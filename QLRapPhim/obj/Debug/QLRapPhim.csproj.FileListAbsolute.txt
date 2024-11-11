@@ -1,0 +1,183 @@
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe.config
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.AssemblyReference.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmMain.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmLogin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Properties.Resources.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.GenerateResource.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.CoreCompileInputs.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmAdmin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmFilm.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmStaff.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BTL\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmShowTime.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe.config
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\bin\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.AssemblyReference.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmAdmin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmFilm.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmMain.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmLogin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmShowTime.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmStaff.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Properties.Resources.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.GenerateResource.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.CoreCompileInputs.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\giaotrinh\Ki_1_nam_3\LapTrinhTrucQuan\BaiTapLon\QLRapPhim\WindowForm\QLRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmCinema.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\QLRapPhim.exe.config
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.csproj.AssemblyReference.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmAdmin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmCinema.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmFilm.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmMain.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmLogin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmShowTime.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.frmStaff.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.Properties.Resources.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.csproj.GenerateResource.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.csproj.CoreCompileInputs.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Bunifu.Licensing.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Guna.UI2.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\MetroFramework.Design.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\MetroFramework.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\RestSharp.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Buffers.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.CodeDom.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Memory.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Text.Json.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.ValueTuple.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\RestSharp.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Buffers.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.CodeDom.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Memory.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Text.Json.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\bin\Debug\System.ValueTuple.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\QLRapPhim\obj\Debug\QLRapPhim.csproj.Up2Date
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.AssemblyReference.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmAdmin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmCinema.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmFilm.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmMain.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmLogin.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmShowTime.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmStaff.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Properties.Resources.resources
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.GenerateResource.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.CoreCompileInputs.cache
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe.config
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.pdb
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.Licensing.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Guna.UI2.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.Design.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\RestSharp.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Buffers.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.CodeDom.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Memory.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Json.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.ValueTuple.dll
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\RestSharp.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Buffers.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.CodeDom.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Memory.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Json.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\bin\Debug\System.ValueTuple.xml
+C:\Users\thedinh\OneDrive - University of Transport and Communications\Desktop\BaiTapLon\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.Up2Date
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.AssemblyReference.cache
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmAdmin.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmCinema.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmCRevenue.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmFilm.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmFRevenue.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmMain.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmLogin.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmShowTime.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmStaff.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Properties.Resources.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.GenerateResource.cache
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.CoreCompileInputs.cache
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.exe
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.pdb
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Staff.frmBookTicket.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.frmMain.vi-VN.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe.config
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.exe
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\QLRapPhim.pdb
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\vi-VN\QLRapPhim.resources.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.Licensing.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Guna.UI2.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.Design.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\MetroFramework.Fonts.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Newtonsoft.Json.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\RestSharp.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Buffers.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.CodeDom.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Memory.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Numerics.Vectors.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Encodings.Web.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Json.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.ValueTuple.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Bunifu.UI.WinForms.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\Newtonsoft.Json.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\RestSharp.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Buffers.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.CodeDom.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Memory.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Numerics.Vectors.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Encodings.Web.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Text.Json.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\bin\Debug\System.ValueTuple.xml
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\vi-VN\QLRapPhim.resources.dll
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.csproj.Up2Date
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Staff.frmSeatOptions.resources
+D:\TÀI LIỆU\Lập trình trực quan\BTL\WindowformRapPhim\QLRapPhim\obj\Debug\QLRapPhim.Staff.frmInvoice.resources
