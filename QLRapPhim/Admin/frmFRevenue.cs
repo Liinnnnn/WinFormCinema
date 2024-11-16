@@ -38,7 +38,9 @@ namespace QLRapPhim
 
             DataTable dtr = process.ReadDatabase(query);
  
-            dataGridView1.DataSource = dt;
+            dataGridView1.DataSource = dtr;
+            dataGridView1.Columns["Revenue"].HeaderText = "Doanh Thu";
+            dataGridView1.Columns["Month"].HeaderText = "Tháng";
             chart1.DataSource = dtr;
             chart1.Series["Doanh Thu"].XValueMember = "Month";
             chart1.Series["Doanh Thu"].YValueMembers = "Revenue";
@@ -61,7 +63,7 @@ namespace QLRapPhim
                 chart1.Update();
             }else
             {
-                DataTable dtf = process.ReadDatabase(@"select SUM(FinalPrice) as Revenue,MONTH(PaymentDate) as Month
+                DataTable dtf = process.ReadDatabase(@"select SUM(FinalPrice - FinalPrice * Discount) as Revenue,MONTH(PaymentDate) as Month
                                     from tblTicket t inner join tblShowtime s on t.ShowtimeID = s.ShowtimeID
                                     inner join tblInvoice i on t.InvoiceID = i.InvoiceID
                                     inner join tblFilm f on f.FilmID = s.FilmID
