@@ -53,6 +53,10 @@
             this.btnAddDB = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateDB = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteDB = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbRoomID = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbHour = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowTime)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -183,7 +187,7 @@
             this.lbShowTimeID.AutoSize = true;
             this.lbShowTimeID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbShowTimeID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbShowTimeID.Location = new System.Drawing.Point(220, 201);
+            this.lbShowTimeID.Location = new System.Drawing.Point(220, 175);
             this.lbShowTimeID.Name = "lbShowTimeID";
             this.lbShowTimeID.Size = new System.Drawing.Size(80, 24);
             this.lbShowTimeID.TabIndex = 7;
@@ -194,18 +198,18 @@
             this.lbShowTime.AutoSize = true;
             this.lbShowTime.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbShowTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbShowTime.Location = new System.Drawing.Point(614, 201);
+            this.lbShowTime.Location = new System.Drawing.Point(633, 178);
             this.lbShowTime.Name = "lbShowTime";
-            this.lbShowTime.Size = new System.Drawing.Size(126, 24);
+            this.lbShowTime.Size = new System.Drawing.Size(91, 24);
             this.lbShowTime.TabIndex = 8;
-            this.lbShowTime.Text = "Thời Gian Chiếu";
+            this.lbShowTime.Text = "Ngày chiếu";
             // 
             // lbFilmID
             // 
             this.lbFilmID.AutoSize = true;
             this.lbFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFilmID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbFilmID.Location = new System.Drawing.Point(220, 252);
+            this.lbFilmID.Location = new System.Drawing.Point(220, 227);
             this.lbFilmID.Name = "lbFilmID";
             this.lbFilmID.Size = new System.Drawing.Size(77, 24);
             this.lbFilmID.TabIndex = 9;
@@ -216,7 +220,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(614, 252);
+            this.label2.Location = new System.Drawing.Point(633, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 24);
             this.label2.TabIndex = 10;
@@ -227,7 +231,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(220, 303);
+            this.label3.Location = new System.Drawing.Point(220, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 24);
             this.label3.TabIndex = 11;
@@ -238,7 +242,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(614, 303);
+            this.label4.Location = new System.Drawing.Point(633, 277);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 12;
@@ -247,7 +251,7 @@
             // txtShowTimeID
             // 
             this.txtShowTimeID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShowTimeID.Location = new System.Drawing.Point(334, 198);
+            this.txtShowTimeID.Location = new System.Drawing.Point(356, 172);
             this.txtShowTimeID.Name = "txtShowTimeID";
             this.txtShowTimeID.Size = new System.Drawing.Size(220, 30);
             this.txtShowTimeID.TabIndex = 13;
@@ -256,7 +260,7 @@
             // 
             this.txtFilm.Enabled = false;
             this.txtFilm.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilm.Location = new System.Drawing.Point(783, 250);
+            this.txtFilm.Location = new System.Drawing.Point(783, 224);
             this.txtFilm.Name = "txtFilm";
             this.txtFilm.Size = new System.Drawing.Size(220, 30);
             this.txtFilm.TabIndex = 14;
@@ -265,7 +269,7 @@
             // 
             this.txtCinema.Enabled = false;
             this.txtCinema.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCinema.Location = new System.Drawing.Point(783, 299);
+            this.txtCinema.Location = new System.Drawing.Point(783, 267);
             this.txtCinema.Name = "txtCinema";
             this.txtCinema.Size = new System.Drawing.Size(220, 30);
             this.txtCinema.TabIndex = 15;
@@ -274,7 +278,7 @@
             // 
             this.dtpShowTime.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpShowTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpShowTime.Location = new System.Drawing.Point(783, 201);
+            this.dtpShowTime.Location = new System.Drawing.Point(783, 175);
             this.dtpShowTime.Name = "dtpShowTime";
             this.dtpShowTime.Size = new System.Drawing.Size(220, 30);
             this.dtpShowTime.TabIndex = 16;
@@ -283,7 +287,7 @@
             // 
             this.cmbFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFilmID.FormattingEnabled = true;
-            this.cmbFilmID.Location = new System.Drawing.Point(334, 248);
+            this.cmbFilmID.Location = new System.Drawing.Point(356, 224);
             this.cmbFilmID.Name = "cmbFilmID";
             this.cmbFilmID.Size = new System.Drawing.Size(220, 32);
             this.cmbFilmID.TabIndex = 17;
@@ -293,7 +297,7 @@
             // 
             this.cmbCinemaID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCinemaID.FormattingEnabled = true;
-            this.cmbCinemaID.Location = new System.Drawing.Point(334, 300);
+            this.cmbCinemaID.Location = new System.Drawing.Point(356, 267);
             this.cmbCinemaID.Name = "cmbCinemaID";
             this.cmbCinemaID.Size = new System.Drawing.Size(220, 32);
             this.cmbCinemaID.TabIndex = 18;
@@ -312,7 +316,7 @@
             // 
             this.lbNote.AutoSize = true;
             this.lbNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNote.Location = new System.Drawing.Point(383, 373);
+            this.lbNote.Location = new System.Drawing.Point(353, 373);
             this.lbNote.Name = "lbNote";
             this.lbNote.Size = new System.Drawing.Size(176, 16);
             this.lbNote.TabIndex = 24;
@@ -366,12 +370,56 @@
             this.btnDeleteDB.Text = "Xóa";
             this.btnDeleteDB.Click += new System.EventHandler(this.btnDeleteDB_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(220, 316);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 24);
+            this.label1.TabIndex = 82;
+            this.label1.Text = "Phòng chiếu";
+            // 
+            // cmbRoomID
+            // 
+            this.cmbRoomID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRoomID.FormattingEnabled = true;
+            this.cmbRoomID.Location = new System.Drawing.Point(356, 313);
+            this.cmbRoomID.Name = "cmbRoomID";
+            this.cmbRoomID.Size = new System.Drawing.Size(220, 32);
+            this.cmbRoomID.TabIndex = 83;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(633, 316);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 24);
+            this.label5.TabIndex = 84;
+            this.label5.Text = "Giờ chiếu";
+            // 
+            // cmbHour
+            // 
+            this.cmbHour.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbHour.FormattingEnabled = true;
+            this.cmbHour.Location = new System.Drawing.Point(783, 316);
+            this.cmbHour.Name = "cmbHour";
+            this.cmbHour.Size = new System.Drawing.Size(220, 32);
+            this.cmbHour.TabIndex = 85;
+            // 
             // frmShowTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(42)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1064, 442);
+            this.Controls.Add(this.cmbHour);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cmbRoomID);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeleteDB);
             this.Controls.Add(this.btnUpdateDB);
             this.Controls.Add(this.btnAddDB);
@@ -429,5 +477,9 @@
         private Guna.UI2.WinForms.Guna2Button btnAddDB;
         private Guna.UI2.WinForms.Guna2Button btnUpdateDB;
         private Guna.UI2.WinForms.Guna2Button btnDeleteDB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbRoomID;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbHour;
     }
 }
