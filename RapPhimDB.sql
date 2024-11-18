@@ -33,7 +33,8 @@ create table tblStaff
 	WorkStartDate Date,
 	Password nvarchar(20),
 	Type_Account nvarchar(10),
-	CinemaID varchar(20)
+	CinemaID varchar(20),
+	Status nvarchar(20)
 	foreign key (CinemaID) references tblCinema(CinemaID)
 );
 
@@ -56,7 +57,7 @@ create table tblShowtime
 	FilmID varchar(20),
 	CinemaID varchar(20),
 	RoomID int,
-	Showtime date,
+	Showtime datetime,	
 	ShowtimeHour time,
 	FOREIGN KEY (FilmID) REFERENCES tblFilm(FilmID),
     FOREIGN KEY (CinemaID) REFERENCES tblCinema(CinemaID),
@@ -103,12 +104,6 @@ create table tblTicket
 insert tblUser(TypeUser,BirthDay,Gender,Name) values('Adult','2004-04-18','Gay','NguyenVanHai')
 insert tblUser(TypeUser,BirthDay,Gender,Name) values('Student','2004-04-18','Male','NguyenTuanLinh')
 
-select SUM(FinalPrice) as Revenue,MONTH(PaymentDate) as Month
-                                    from tblTicket t inner join tblShowtime s on t.ShowtimeID = s.ShowtimeID
-                                    inner join tblInvoice i on t.InvoiceID = i.InvoiceID
-                                    inner join tblFilm f on f.FilmID = s.FilmID
-                                    inner join tblCinema c on c.CinemaID = s.CinemaID
-                                    group by MONTH(PaymentDate)
 
 --insert tblCinema
 insert tblCinema (CinemaID,CinemaName,Address) values (N'SKPGP',N'Skope Giải Phóng',N'67-Định Công-Hoàng Mai-Hà Nội')
@@ -117,12 +112,12 @@ insert tblCinema (CinemaID,CinemaName,Address) values (N'SKPCG',N'Skope Cầu Gi
 insert tblCinema (CinemaID,CinemaName,Address) values (N'SKPHD',N'Skope Hải Dương',N'158-Ngô Quyền-Hải Dương')
 --insert tblStaff
 insert tblStaff (StaffID,Name,Password,Type_Account) values ('Admin','admin','admin','Admin')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV001',N'Nguyễn Thế Định',N'Nam','5-18-2004','0984983258','2-25-2024','123','Staff','SKPHD')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV002',N'Nguyễn Văn Hải',N'Nam','8-8-2004','0947365489','4-5-2023','123','Staff','SKPNT')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV003',N'Nguyễn Tuần Linh',N'Nữ','3-8-2005','0947884783','7-4-2022','123','Staff','SKPCG')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV004',N'Vũ Đức Duy Anh',N'Nam','10-20-2004','0968473463','9-1-2024','123','Staff','SKPGP')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV005',N'Phí Gia Huy',N'Nam','9-2-2003','0875673245','1-1-2023','123','Staff','SKPGP')
-insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID) values (N'NV006',N'Nguyễn Minh Hiếu','Nam','4-4-2004','0985746375','2-25-2024','123','Staff','SKPHD')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV001',N'Nguyễn Thế Định',N'Nam','5-18-2004','0984983258','2-25-2024','123','Staff','SKPHD',N'Đang làm')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV002',N'Nguyễn Văn Hải',N'Nam','8-8-2004','0947365489','4-5-2023','123','Staff','SKPNT',N'Đang làm')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV003',N'Nguyễn Tuần Linh',N'Nữ','3-8-2005','0947884783','7-4-2022','123','Staff','SKPCG',N'Đang làm')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV004',N'Vũ Đức Duy Anh',N'Nam','10-20-2004','0968473463','9-1-2024','123','Staff','SKPGP',N'Đang làm')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV005',N'Phí Gia Huy',N'Nam','9-2-2003','0875673245','1-1-2023','123','Staff','SKPGP',N'Đang làm')
+insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV006',N'Nguyễn Minh Hiếu','Nam','4-4-2004','0985746375','2-25-2024','123','Staff','SKPHD',N'Đang làm')
 --insert tblFilm
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,AgeAllowed) values (N'PB',N'Peaky Blinders',N'Tiếng Anh',N'Steven Knight','9-12-2013',50000,N'Đang Chiếu','17')
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,AgeAllowed) values (N'CC',N'CoCo',N'Tiếng Anh',N'Lee Unkrich','10-20-2017',70000,'Đang Chiếu','13')
@@ -170,6 +165,15 @@ insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour
 insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST8', 'PB', 'SKPCG', '2024-11-20', '7', '18:00')
 
 insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST9', 'NBN', 'SKPCG', '2024-11-20', '7', '13:00')
+
+--insert Invoice
+
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-10-24','Cash',0.1,63000,1,'NV001')
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-9-24','Cash',0.1,56000,2,'NV002')
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-11-24','Cash',0.1,126000,1,'NV003')
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-10-24','Cash',0.1,126000,2,'NV004')
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-8-24','Cash',0.1,70000,1,'NV005')
+insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-9-24','Cash',0.1,70000,1,'NV006')
 --insert Tickets 
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',1,'A3',70000)
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',2,'B3',140000)
@@ -183,10 +187,3 @@ insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult'
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST4',4,'A1',70000)
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',5,'C4',70000)
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',6,'C4',70000)
---insert Invoice
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-10-24','Cash',0.1,63000,1,'NV001')
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-9-24','Cash',0.1,56000,2,'NV002')
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-11-24','Cash',0.1,126000,1,'NV003')
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-10-24','Cash',0.1,126000,2,'NV004')
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-8-24','Cash',0.1,70000,1,'NV005')
-insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-9-24','Cash',0.1,70000,1,'NV006')
