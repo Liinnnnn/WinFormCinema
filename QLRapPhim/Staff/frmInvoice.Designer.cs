@@ -96,13 +96,13 @@
             this.lblDiaChi.Text = "Tầng 3, TTTM IPH, ";
             // 
             this.lblCinemaB.Text = "SKOPE ";
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 183);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "SKOPE Cầu Giấy";
+            this.lblCinemaB.AutoSize = true;
+            this.lblCinemaB.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCinemaB.Location = new System.Drawing.Point(38, 183);
+            this.lblCinemaB.Name = "lblCinemaB";
+            this.lblCinemaB.Size = new System.Drawing.Size(116, 19);
+            this.lblCinemaB.TabIndex = 4;
+            this.lblCinemaB.Text = "SKOPE Cầu Giấy";
             // 
             // label2
             // 

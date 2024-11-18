@@ -296,3 +296,6 @@ C:\Users\ngtua\Downloads\WinFormCinema\QLRapPhim\bin\Debug\System.Threading.Task
 C:\Users\ngtua\Downloads\WinFormCinema\QLRapPhim\bin\Debug\System.ValueTuple.xml
 C:\Users\ngtua\Downloads\WinFormCinema\QLRapPhim\obj\Debug\vi-VN\QLRapPhim.resources.dll
 C:\Users\ngtua\Downloads\WinFormCinema\QLRapPhim\obj\Debug\QLRapPhim.csproj.Up2Date
+C:\Users\ngtua\OneDrive\Desktop\FormC#\WinFormCinema\QLRapPhim\obj\Debug\QLRapPhim.Staff.frmPayment.resources
+C:\Users\ngtua\OneDrive\Desktop\FormC#\WinFormCinema\QLRapPhim\bin\Debug\QRCoder.dll
+C:\Users\ngtua\OneDrive\Desktop\FormC#\WinFormCinema\QLRapPhim\bin\Debug\VietQRHelper.dll
