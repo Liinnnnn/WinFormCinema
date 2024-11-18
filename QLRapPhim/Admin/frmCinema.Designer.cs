@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCinema));
             this.dgvCinema = new System.Windows.Forms.DataGridView();
-            this.lbCinemaID = new System.Windows.Forms.Label();
-            this.lbCinemaName = new System.Windows.Forms.Label();
-            this.lbAddress = new System.Windows.Forms.Label();
             this.txtCinemaID = new System.Windows.Forms.TextBox();
             this.txtCinemaName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.btnChange = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnChange = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnTop = new System.Windows.Forms.Panel();
-            this.btnDeleteDB = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateDB = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddDB = new Guna.UI2.WinForms.Guna2Button();
+            this.lbCinemaID = new System.Windows.Forms.Label();
+            this.lbCinemaName = new System.Windows.Forms.Label();
+            this.lbAddress = new System.Windows.Forms.Label();
+            this.btnDeleteDB = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cmbCinemaID = new System.Windows.Forms.ComboBox();
+            this.btnUpdateDB = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddDB = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCinema)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnTop.SuspendLayout();
@@ -64,39 +64,6 @@
             this.dgvCinema.Size = new System.Drawing.Size(531, 350);
             this.dgvCinema.TabIndex = 1;
             this.dgvCinema.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCinema_CellContentClick);
-            // 
-            // lbCinemaID
-            // 
-            this.lbCinemaID.AutoSize = true;
-            this.lbCinemaID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCinemaID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbCinemaID.Location = new System.Drawing.Point(614, 23);
-            this.lbCinemaID.Name = "lbCinemaID";
-            this.lbCinemaID.Size = new System.Drawing.Size(82, 23);
-            this.lbCinemaID.TabIndex = 8;
-            this.lbCinemaID.Text = "Mã Rạp";
-            // 
-            // lbCinemaName
-            // 
-            this.lbCinemaName.AutoSize = true;
-            this.lbCinemaName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCinemaName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbCinemaName.Location = new System.Drawing.Point(614, 89);
-            this.lbCinemaName.Name = "lbCinemaName";
-            this.lbCinemaName.Size = new System.Drawing.Size(84, 23);
-            this.lbCinemaName.TabIndex = 9;
-            this.lbCinemaName.Text = "Tên Rạp";
-            // 
-            // lbAddress
-            // 
-            this.lbAddress.AutoSize = true;
-            this.lbAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbAddress.Location = new System.Drawing.Point(614, 155);
-            this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(82, 23);
-            this.lbAddress.TabIndex = 10;
-            this.lbAddress.Text = "Địa Chỉ";
             // 
             // txtCinemaID
             // 
@@ -124,11 +91,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(42)))), ((int)(((byte)(59)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnChange);
             this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -137,166 +104,207 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BorderRadius = 22;
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BorderColor = System.Drawing.Color.Violet;
+            this.btnCancel.BorderRadius = 10;
+            this.btnCancel.BorderThickness = 1;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
+            this.btnCancel.FillColor = System.Drawing.Color.White;
+            this.btnCancel.FillColor2 = System.Drawing.Color.White;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageOffset = new System.Drawing.Point(-10, 0);
-            this.btnCancel.Location = new System.Drawing.Point(876, 27);
+            this.btnCancel.ForeColor = System.Drawing.Color.Violet;
+            this.btnCancel.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
+            this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCancel.Location = new System.Drawing.Point(856, 28);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(175, 40);
-            this.btnCancel.TabIndex = 24;
-            this.btnCancel.Text = "Hủy";
+            this.btnCancel.Size = new System.Drawing.Size(121, 40);
+            this.btnCancel.TabIndex = 89;
+            this.btnCancel.Text = "HỦY";
+            this.btnCancel.UseTransparentBackground = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BorderRadius = 22;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(21, 27);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(175, 40);
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // btnChange
             // 
-            this.btnChange.BorderRadius = 22;
+            this.btnChange.BackColor = System.Drawing.Color.Transparent;
+            this.btnChange.BorderColor = System.Drawing.Color.Violet;
+            this.btnChange.BorderRadius = 10;
+            this.btnChange.BorderThickness = 1;
             this.btnChange.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnChange.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnChange.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChange.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnChange.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChange.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
+            this.btnChange.FillColor = System.Drawing.Color.White;
+            this.btnChange.FillColor2 = System.Drawing.Color.White;
             this.btnChange.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChange.ForeColor = System.Drawing.Color.White;
-            this.btnChange.Image = ((System.Drawing.Image)(resources.GetObject("btnChange.Image")));
-            this.btnChange.ImageOffset = new System.Drawing.Point(-10, 0);
-            this.btnChange.Location = new System.Drawing.Point(306, 27);
+            this.btnChange.ForeColor = System.Drawing.Color.Violet;
+            this.btnChange.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
+            this.btnChange.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChange.Location = new System.Drawing.Point(336, 28);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(175, 40);
-            this.btnChange.TabIndex = 21;
-            this.btnChange.Text = "Sửa";
+            this.btnChange.Size = new System.Drawing.Size(120, 40);
+            this.btnChange.TabIndex = 87;
+            this.btnChange.Text = "SỬA";
+            this.btnChange.UseTransparentBackground = true;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click_1);
             // 
             // btnDelete
             // 
-            this.btnDelete.BorderRadius = 22;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderColor = System.Drawing.Color.Violet;
+            this.btnDelete.BorderRadius = 10;
+            this.btnDelete.BorderThickness = 1;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
+            this.btnDelete.FillColor = System.Drawing.Color.White;
+            this.btnDelete.FillColor2 = System.Drawing.Color.White;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.ImageOffset = new System.Drawing.Point(-10, 0);
-            this.btnDelete.Location = new System.Drawing.Point(591, 27);
+            this.btnDelete.ForeColor = System.Drawing.Color.Violet;
+            this.btnDelete.Image = global::QLRapPhim.Properties.Resources.icons8_delete_64;
+            this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDelete.Location = new System.Drawing.Point(620, 28);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(175, 40);
-            this.btnDelete.TabIndex = 22;
-            this.btnDelete.Text = "Xóa";
+            this.btnDelete.Size = new System.Drawing.Size(122, 40);
+            this.btnDelete.TabIndex = 88;
+            this.btnDelete.Text = "XÓA";
+            this.btnDelete.UseTransparentBackground = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
             // 
-            // btnSearch
+            // btnAdd
             // 
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(618, 219);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(159, 30);
-            this.btnSearch.TabIndex = 23;
-            this.btnSearch.Text = "Tìm Kiếm";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BorderColor = System.Drawing.Color.Violet;
+            this.btnAdd.BorderRadius = 10;
+            this.btnAdd.BorderThickness = 1;
+            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdd.FillColor = System.Drawing.Color.White;
+            this.btnAdd.FillColor2 = System.Drawing.Color.White;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd.ForeColor = System.Drawing.Color.Violet;
+            this.btnAdd.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
+            this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAdd.Location = new System.Drawing.Point(103, 28);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(114, 40);
+            this.btnAdd.TabIndex = 86;
+            this.btnAdd.Text = "THÊM";
+            this.btnAdd.UseTransparentBackground = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // pnTop
             // 
-            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(42)))), ((int)(((byte)(59)))));
-            this.pnTop.Controls.Add(this.btnDeleteDB);
-            this.pnTop.Controls.Add(this.btnUpdateDB);
-            this.pnTop.Controls.Add(this.btnAddDB);
-            this.pnTop.Controls.Add(this.cmbCinemaID);
-            this.pnTop.Controls.Add(this.dgvCinema);
-            this.pnTop.Controls.Add(this.btnSearch);
-            this.pnTop.Controls.Add(this.txtCinemaID);
-            this.pnTop.Controls.Add(this.txtAddress);
+            this.pnTop.BackColor = System.Drawing.Color.White;
             this.pnTop.Controls.Add(this.lbCinemaID);
-            this.pnTop.Controls.Add(this.txtCinemaName);
             this.pnTop.Controls.Add(this.lbCinemaName);
             this.pnTop.Controls.Add(this.lbAddress);
+            this.pnTop.Controls.Add(this.btnDeleteDB);
+            this.pnTop.Controls.Add(this.btnSearch);
+            this.pnTop.Controls.Add(this.cmbCinemaID);
+            this.pnTop.Controls.Add(this.dgvCinema);
+            this.pnTop.Controls.Add(this.txtCinemaID);
+            this.pnTop.Controls.Add(this.txtAddress);
+            this.pnTop.Controls.Add(this.txtCinemaName);
+            this.pnTop.Controls.Add(this.btnUpdateDB);
+            this.pnTop.Controls.Add(this.btnAddDB);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnTop.Location = new System.Drawing.Point(0, 92);
             this.pnTop.Name = "pnTop";
             this.pnTop.Size = new System.Drawing.Size(1064, 350);
             this.pnTop.TabIndex = 18;
             // 
+            // lbCinemaID
+            // 
+            this.lbCinemaID.AutoSize = true;
+            this.lbCinemaID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCinemaID.ForeColor = System.Drawing.Color.Violet;
+            this.lbCinemaID.Location = new System.Drawing.Point(629, 22);
+            this.lbCinemaID.Name = "lbCinemaID";
+            this.lbCinemaID.Size = new System.Drawing.Size(79, 28);
+            this.lbCinemaID.TabIndex = 91;
+            this.lbCinemaID.Text = "Mã Rạp";
+            // 
+            // lbCinemaName
+            // 
+            this.lbCinemaName.AutoSize = true;
+            this.lbCinemaName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCinemaName.ForeColor = System.Drawing.Color.Violet;
+            this.lbCinemaName.Location = new System.Drawing.Point(629, 88);
+            this.lbCinemaName.Name = "lbCinemaName";
+            this.lbCinemaName.Size = new System.Drawing.Size(80, 28);
+            this.lbCinemaName.TabIndex = 92;
+            this.lbCinemaName.Text = "Tên Rạp";
+            // 
+            // lbAddress
+            // 
+            this.lbAddress.AutoSize = true;
+            this.lbAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAddress.ForeColor = System.Drawing.Color.Violet;
+            this.lbAddress.Location = new System.Drawing.Point(629, 154);
+            this.lbAddress.Name = "lbAddress";
+            this.lbAddress.Size = new System.Drawing.Size(74, 28);
+            this.lbAddress.TabIndex = 93;
+            this.lbAddress.Text = "Địa Chỉ";
+            // 
             // btnDeleteDB
             // 
+            this.btnDeleteDB.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeleteDB.BorderColor = System.Drawing.Color.Violet;
+            this.btnDeleteDB.BorderRadius = 10;
+            this.btnDeleteDB.BorderThickness = 1;
             this.btnDeleteDB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteDB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteDB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteDB.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteDB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteDB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
+            this.btnDeleteDB.FillColor = System.Drawing.Color.White;
+            this.btnDeleteDB.FillColor2 = System.Drawing.Color.White;
             this.btnDeleteDB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeleteDB.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteDB.Location = new System.Drawing.Point(880, 284);
+            this.btnDeleteDB.ForeColor = System.Drawing.Color.Violet;
+            this.btnDeleteDB.Image = global::QLRapPhim.Properties.Resources.icons8_delete_64;
+            this.btnDeleteDB.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDeleteDB.Location = new System.Drawing.Point(876, 269);
             this.btnDeleteDB.Name = "btnDeleteDB";
-            this.btnDeleteDB.Size = new System.Drawing.Size(122, 32);
-            this.btnDeleteDB.TabIndex = 81;
-            this.btnDeleteDB.Text = "Xóa";
+            this.btnDeleteDB.Size = new System.Drawing.Size(126, 40);
+            this.btnDeleteDB.TabIndex = 90;
+            this.btnDeleteDB.Text = "XÓA";
+            this.btnDeleteDB.UseTransparentBackground = true;
             this.btnDeleteDB.Click += new System.EventHandler(this.btnDeleteDB_Click);
             // 
-            // btnUpdateDB
+            // btnSearch
             // 
-            this.btnUpdateDB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateDB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateDB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
-            this.btnUpdateDB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdateDB.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateDB.Location = new System.Drawing.Point(880, 284);
-            this.btnUpdateDB.Name = "btnUpdateDB";
-            this.btnUpdateDB.Size = new System.Drawing.Size(122, 32);
-            this.btnUpdateDB.TabIndex = 80;
-            this.btnUpdateDB.Text = "Sửa";
-            this.btnUpdateDB.Click += new System.EventHandler(this.btnUpdateDB_Click);
-            // 
-            // btnAddDB
-            // 
-            this.btnAddDB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddDB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddDB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddDB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddDB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(166)))), ((int)(((byte)(35)))));
-            this.btnAddDB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddDB.ForeColor = System.Drawing.Color.White;
-            this.btnAddDB.Location = new System.Drawing.Point(880, 284);
-            this.btnAddDB.Name = "btnAddDB";
-            this.btnAddDB.Size = new System.Drawing.Size(122, 32);
-            this.btnAddDB.TabIndex = 79;
-            this.btnAddDB.Text = "Thêm";
-            this.btnAddDB.Click += new System.EventHandler(this.btnAdđB_Click);
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BorderColor = System.Drawing.Color.Violet;
+            this.btnSearch.BorderRadius = 10;
+            this.btnSearch.BorderThickness = 1;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.FillColor = System.Drawing.Color.White;
+            this.btnSearch.FillColor2 = System.Drawing.Color.White;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearch.ForeColor = System.Drawing.Color.Violet;
+            this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
+            this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSearch.Location = new System.Drawing.Point(618, 209);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(140, 40);
+            this.btnSearch.TabIndex = 87;
+            this.btnSearch.Text = "TÌM KIẾM";
+            this.btnSearch.UseTransparentBackground = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // cmbCinemaID
             // 
@@ -307,14 +315,65 @@
             this.cmbCinemaID.Size = new System.Drawing.Size(181, 32);
             this.cmbCinemaID.TabIndex = 64;
             // 
+            // btnUpdateDB
+            // 
+            this.btnUpdateDB.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdateDB.BorderColor = System.Drawing.Color.Violet;
+            this.btnUpdateDB.BorderRadius = 10;
+            this.btnUpdateDB.BorderThickness = 1;
+            this.btnUpdateDB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateDB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateDB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateDB.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateDB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateDB.FillColor = System.Drawing.Color.White;
+            this.btnUpdateDB.FillColor2 = System.Drawing.Color.White;
+            this.btnUpdateDB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
+            this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
+            this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnUpdateDB.Location = new System.Drawing.Point(876, 269);
+            this.btnUpdateDB.Name = "btnUpdateDB";
+            this.btnUpdateDB.Size = new System.Drawing.Size(123, 40);
+            this.btnUpdateDB.TabIndex = 88;
+            this.btnUpdateDB.Text = "SỬA";
+            this.btnUpdateDB.UseTransparentBackground = true;
+            this.btnUpdateDB.Click += new System.EventHandler(this.btnUpdateDB_Click);
+            // 
+            // btnAddDB
+            // 
+            this.btnAddDB.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddDB.BorderColor = System.Drawing.Color.Violet;
+            this.btnAddDB.BorderRadius = 10;
+            this.btnAddDB.BorderThickness = 1;
+            this.btnAddDB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddDB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddDB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddDB.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddDB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddDB.FillColor = System.Drawing.Color.White;
+            this.btnAddDB.FillColor2 = System.Drawing.Color.White;
+            this.btnAddDB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
+            this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
+            this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddDB.Location = new System.Drawing.Point(876, 269);
+            this.btnAddDB.Name = "btnAddDB";
+            this.btnAddDB.Size = new System.Drawing.Size(127, 40);
+            this.btnAddDB.TabIndex = 89;
+            this.btnAddDB.Text = "THÊM";
+            this.btnAddDB.UseTransparentBackground = true;
+            this.btnAddDB.Click += new System.EventHandler(this.btnAdđB_Click);
+            // 
             // frmCinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1064, 442);
             this.Controls.Add(this.pnTop);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCinema";
             this.Text = "frmCinemacs";
             this.Load += new System.EventHandler(this.frmCinema_Load);
@@ -329,22 +388,22 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvCinema;
-        private System.Windows.Forms.Label lbCinemaID;
-        private System.Windows.Forms.Label lbCinemaName;
-        private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.TextBox txtCinemaID;
         private System.Windows.Forms.TextBox txtCinemaName;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnTop;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2Button btnChange;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnSearch;
-        private Guna.UI2.WinForms.Guna2Button btnCancel;
         private System.Windows.Forms.ComboBox cmbCinemaID;
-        private Guna.UI2.WinForms.Guna2Button btnAddDB;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateDB;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteDB;
+        private Guna.UI2.WinForms.Guna2GradientButton btnCancel;
+        private Guna.UI2.WinForms.Guna2GradientButton btnChange;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDelete;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAdd;
+        private System.Windows.Forms.Label lbCinemaID;
+        private System.Windows.Forms.Label lbCinemaName;
+        private System.Windows.Forms.Label lbAddress;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDeleteDB;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSearch;
+        private Guna.UI2.WinForms.Guna2GradientButton btnUpdateDB;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAddDB;
     }
 }
