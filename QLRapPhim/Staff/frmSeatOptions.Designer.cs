@@ -56,7 +56,7 @@
             this.btnC3 = new System.Windows.Forms.Button();
             this.btnC2 = new System.Windows.Forms.Button();
             this.btnC1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbLoaiVe = new System.Windows.Forms.GroupBox();
             this.rbtnTreEm = new System.Windows.Forms.RadioButton();
             this.rbtnSinhVien = new System.Windows.Forms.RadioButton();
             this.rbtnNguoiLon = new System.Windows.Forms.RadioButton();
@@ -91,7 +91,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbLoaiVe.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,9 +137,8 @@
             this.lblDiaDiem.ForeColor = System.Drawing.Color.White;
             this.lblDiaDiem.Location = new System.Drawing.Point(39, 10);
             this.lblDiaDiem.Name = "lblDiaDiem";
-            this.lblDiaDiem.Size = new System.Drawing.Size(146, 18);
+            this.lblDiaDiem.Size = new System.Drawing.Size(0, 18);
             this.lblDiaDiem.TabIndex = 0;
-            this.lblDiaDiem.Text = "CGV Skope Cầu Giấy | ";
             // 
             // textBox1
             // 
@@ -433,18 +432,18 @@
             this.btnC1.UseVisualStyleBackColor = false;
             this.btnC1.Click += new System.EventHandler(this.button16_Click);
             // 
-            // groupBox1
+            // gbLoaiVe
             // 
-            this.groupBox1.Controls.Add(this.rbtnTreEm);
-            this.groupBox1.Controls.Add(this.rbtnSinhVien);
-            this.groupBox1.Controls.Add(this.rbtnNguoiLon);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(355, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(153, 153);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Loại vé";
+            this.gbLoaiVe.Controls.Add(this.rbtnTreEm);
+            this.gbLoaiVe.Controls.Add(this.rbtnSinhVien);
+            this.gbLoaiVe.Controls.Add(this.rbtnNguoiLon);
+            this.gbLoaiVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbLoaiVe.Location = new System.Drawing.Point(355, 12);
+            this.gbLoaiVe.Name = "gbLoaiVe";
+            this.gbLoaiVe.Size = new System.Drawing.Size(153, 153);
+            this.gbLoaiVe.TabIndex = 0;
+            this.gbLoaiVe.TabStop = false;
+            this.gbLoaiVe.Text = "Loại vé";
             // 
             // rbtnTreEm
             // 
@@ -760,7 +759,7 @@
             // 
             this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(42)))), ((int)(((byte)(59)))));
             this.guna2Panel3.BorderThickness = 2;
-            this.guna2Panel3.Controls.Add(this.groupBox1);
+            this.guna2Panel3.Controls.Add(this.gbLoaiVe);
             this.guna2Panel3.Controls.Add(this.groupBox2);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 352);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -788,10 +787,12 @@
             this.dtpNgaySinh.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgaySinh.Location = new System.Drawing.Point(134, 116);
+            this.dtpNgaySinh.MaxDate = new System.DateTime(2019, 12, 31, 0, 0, 0, 0);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtpNgaySinh.Size = new System.Drawing.Size(177, 21);
             this.dtpNgaySinh.TabIndex = 2;
+            this.dtpNgaySinh.Value = new System.DateTime(2019, 12, 31, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -810,6 +811,7 @@
             this.tbGioiTinh.Name = "tbGioiTinh";
             this.tbGioiTinh.Size = new System.Drawing.Size(177, 20);
             this.tbGioiTinh.TabIndex = 1;
+            this.tbGioiTinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbGioiTinh_KeyPress);
             // 
             // label2
             // 
@@ -828,6 +830,7 @@
             this.tbTenKH.Name = "tbTenKH";
             this.tbTenKH.Size = new System.Drawing.Size(177, 22);
             this.tbTenKH.TabIndex = 0;
+            this.tbTenKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTenKH_KeyPress);
             // 
             // label1
             // 
@@ -901,8 +904,8 @@
             this.Load += new System.EventHandler(this.SeatOptions_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbLoaiVe.ResumeLayout(false);
+            this.gbLoaiVe.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
@@ -952,7 +955,7 @@
         private System.Windows.Forms.Button btnD3;
         private System.Windows.Forms.Button btnD2;
         private System.Windows.Forms.Button btnD1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbLoaiVe;
         private System.Windows.Forms.RadioButton rbtnTreEm;
         private System.Windows.Forms.RadioButton rbtnSinhVien;
         private System.Windows.Forms.RadioButton rbtnNguoiLon;
@@ -968,7 +971,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbGioiTinh;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbTenKH;
         private System.Windows.Forms.Label label1;
@@ -977,5 +979,6 @@
         private Guna.UI2.WinForms.Guna2TextBox tbTienThu;
         private Guna.UI2.WinForms.Guna2TextBox tbGiamGia;
         private Guna.UI2.WinForms.Guna2TextBox tbTongTien;
+        private System.Windows.Forms.TextBox tbGioiTinh;
     }
 }

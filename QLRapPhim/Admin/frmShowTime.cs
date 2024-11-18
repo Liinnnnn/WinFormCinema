@@ -243,15 +243,26 @@ namespace QLRapPhim
             }
             else
             {
-                string roomName = cmbRoomID.Text;
-                string queryRoomID = "SELECT RoomID FROM tblShowroom WHERE RoomName = '" + roomName + "'";
-                DataTable dtRoom = process.ReadDatabase(queryRoomID);
-                string room = dtRoom.Rows[0]["RoomID"].ToString();
-                int roomID = Convert.ToInt32(room);
-                if (MessageBox.Show("Bạn có muốn sửa lịch chiếu " + txtShowTimeID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                DataTable dt = process.ReadDatabase("select count(*) as Count from tblTicket t join tblInvoice i on t.InvoiceID = i.InvoiceID  WHERE ShowtimeID = '" + txtShowTimeID.Text + "'");
+
+                if (dt.Rows.Count > 0 && Convert.ToInt32(dt.Rows[0]["Count"]) > 0)
                 {
-                    process.ChangeDatabase("Update tblShowtime set Showtime = '" + showtimeFormatted + "', FilmID = '" + cmbFilmID.Text + "', CinemaID = '" + cmbCinemaID.Text + "', RoomID = '" + roomID + "',ShowtimeHour='" + cmbHour.Text + "' where ShowtimeID = '" + txtShowTimeID.Text + "'");
-                    LoadData();
+
+                    MessageBox.Show("Không thể sửa vì đã có người đặt lịch này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+
+                    string roomName = cmbRoomID.Text;
+                    string queryRoomID = "SELECT RoomID FROM tblShowroom WHERE RoomName = '" + roomName + "'";
+                    DataTable dtRoom = process.ReadDatabase(queryRoomID);
+                    string room = dtRoom.Rows[0]["RoomID"].ToString();
+                    int roomID = Convert.ToInt32(room);
+                    if (MessageBox.Show("Bạn có muốn sửa lịch chiếu " + txtShowTimeID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        process.ChangeDatabase("Update tblShowtime set Showtime = '" + showtimeFormatted + "', FilmID = '" + cmbFilmID.Text + "', CinemaID = '" + cmbCinemaID.Text + "', RoomID = '" + roomID + "',ShowtimeHour='" + cmbHour.Text + "' where ShowtimeID = '" + txtShowTimeID.Text + "'");
+                        LoadData();
+                    }
                 }
             }
         }
@@ -264,14 +275,38 @@ namespace QLRapPhim
             }
             else
             {
-                if (MessageBox.Show("Bạn có muốn xóa lịch chiếu " + txtShowTimeID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                DataTable dt = process.ReadDatabase("select count(*) as Count from tblTicket t join tblInvoice i on t.InvoiceID = i.InvoiceID  WHERE ShowtimeID = '" + txtShowTimeID.Text + "'");
+
+                if (dt.Rows.Count > 0 && Convert.ToInt32(dt.Rows[0]["Count"]) > 0)
                 {
-                    // DataTable dt = process.ReadDatabase("Select ShowtimeID From tblShowtime where ShowtimeID = '" + txtShowTimeID.Text + "'");
-                    process.ChangeDatabase("Delete from tblShowtime where ShowtimeID = '" + txtShowTimeID.Text + "'");
-                    LoadData();
+
+                    MessageBox.Show("Không thể xóa vì đã có người đặt lịch này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+
+                    if (MessageBox.Show("Bạn có muốn xóa lịch chiếu " + txtShowTimeID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        process.ChangeDatabase("delete from tblShowtime where ShowtimeID = '" + txtShowTimeID.Text + "'");
+                        MessageBox.Show("Lịch chiếu đã được xóa thành công.", "Thông báo", MessageBoxButtons.OK);
+                        LoadData();
+                    }
                 }
             }
         }
 
+        private void dgvShowTime_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int i = dgvShowTime.CurrentRow.Index;
+            txtShowTimeID.Text = dgvShowTime.Rows[i].Cells[0].Value.ToString();
+            dtpShowTime.Text = dgvShowTime.Rows[i].Cells[1].Value.ToString();
+            cmbHour.Text = dgvShowTime.Rows[i].Cells[2].Value.ToString();
+            cmbFilmID.Text = dgvShowTime.Rows[i].Cells[3].Value.ToString();
+            txtFilm.Text = dgvShowTime.Rows[i].Cells[4].Value.ToString();
+            cmbCinemaID.Text = dgvShowTime.Rows[i].Cells[5].Value.ToString();
+            txtCinema.Text = dgvShowTime.Rows[i].Cells[6].Value.ToString();
+            cmbRoomID.Text = dgvShowTime.Rows[i].Cells[7].Value.ToString();
+            txtShowTimeID.Enabled = false;
+        }
     }
 }

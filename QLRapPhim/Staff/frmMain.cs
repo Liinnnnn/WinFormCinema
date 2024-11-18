@@ -13,14 +13,15 @@ namespace QLRapPhim
 {
     public partial class frmMain : Form
     {
-        private string nameStaff;
+        private string staffID, cinemaID;
         public frmMain()
         {
             InitializeComponent();
         }
-        public frmMain(string name)
+        public frmMain(string staffID, string cinemaID)
         {
-            this.nameStaff = name;
+            this.staffID = staffID;
+            this.cinemaID = cinemaID;
             InitializeComponent();
         }
 
@@ -41,7 +42,7 @@ namespace QLRapPhim
         private void btnDatVe_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmBookTicket frm = new frmBookTicket(nameStaff);
+            frmBookTicket frm = new frmBookTicket(staffID, cinemaID);
             frm.ShowDialog();
             this.Close();
         }

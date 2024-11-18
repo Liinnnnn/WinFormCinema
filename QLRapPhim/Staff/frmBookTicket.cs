@@ -13,27 +13,31 @@ namespace QLRapPhim.Staff
 {
     public partial class frmBookTicket : Form
     {
-        private string nameStaff;
+        private string staffID, cinemaID;
         DataTable table = new DataTable();
         DataProcess data = new DataProcess();
         public frmBookTicket()
         {
             InitializeComponent();
         }
-        public frmBookTicket(string name)
+        public frmBookTicket(string staff, string cinema)
         {
-            this.nameStaff = name;
+            this.staffID = staff;
+            this.cinemaID = cinema;
             InitializeComponent();
         }
         private void frmBookTicket_Load(object sender, EventArgs e)
         {
+            DataTable tb1 = data.ReadDatabase("select * from tblStaff where StaffID = '" + staffID + "'");
+            DataTable tb2 = data.ReadDatabase("select * from tblCinema where CinemaID = '" + cinemaID + "'");
             DataTable table = new DataTable();
             table.Columns.Add("Tên Phòng Chiếu");
             table.Columns.Add("Tên Phim");
             table.Columns.Add("Giờ Chiếu");
             table.Columns.Add("Số Ghế Trống");
             dgvLichChieu.DataSource = table;
-            lblNhanVien.Text += nameStaff;
+            lblTenRap.Text += tb2.Rows[0]["CinemaName"].ToString();
+            lblNhanVien.Text += tb1.Rows[0]["Name"].ToString();
         }
 
         private void frmBookTicket_FormClosed(object sender, FormClosedEventArgs e)
@@ -50,7 +54,7 @@ namespace QLRapPhim.Staff
             cbbPhim.SelectedIndex = -1;
             cbbPhim.Text = "";
 
-            DataTable table = data.ReadDatabase("select distinct f.Name from tblShowtime st join tblFilm f on st.FilmID = f.FilmID where CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
+            DataTable table = data.ReadDatabase("select distinct f.Name from tblShowtime st join tblFilm f on st.FilmID = f.FilmID where CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "' and st.CinemaID = '" + cinemaID + "'");
             for (int i = 0; i < table.Rows.Count; i++)
             {
                 cbbPhim.Items.Add(table.Rows[i]["Name"]);
@@ -63,7 +67,7 @@ namespace QLRapPhim.Staff
             {
                 DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, CONVERT(time, st.Showtime) as Time, 32-(select count(TicketID) " +
                     "from tblTicket where ShowtimeID = st.ShowtimeID ) as Status from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
-                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = 'SKPCG' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
+                    "join tblShowRoom sr on sr.RoomID = st.RoomID where st.CinemaID = N'" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
                 dgvLichChieu.DataSource = table;
                 dgvLichChieu.Columns[0].HeaderText = "Tên Phòng Chiếu";
                 dgvLichChieu.Columns[1].HeaderText = "Tên Phim";
@@ -79,7 +83,8 @@ namespace QLRapPhim.Staff
             {
                 var selectedRow = dgvLichChieu.Rows[e.RowIndex];
                 string time = selectedRow.Cells["Time"].Value.ToString();
-                frmSeatOptions frm = new frmSeatOptions(selectedRow, dtpNgayChieu.Value.ToString("yyyy-MM-dd"), time, cbbPhim.Text);
+                DataTable tb = data.ReadDatabase("select * from tblShowtime st join tblFilm film on film.FilmID = st.FilmID where st.CinemaID = '" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
+                frmSeatOptions frm = new frmSeatOptions(selectedRow, dtpNgayChieu.Value.ToString("yyyy-MM-dd"), time, cbbPhim.Text, staffID, cinemaID, tb.Rows[0]["ShowtimeID"].ToString());
                 frm.ShowDialog();
             }
         }

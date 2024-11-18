@@ -21,13 +21,13 @@ namespace QLRapPhim
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtUserName.Text == "" || txtPassword.Text == "")
+            if (txtUserName.Text == "" || txtPassword.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
             }
             {
-                DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '"+txtPassword.Text+"'");
-                if(dt.Rows.Count == 0)
+                DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
+                if (dt.Rows.Count == 0)
                 {
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
                 }
@@ -36,8 +36,9 @@ namespace QLRapPhim
                     this.Hide();
                     if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
                     {
-                        string name = dt.Rows[0]["Name"].ToString();
-                        frmMain main = new frmMain(name);
+                        string staffID = dt.Rows[0]["StaffID"].ToString();
+                        string cinemaID = dt.Rows[0]["CinemaID"].ToString();
+                        frmMain main = new frmMain(staffID, cinemaID);
                         main.ShowDialog();
                     }
                     else
@@ -46,7 +47,7 @@ namespace QLRapPhim
                         frmAdmin.ShowDialog();
                     }
                 }
-            }    
+            }
         }
 
 
@@ -55,6 +56,39 @@ namespace QLRapPhim
             if (MessageBox.Show("Bạn có chắc là muốn thoát không?", "Rạp phim Skope", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
+            }
+        }
+
+        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) {
+                if (txtUserName.Text == "" || txtPassword.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
+                }
+                {
+                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        this.Hide();
+                        if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
+                        {
+                            string staffID = dt.Rows[0]["StaffID"].ToString();
+                            string cinemaID = dt.Rows[0]["CinemaID"].ToString();
+                            frmMain main = new frmMain(staffID, cinemaID);
+                            main.ShowDialog();
+                        }
+                        else
+                        {
+                            frmAdmin frmAdmin = new frmAdmin();
+                            frmAdmin.ShowDialog();
+                        }
+                    }
+                }
             }
         }
     }

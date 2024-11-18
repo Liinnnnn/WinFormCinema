@@ -79,5 +79,16 @@ namespace QLRapPhim
         {
             OpenChilForm(new frmFRevenue());
         }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc là muốn thoát không?", "Rạp phim Skope", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                frmLogin frm = new frmLogin();
+                frm.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

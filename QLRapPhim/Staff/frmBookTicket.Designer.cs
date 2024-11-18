@@ -76,7 +76,7 @@
             this.lblNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhanVien.Location = new System.Drawing.Point(19, 254);
             this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(84, 16);
+            this.lblNhanVien.Size = new System.Drawing.Size(87, 16);
             this.lblNhanVien.TabIndex = 6;
             this.lblNhanVien.Text = "Nhân viên: ";
             // 
@@ -96,9 +96,9 @@
             this.lblTenRap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenRap.Location = new System.Drawing.Point(19, 204);
             this.lblTenRap.Name = "lblTenRap";
-            this.lblTenRap.Size = new System.Drawing.Size(156, 16);
+            this.lblTenRap.Size = new System.Drawing.Size(44, 16);
             this.lblTenRap.TabIndex = 5;
-            this.lblTenRap.Text = "Rạp: Skope Cầu Giấy";
+            this.lblTenRap.Text = "Rạp: ";
             // 
             // label3
             // 

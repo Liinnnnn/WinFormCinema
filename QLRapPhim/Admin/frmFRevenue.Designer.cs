@@ -56,7 +56,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Doanh Thu";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(560, 268);
+            this.chart1.Size = new System.Drawing.Size(581, 274);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -66,7 +66,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(16, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 43;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 96);
+            this.dataGridView1.Size = new System.Drawing.Size(581, 96);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1

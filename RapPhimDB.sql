@@ -56,7 +56,8 @@ create table tblShowtime
 	FilmID varchar(20),
 	CinemaID varchar(20),
 	RoomID int,
-	Showtime datetime,
+	Showtime date,
+	ShowtimeHour time,
 	FOREIGN KEY (FilmID) REFERENCES tblFilm(FilmID),
     FOREIGN KEY (CinemaID) REFERENCES tblCinema(CinemaID),
 	FOREIGN KEY (RoomID) REFERENCES tblShowRoom(RoomID)
@@ -102,6 +103,12 @@ create table tblTicket
 insert tblUser(TypeUser,BirthDay,Gender,Name) values('Adult','2004-04-18','Gay','NguyenVanHai')
 insert tblUser(TypeUser,BirthDay,Gender,Name) values('Student','2004-04-18','Male','NguyenTuanLinh')
 
+select SUM(FinalPrice) as Revenue,MONTH(PaymentDate) as Month
+                                    from tblTicket t inner join tblShowtime s on t.ShowtimeID = s.ShowtimeID
+                                    inner join tblInvoice i on t.InvoiceID = i.InvoiceID
+                                    inner join tblFilm f on f.FilmID = s.FilmID
+                                    inner join tblCinema c on c.CinemaID = s.CinemaID
+                                    group by MONTH(PaymentDate)
 
 --insert tblCinema
 insert tblCinema (CinemaID,CinemaName,Address) values (N'SKPGP',N'Skope Giải Phóng',N'67-Định Công-Hoàng Mai-Hà Nội')
@@ -145,28 +152,37 @@ insert tblShowRoom (RoomName,CinemaID) values ('SKPHD03','SKPHD')
 insert tblShowRoom (RoomName,CinemaID) values ('SKPHD04','SKPHD')
 
 --insert Showtime
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST1','PB','SKPCG','9-11-2024 18:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST2','CC','SKPCG','9-11-2024 20:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST3','NBN','SKPCG','9-11-2024 22:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST4','MDD','SKPCG','9-11-2024 18:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST5','EVT','SKPCG','9-11-2024 20:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST6','BWY','SKPCG','9-11-2024 22:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST7','MDD','SKPCG','9-11-2024 18:00:00','7')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST8','PB','SKPCG','9-11-2024 20:00:00','7')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST9','NBN','SKPCG','9-11-2024 22:00:00','7')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST1', 'PB', 'SKPCG', '2024-11-19', '5', '18:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST2', 'CC', 'SKPCG', '2024-11-19', '5', '21:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST3', 'NBN', 'SKPCG', '2024-11-19', '5', '13:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST4', 'MDD', 'SKPCG', '2024-11-19', '6', '15:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST5', 'EVT', 'SKPCG', '2024-11-19', '6', '13:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST6', 'BWY', 'SKPCG', '2024-11-19', '6', '21:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST7', 'MDD', 'SKPCG', '2024-11-20', '7', '15:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST8', 'PB', 'SKPCG', '2024-11-20', '7', '18:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST9', 'NBN', 'SKPCG', '2024-11-20', '7', '13:00')
 --insert Tickets 
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',2,'A3',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',4,'B3',140000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Student','ST3',6,'A4',126000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST4',7,'A1',210000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Student','ST5',8,'A2',63000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST6',9,'C3',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',10,'C2',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',11,'B1',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST3',12,'A3',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST4',13,'A1',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',14,'C4',70000)
-insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',15,'C4',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',1,'A3',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',2,'B3',140000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Student','ST3',3,'A4',126000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST4',4,'A1',210000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Student','ST5',5,'A2',63000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST6',6,'C3',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',1,'C2',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',2,'B1',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST3',3,'A3',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST4',4,'A1',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',5,'C4',70000)
+insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST5',6,'C4',70000)
 --insert Invoice
 insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-10-24','Cash',0.1,63000,1,'NV001')
 insert tblInvoice (PaymentDate,PaymentMethod,Discount,ToTal,UserID,StaffID) values ('2024-9-24','Cash',0.1,56000,2,'NV002')

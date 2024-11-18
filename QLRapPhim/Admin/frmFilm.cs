@@ -18,7 +18,7 @@ namespace QLRapPhim
         {
             cmbFilmID.Items.Clear();
             
-            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate, Price From tblFilm");
+            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate, Price From tblFilm where Status = N'Đang chiếu'");
             dgvFilm.DataSource = dt;
             dgvFilm.Columns["FilmID"].HeaderText = "Mã Phim";
             dgvFilm.Columns["Name"].HeaderText = "Tên Phim";
@@ -43,6 +43,7 @@ namespace QLRapPhim
             txtName.Text = "";
             cmbFilmID.Text = "";
             txtPrice.Text = "";
+            comboBox1.SelectedIndex = -1;
             dtpDate.Value = DateTime.Now;
         }
 
@@ -59,7 +60,6 @@ namespace QLRapPhim
             lbFilmIDSearch.Visible = true;
             cmbFilmID.Visible = true;
             btnSearch.Visible = true;
-            btnDeleteDB.Visible = false;
             btnUpdateDB.Visible = false;
             btnAddDB.Visible = false;
         }
@@ -75,7 +75,6 @@ namespace QLRapPhim
             lbFilmIDSearch.Visible = true;
             cmbFilmID.Visible = true;
             btnSearch.Visible = true;
-            btnDeleteDB.Visible = false;
             btnUpdateDB.Visible = false;
             btnAddDB.Visible = false;
             LoadData();
@@ -90,6 +89,7 @@ namespace QLRapPhim
             txtDirector.Text = dgvFilm.Rows[i].Cells["Director"].Value.ToString();
             dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
             txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
+            comboBox1.SelectedIndex = 0;
         }
 
 
@@ -101,7 +101,6 @@ namespace QLRapPhim
             lbFilmIDSearch.Visible = false;
             cmbFilmID.Visible = false;
             btnSearch.Visible = false;
-            btnDeleteDB.Visible = false;
             btnUpdateDB.Visible = false;
             btnAddDB.Visible = true;
         }
@@ -112,21 +111,10 @@ namespace QLRapPhim
             lbFilmIDSearch.Visible = true;
             cmbFilmID.Visible = true;
             btnSearch.Visible = true;
-            btnDeleteDB.Visible = false;
             btnUpdateDB.Visible = true;
             btnAddDB.Visible = false;
         }
 
-        private void btnDelete_Click_1(object sender, EventArgs e)
-        {
-            txtFilmID.Enabled = false;
-            lbFilmIDSearch.Visible = true;
-            cmbFilmID.Visible = true;
-            btnSearch.Visible = true;
-            btnDeleteDB.Visible = true;
-            btnUpdateDB.Visible = false;
-            btnAddDB.Visible = false;
-        }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -154,7 +142,7 @@ namespace QLRapPhim
                 }
                 else
                 {
-                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate, Price) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Text + "', '" + txtPrice.Text + "')");
+                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate, Price,Status) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Text + "', '" + txtPrice.Text + "',N'"+comboBox1.Text+"')");
                     LoadData();
                 }
             }
@@ -192,6 +180,7 @@ namespace QLRapPhim
                     txtDirector.Text = dt.Rows[0]["Director"].ToString();
                     txtPrice.Text = dt.Rows[0]["Price"].ToString();
                     dtpDate.Text = dt.Rows[0]["ProductionDate"].ToString();
+                    comboBox1.SelectedIndex = 0;
                 }
             }
         }
@@ -213,30 +202,25 @@ namespace QLRapPhim
                 {
                    if(MessageBox.Show("Bạn có muốn thay đổi thông tin phim "+txtFilmID.Text+" không","Thông báo",MessageBoxButtons.YesNo) == DialogResult.Yes)
                    {
-                        process.ChangeDatabase("Update tblFilm set Name = N'" + txtName.Text + "', Language = N'" + txtLanguage.Text + "', Director = N'" + txtDirector.Text + "', ProductionDate = '" + dtpDate.Text + "', Price = '" + txtPrice.Text + "' Where FilmID = '"+txtFilmID.Text+"'");
+                        process.ChangeDatabase("Update tblFilm set Name = N'" + txtName.Text + "', Language = N'" + txtLanguage.Text + "', Director = N'" + txtDirector.Text + "', ProductionDate = '" + dtpDate.Value.ToString("yyyy-MM-dd") + "', Price = '" + txtPrice.Text + "' , Status = N'"+comboBox1.Text+"' Where FilmID = '"+txtFilmID.Text+"'");
                         LoadData();
                    }    
                 }
             }
         }
 
-        private void btnDeleteDB_Click(object sender, EventArgs e)
+
+
+        private void dgvFilm_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if(txtFilmID.Text == "")
-            {
-                MessageBox.Show("Vui lòng chọn một phim", "Thông báo", MessageBoxButtons.OK);
-
-            }
-            else
-            {
-                if (MessageBox.Show("Bạn có muốn xóa phim " + txtFilmID.Text + " không", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    process.ChangeDatabase("Delete from tblFilm Where FilmID = '"+txtFilmID.Text+"'");
-                    LoadData();
-                }
-            }
+            int i = dgvFilm.CurrentRow.Index;
+            txtFilmID.Text = dgvFilm.Rows[i].Cells[0].Value.ToString();
+            txtName.Text = dgvFilm.Rows[i].Cells["Name"].Value.ToString();
+            txtLanguage.Text = dgvFilm.Rows[i].Cells["Language"].Value.ToString();
+            txtDirector.Text = dgvFilm.Rows[i].Cells["Director"].Value.ToString();
+            dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
+            comboBox1.SelectedIndex = 0;
+            txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
         }
-
-        
     }
 }

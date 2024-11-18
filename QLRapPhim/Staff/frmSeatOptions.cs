@@ -14,10 +14,9 @@ namespace QLRapPhim.Staff
     public partial class frmSeatOptions : Form
     {
         DataGridViewRow row;
-        string time;
-        string date;
-        string name;
+        string time, date, name, staffID, cinemaID, showtimeID;
         double tongtien = 0;
+        List<string> userInfor = new List<string>();
         List<string> seats = new List<string>();
         DataProcess data = new DataProcess();
         public frmSeatOptions()
@@ -25,19 +24,24 @@ namespace QLRapPhim.Staff
             InitializeComponent();
         }
 
-        public frmSeatOptions(DataGridViewRow selectedRow, string showDate, string showTime, string nameFilm)
+        public frmSeatOptions(DataGridViewRow selectedRow, string showDate, string showTime, string nameFilm, string staff, string cinema, string showtimeID)
         {
+            this.staffID = staff;
+            this.cinemaID = cinema;
             this.row = selectedRow;
             this.date = showDate;
             this.name = nameFilm;
             this.time = showTime;
+            this.showtimeID = showtimeID;
             InitializeComponent();
         }
 
         private void SeatOptions_Load(object sender, EventArgs e)
         {
             // Hiển thị thông tin địa điểm và thời gian chiếu
-            lblDiaDiem.Text += row.Cells[0].Value.ToString() + " | " + row.Cells[1].Value.ToString();
+            DataTable tb1 = data.ReadDatabase("select * from tblStaff where StaffID = '" + staffID + "'");
+            DataTable tb2 = data.ReadDatabase("select * from tblCinema where CinemaID = '" + cinemaID + "'");
+            lblDiaDiem.Text += tb2.Rows[0]["CinemaName"].ToString() + " | " + row.Cells[0].Value.ToString() + " | " + row.Cells[1].Value.ToString();
             lblThoiGian.Text += date + " | " + row.Cells[2].Value.ToString();
 
             DataTable table = data.ReadDatabase("select tk.Seat from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
@@ -292,6 +296,22 @@ namespace QLRapPhim.Staff
             tbGiamGia.Text = "20";
         }
 
+        private void tbTenKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbGioiTinh_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void rbtnTreEm_CheckedChanged(object sender, EventArgs e)
         {
             tongtien = 0;
@@ -327,7 +347,7 @@ namespace QLRapPhim.Staff
             {
                 e.Handled = true; // Chặn ký tự không hợp lệ
             }
-            if ((e.KeyChar == '.'))
+            if (e.KeyChar == '.')
             {
                 e.Handled = true;
             }
@@ -340,8 +360,44 @@ namespace QLRapPhim.Staff
 
         private void btnInHD_Click(object sender, EventArgs e)
         {
-            frmInvoice invoice = new frmInvoice();
-            invoice.ShowDialog();
+            if(tbTenKH.Text == "" || tbGioiTinh.Text == "")
+            {
+                MessageBox.Show("Chưa nhập đủ thông tin khách hàng");
+            }
+            else if(rbtnNguoiLon.Enabled == false && rbtnSinhVien.Enabled == false && rbtnTreEm.Enabled == false){
+                MessageBox.Show("Chưa chọn loại vé");
+            }
+            else if(tbTongTien.Text == "0")
+            {
+                MessageBox.Show("Chưa chọn ghế ngồi");
+            }
+            else
+            {
+                List<string> list = new List<string>();
+                list.Add(tbTongTien.Text);
+                list.Add(tbGiamGia.Text);
+                list.Add(tbTienThu.Text);
+
+                if (rbtnNguoiLon.Enabled == true)
+                {
+                    list.Add("Adult");
+                }
+                else if (rbtnSinhVien.Enabled == true)
+                {
+                    list.Add("Student");
+                }
+                else if (rbtnTreEm.Enabled == true)
+                {
+                    list.Add("Child");
+                }
+                userInfor.Add(tbTenKH.Text);
+                userInfor.Add(tbGioiTinh.Text);
+                userInfor.Add(dtpNgaySinh.Value.ToString("yyyy-MM-dd"));
+                this.Hide();
+                frmInvoice invoice = new frmInvoice(staffID, cinemaID, date, seats, list, row, userInfor, showtimeID);
+                invoice.ShowDialog();
+                this.Show();
+            }
         }
     }
 }
