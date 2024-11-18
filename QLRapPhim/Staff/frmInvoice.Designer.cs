@@ -65,7 +65,7 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(115, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 29);
+            this.label1.Size = new System.Drawing.Size(164, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "VÉ XEM PHIM";
             // 
@@ -75,7 +75,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(38, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(280, 18);
+            this.label3.Size = new System.Drawing.Size(312, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Công ty TNHH Skope Việt Nam - CN Cầu Giấy";
             // 
@@ -85,7 +85,7 @@
             this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(38, 124);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(259, 36);
+            this.label4.Size = new System.Drawing.Size(285, 38);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tầng 3, TTTM IPH, Số 241 Xuân Thủy, Dịch \r\nVọng Hậu, Cầu Giấy, Hà Nội";
             // 
@@ -95,7 +95,7 @@
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(38, 183);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 18);
+            this.label5.Size = new System.Drawing.Size(116, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "SKOPE Cầu Giấy";
             // 
@@ -105,7 +105,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 18);
+            this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Khách hàng";
             // 
@@ -115,7 +115,7 @@
             this.label6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(38, 206);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 18);
+            this.label6.Size = new System.Drawing.Size(165, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Cinema: Skope Cầu Giấy";
             // 
@@ -125,7 +125,7 @@
             this.lblNgayGD.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayGD.Location = new System.Drawing.Point(38, 230);
             this.lblNgayGD.Name = "lblNgayGD";
-            this.lblNgayGD.Size = new System.Drawing.Size(73, 18);
+            this.lblNgayGD.Size = new System.Drawing.Size(79, 19);
             this.lblNgayGD.TabIndex = 6;
             this.lblNgayGD.Text = "TransDate:";
             // 
@@ -135,7 +135,7 @@
             this.lblNhanVien.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhanVien.Location = new System.Drawing.Point(38, 254);
             this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(51, 18);
+            this.lblNhanVien.Size = new System.Drawing.Size(53, 19);
             this.lblNhanVien.TabIndex = 7;
             this.lblNhanVien.Text = "Seller: ";
             // 
@@ -161,7 +161,7 @@
             this.label11.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(41, 299);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 18);
+            this.label11.Size = new System.Drawing.Size(137, 19);
             this.label11.TabIndex = 10;
             this.label11.Text = "[2D] PeakyBlinders";
             // 
@@ -171,7 +171,7 @@
             this.label12.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(41, 322);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 18);
+            this.label12.Size = new System.Drawing.Size(91, 19);
             this.label12.TabIndex = 11;
             this.label12.Text = "Trên 17 tuổi";
             // 
@@ -181,7 +181,7 @@
             this.lblNgayChieu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayChieu.Location = new System.Drawing.Point(41, 346);
             this.lblNgayChieu.Name = "lblNgayChieu";
-            this.lblNgayChieu.Size = new System.Drawing.Size(76, 18);
+            this.lblNgayChieu.Size = new System.Drawing.Size(85, 19);
             this.lblNgayChieu.TabIndex = 12;
             this.lblNgayChieu.Text = "11/11/2024";
             // 
@@ -191,7 +191,7 @@
             this.lblTenRap.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenRap.Location = new System.Drawing.Point(41, 368);
             this.lblTenRap.Name = "lblTenRap";
-            this.lblTenRap.Size = new System.Drawing.Size(38, 18);
+            this.lblTenRap.Size = new System.Drawing.Size(42, 19);
             this.lblTenRap.TabIndex = 13;
             this.lblTenRap.Text = "Rạp: ";
             // 
@@ -201,7 +201,7 @@
             this.lblGioChieu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGioChieu.Location = new System.Drawing.Point(189, 346);
             this.lblGioChieu.Name = "lblGioChieu";
-            this.lblGioChieu.Size = new System.Drawing.Size(40, 18);
+            this.lblGioChieu.Size = new System.Drawing.Size(45, 19);
             this.lblGioChieu.TabIndex = 14;
             this.lblGioChieu.Text = "18:00";
             // 
@@ -211,7 +211,7 @@
             this.lblGhe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGhe.Location = new System.Drawing.Point(189, 368);
             this.lblGhe.Name = "lblGhe";
-            this.lblGhe.Size = new System.Drawing.Size(40, 18);
+            this.lblGhe.Size = new System.Drawing.Size(43, 19);
             this.lblGhe.TabIndex = 15;
             this.lblGhe.Text = "Ghế: ";
             // 
@@ -221,7 +221,7 @@
             this.label21.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(41, 457);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 18);
+            this.label21.Size = new System.Drawing.Size(47, 19);
             this.label21.TabIndex = 18;
             this.label21.Text = "Adult";
             // 
@@ -231,7 +231,7 @@
             this.label22.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(41, 434);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 18);
+            this.label22.Size = new System.Drawing.Size(105, 19);
             this.label22.TabIndex = 17;
             this.label22.Text = "PeakyBlinders";
             // 
@@ -249,7 +249,7 @@
             this.lblSoLuongVe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuongVe.Location = new System.Drawing.Point(170, 457);
             this.lblSoLuongVe.Name = "lblSoLuongVe";
-            this.lblSoLuongVe.Size = new System.Drawing.Size(15, 18);
+            this.lblSoLuongVe.Size = new System.Drawing.Size(17, 19);
             this.lblSoLuongVe.TabIndex = 19;
             this.lblSoLuongVe.Text = "2";
             // 
@@ -259,7 +259,7 @@
             this.lblTienVe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienVe.Location = new System.Drawing.Point(282, 457);
             this.lblTienVe.Name = "lblTienVe";
-            this.lblTienVe.Size = new System.Drawing.Size(43, 18);
+            this.lblTienVe.Size = new System.Drawing.Size(49, 19);
             this.lblTienVe.TabIndex = 20;
             this.lblTienVe.Text = "60000";
             // 
@@ -269,7 +269,7 @@
             this.lblTienThu.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienThu.Location = new System.Drawing.Point(282, 434);
             this.lblTienThu.Name = "lblTienThu";
-            this.lblTienThu.Size = new System.Drawing.Size(50, 18);
+            this.lblTienThu.Size = new System.Drawing.Size(57, 19);
             this.lblTienThu.TabIndex = 21;
             this.lblTienThu.Text = "120000";
             // 
@@ -279,7 +279,7 @@
             this.label20.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(41, 484);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(62, 18);
+            this.label20.Size = new System.Drawing.Size(66, 19);
             this.label20.TabIndex = 22;
             this.label20.Text = "Discount";
             // 
@@ -289,7 +289,7 @@
             this.lblGiamGia.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiamGia.Location = new System.Drawing.Point(282, 484);
             this.lblGiamGia.Name = "lblGiamGia";
-            this.lblGiamGia.Size = new System.Drawing.Size(15, 18);
+            this.lblGiamGia.Size = new System.Drawing.Size(17, 19);
             this.lblGiamGia.TabIndex = 23;
             this.lblGiamGia.Text = "0";
             // 
@@ -299,7 +299,7 @@
             this.label31.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(41, 533);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(90, 18);
+            this.label31.Size = new System.Drawing.Size(99, 19);
             this.label31.TabIndex = 25;
             this.label31.Text = "PayMethods:";
             // 
@@ -380,6 +380,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmInvoice_Load);

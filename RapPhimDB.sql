@@ -56,7 +56,8 @@ create table tblShowtime
 	FilmID varchar(20),
 	CinemaID varchar(20),
 	RoomID int,
-	Showtime datetime,
+	Showtime date,
+	ShowtimeHour time,
 	FOREIGN KEY (FilmID) REFERENCES tblFilm(FilmID),
     FOREIGN KEY (CinemaID) REFERENCES tblCinema(CinemaID),
 	FOREIGN KEY (RoomID) REFERENCES tblShowRoom(RoomID)
@@ -145,15 +146,24 @@ insert tblShowRoom (RoomName,CinemaID) values ('SKPHD03','SKPHD')
 insert tblShowRoom (RoomName,CinemaID) values ('SKPHD04','SKPHD')
 
 --insert Showtime
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST1','PB','SKPCG','9-11-2024 18:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST2','CC','SKPCG','9-11-2024 20:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST3','NBN','SKPCG','9-11-2024 22:00:00','5')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST4','MDD','SKPCG','9-11-2024 18:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST5','EVT','SKPCG','9-11-2024 20:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST6','BWY','SKPCG','9-11-2024 22:00:00','6')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST7','MDD','SKPCG','9-11-2024 18:00:00','7')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST8','PB','SKPCG','9-11-2024 20:00:00','7')
-insert tblShowtime (ShowtimeID,FilmID,CinemaID,Showtime,RoomID) values ('ST9','NBN','SKPCG','9-11-2024 22:00:00','7')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST1', 'PB', 'SKPCG', '2024-11-19', '5', '18:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST2', 'CC', 'SKPCG', '2024-11-19', '5', '21:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST3', 'NBN', 'SKPCG', '2024-11-19', '5', '13:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST4', 'MDD', 'SKPCG', '2024-11-19', '6', '15:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST5', 'EVT', 'SKPCG', '2024-11-19', '6', '13:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST6', 'BWY', 'SKPCG', '2024-11-19', '6', '21:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST7', 'MDD', 'SKPCG', '2024-11-20', '7', '15:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST8', 'PB', 'SKPCG', '2024-11-20', '7', '18:00')
+
+insert tblShowtime (ShowtimeID, FilmID, CinemaID, Showtime, RoomID, ShowtimeHour) values ('ST9', 'NBN', 'SKPCG', '2024-11-20', '7', '13:00')
 --insert Tickets 
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST1',2,'A3',70000)
 insert tblTicket(TypeTicket,ShowtimeID,InvoiceID,Seat,FinalPrice) values('Adult','ST2',4,'B3',140000)
