@@ -91,5 +91,39 @@ namespace QLRapPhim
                 }
             }
         }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (txtUserName.Text == "" || txtPassword.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
+                }
+                {
+                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        this.Hide();
+                        if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
+                        {
+                            string staffID = dt.Rows[0]["StaffID"].ToString();
+                            string cinemaID = dt.Rows[0]["CinemaID"].ToString();
+                            frmMain main = new frmMain(staffID, cinemaID);
+                            main.ShowDialog();
+                        }
+                        else
+                        {
+                            frmAdmin frmAdmin = new frmAdmin();
+                            frmAdmin.ShowDialog();
+                        }
+                    }
+                }
+            }
+        }
     }
 }

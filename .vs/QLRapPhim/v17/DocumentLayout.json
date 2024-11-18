@@ -1,117 +1,121 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\",
+  "WorkspaceRootPath": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmfrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmfrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmcinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmcinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|d:\\webbbbbb\\winformcinemalinhl\\qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|c:\\users\\ngtua\\onedrive\\desktop\\formc#\\winformcinema\\qlrapphim\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:1:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmfrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmfrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|c:\\users\\ngtua\\onedrive\\desktop\\formc#\\winformcinema\\qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmcinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmcinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmseatoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\resources\\wpwkngo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\resources\\wpwkngo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\resources\\wpwkngo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmbookticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frminvoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frminvoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frminvoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmshowtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmfilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\staff\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\admin\\frmcrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|D:\\WEBBBBBB\\WinFormCinemaLINHL\\qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:2:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:2:0:{0AC919B2-FC89-4BFF-B66A-54C1D5346C31}|QLRapPhim\\QLRapPhim.csproj|solutionrelative:qlrapphim\\classes\\dataprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -122,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,15 +134,36 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:358036584:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\frmLogin.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\frmLogin.cs",
+              "RelativeToolTip": "QLRapPhim\\frmLogin.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBwAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T18:48:13.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmFilm.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFilm.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFilm.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmFilm.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFilm.cs [Design]",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFilm.cs [Design]",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmFilm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T17:38:01.781Z",
@@ -146,11 +171,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmFRevenue.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFRevenue.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFRevenue.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmFRevenue.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFRevenue.cs [Design]",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFRevenue.cs [Design]",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmFRevenue.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T17:21:46.374Z",
@@ -158,11 +183,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmShowTime.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmShowTime.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmShowTime.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmShowTime.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmShowTime.cs [Design]",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmShowTime.cs [Design]",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmShowTime.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:46:40.645Z",
@@ -170,11 +195,66 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmCinema.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmCinema.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmCinema.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCinema.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:37:57.264Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\frmLogin.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\frmLogin.cs [Design]",
+              "RelativeToolTip": "QLRapPhim\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:31:25.126Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataProcess.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Classes\\DataProcess.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Classes\\DataProcess.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Classes\\DataProcess.cs",
+              "RelativeToolTip": "QLRapPhim\\Classes\\DataProcess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T15:33:02.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmCRevenue.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmCRevenue.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmCRevenue.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCRevenue.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:37:59.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmAdmin.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmAdmin.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:38:01.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "frmStaff.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmStaff.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmStaff.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmStaff.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmStaff.cs [Design]",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmStaff.cs [Design]",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmStaff.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:24:34.03Z",
@@ -182,167 +262,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCRevenue.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCRevenue.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmCRevenue.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCRevenue.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Admin\\frmCRevenue.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:37:59.241Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmCinema.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCinema.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmCinema.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCinema.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Admin\\frmCinema.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:37:57.264Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmAdmin.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmAdmin.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmAdmin.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmAdmin.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Admin\\frmAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:38:01.238Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "frmSeatOptions.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmSeatOptions.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmSeatOptions.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmSeatOptions.cs",
               "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmSeatOptions.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmSeatOptions.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T00:59:41.928Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmPayment.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmPayment.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmPayment.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmPayment.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmPayment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T17:21:39.35Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmMain.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmMain.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmMain.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:49:27.177Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmInvoice.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmInvoice.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmInvoice.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T01:43:08.334Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-09T00:59:41.928Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "frmBookTicket.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmBookTicket.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmBookTicket.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmBookTicket.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmBookTicket.cs [Design]",
+              "Title": "frmPayment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmPayment.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmPayment.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmPayment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:19:25.787Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-18T17:21:39.35Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\frmLogin.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\frmLogin.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\frmLogin.cs [Design]",
-              "RelativeToolTip": "QLRapPhim\\frmLogin.cs [Design]",
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmMain.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmMain.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:31:25.126Z"
+              "WhenOpened": "2024-11-18T15:49:27.177Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "DataProcess.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Classes\\DataProcess.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Classes\\DataProcess.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Classes\\DataProcess.cs",
-              "RelativeToolTip": "QLRapPhim\\Classes\\DataProcess.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAMwDYAAAABAAAAAAAAAA==",
+              "Title": "frmInvoice.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmInvoice.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmInvoice.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:33:02.744Z"
+              "WhenOpened": "2024-11-11T01:43:08.334Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "frmSeatOptions.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmSeatOptions.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmSeatOptions.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmSeatOptions.cs",
-              "RelativeToolTip": "QLRapPhim\\Staff\\frmSeatOptions.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAhwLwAAAAMAAAAAAAAAA==",
+              "Title": "frmBookTicket.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmBookTicket.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmBookTicket.cs",
+              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmBookTicket.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T01:01:03.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:19:25.787Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "frmAdmin.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmAdmin.cs",
-              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmAdmin.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmAdmin.cs",
-              "RelativeToolTip": "QLRapPhim\\Admin\\frmAdmin.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAawF8AAAAAAAAAAAAAAA==",
+              "Title": "frmSeatOptions.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmSeatOptions.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmSeatOptions.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmSeatOptions.cs",
+              "RelativeToolTip": "QLRapPhim\\Staff\\frmSeatOptions.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAhwLwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:17:12.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T01:01:03.355Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "frmAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmAdmin.cs",
+              "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmAdmin.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmAdmin.cs",
+              "RelativeToolTip": "QLRapPhim\\Admin\\frmAdmin.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAawF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:17:12.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "wPWKnGo.png - PNG [980x500, 24 bit, PNG]",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Resources\\wPWKnGo.png",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Resources\\wPWKnGo.png",
               "RelativeDocumentMoniker": "QLRapPhim\\Resources\\wPWKnGo.png",
               "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Resources\\wPWKnGo.png - PNG [980x500, 24 bit, PNG]",
-              "RelativeToolTip": "QLRapPhim\\Resources\\wPWKnGo.png - PNG [980x500, 24 bit, PNG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2024-11-18T17:54:45.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "frmBookTicket.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmBookTicket.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmBookTicket.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmBookTicket.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmBookTicket.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmBookTicket.cs",
               "RelativeToolTip": "QLRapPhim\\Staff\\frmBookTicket.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAWwFkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -350,24 +358,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "frmCRevenue.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCRevenue.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmCRevenue.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmCRevenue.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmCRevenue.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmCRevenue.cs",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmCRevenue.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAswCUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T14:05:06.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T14:05:06.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "frmFilm.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFilm.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFilm.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmFilm.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmFilm.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmFilm.cs",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmFilm.cs",
               "ViewState": "AgIAALQAAAAAAAAAAAAqwMwAAADsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -376,11 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "App.config",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\App.config",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\App.config",
               "RelativeDocumentMoniker": "QLRapPhim\\App.config",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\App.config",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\App.config",
               "RelativeToolTip": "QLRapPhim\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -389,11 +396,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "frmShowTime.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmShowTime.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmShowTime.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmShowTime.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmShowTime.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmShowTime.cs",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmShowTime.cs",
               "ViewState": "AgIAAP0AAAAAAAAAAAAQwCQBAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -402,37 +409,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "frmInvoice.Designer.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmInvoice.Designer.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmInvoice.Designer.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.Designer.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmInvoice.Designer.cs",
               "RelativeToolTip": "QLRapPhim\\Staff\\frmInvoice.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:55:20.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:55:20.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "frmPayment.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmPayment.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmPayment.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmPayment.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmPayment.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmPayment.cs",
               "RelativeToolTip": "QLRapPhim\\Staff\\frmPayment.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA6wCQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:30:29.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T15:30:29.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Program.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Program.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Program.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Program.cs",
               "RelativeToolTip": "QLRapPhim\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -440,41 +445,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "frmStaff.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmStaff.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmStaff.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Admin\\frmStaff.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Admin\\frmStaff.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Admin\\frmStaff.cs",
               "RelativeToolTip": "QLRapPhim\\Admin\\frmStaff.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAASwNAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:30:08.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:30:08.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "DataProcess.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Classes\\DataProcess.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Classes\\DataProcess.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Classes\\DataProcess.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Classes\\DataProcess.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Classes\\DataProcess.cs",
               "RelativeToolTip": "QLRapPhim\\Classes\\DataProcess.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAawCYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T15:28:29.246Z"
+              "WhenOpened": "2024-11-18T15:28:29.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "frmInvoice.cs",
-              "DocumentMoniker": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.cs",
+              "DocumentMoniker": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmInvoice.cs",
               "RelativeDocumentMoniker": "QLRapPhim\\Staff\\frmInvoice.cs",
-              "ToolTip": "D:\\WEBBBBBB\\WinFormCinemaLINHL\\QLRapPhim\\Staff\\frmInvoice.cs",
+              "ToolTip": "C:\\Users\\ngtua\\OneDrive\\Desktop\\FormC#\\WinFormCinema\\QLRapPhim\\Staff\\frmInvoice.cs",
               "RelativeToolTip": "QLRapPhim\\Staff\\frmInvoice.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAowN4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T08:41:46.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T08:41:46.779Z"
             }
           ]
         }
