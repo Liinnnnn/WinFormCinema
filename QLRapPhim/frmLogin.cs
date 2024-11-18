@@ -57,5 +57,7 @@ namespace QLRapPhim
                 Application.Exit();
             }
         }
+
+
     }
 }

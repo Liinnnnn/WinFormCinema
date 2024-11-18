@@ -61,9 +61,9 @@ namespace QLRapPhim.Staff
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, CONVERT(time, st.Showtime) as Time, 32-(select count(TicketID) " +
+                DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, st.ShowtimeHour, 32-(select count(TicketID) " +
                     "from tblTicket where ShowtimeID = st.ShowtimeID ) as Status from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
-                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = 'SKPCG' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
+                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = 'SKPCG' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value + "'");
                 dgvLichChieu.DataSource = table;
                 dgvLichChieu.Columns[0].HeaderText = "Tên Phòng Chiếu";
                 dgvLichChieu.Columns[1].HeaderText = "Tên Phim";
