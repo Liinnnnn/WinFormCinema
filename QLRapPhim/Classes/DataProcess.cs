@@ -10,7 +10,7 @@ namespace QLRapPhim.Classes
 {   
     internal class DataProcess
     {
-        private string strConnect = "Data Source=LINHLENOVO\\SQLEXPRESS;Initial Catalog=QLRapPhim;Integrated Security=True";
+        private string strConnect = "Data Source=DARK\\MSSQLSERVER02;Initial Catalog=QLRapPhim;Integrated Security=True";
         private SqlConnection sqlConnection = null;
 
         private void OpenConnect()
