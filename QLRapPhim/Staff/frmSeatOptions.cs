@@ -14,7 +14,7 @@ namespace QLRapPhim.Staff
     public partial class frmSeatOptions : Form
     {
         DataGridViewRow row;
-        string time, date, name, staffID, cinemaID, showtimeID;
+        string time, date, name, staffID, cinemaID, showtimeID, TenKH = "", GioiTinh = "", NgaySinh = "24/11/2011";
         double tongtien = 0;
         List<string> userInfor = new List<string>();
         List<string> seats = new List<string>();
@@ -35,9 +35,28 @@ namespace QLRapPhim.Staff
             this.showtimeID = showtimeID;
             InitializeComponent();
         }
+        public frmSeatOptions(DataGridViewRow selectedRow, string showDate, string showTime, string nameFilm, string staff, string cinema, string showtimeID, string TenKH, string NgaySinh, string GioiTinh)
+        {
+            this.staffID = staff;
+            this.cinemaID = cinema;
+            this.row = selectedRow;
+            this.date = showDate;
+            this.name = nameFilm;
+            this.time = showTime;
+            this.showtimeID = showtimeID;
+            this.TenKH = TenKH;
+            this.NgaySinh = NgaySinh;
+            this.GioiTinh = GioiTinh;
+            InitializeComponent();
+        }
 
         private void SeatOptions_Load(object sender, EventArgs e)
         {
+            //Load lai thong tin form khi an huy hoa don
+            tbTenKH.Text = TenKH;
+            tbGioiTinh.Text = GioiTinh;
+            dtpNgaySinh.Text = NgaySinh;
+
             // Hiển thị thông tin địa điểm và thời gian chiếu
             DataTable tb1 = data.ReadDatabase("select * from tblStaff where StaffID = '" + staffID + "'");
             DataTable tb2 = data.ReadDatabase("select * from tblCinema where CinemaID = '" + cinemaID + "'");
@@ -46,7 +65,7 @@ namespace QLRapPhim.Staff
 
             DataTable table = data.ReadDatabase("select tk.Seat from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
                 "join tblShowRoom sr on sr.RoomID = st.RoomID join tblTicket tk on tk.ShowtimeID = st.ShowtimeID " +
-                "where sr.CinemaID = 'SKPCG' and film.Name = N'" + name + "' and cast(st.Showtime as date) = '" + date + "'and cast(st.Showtime as time) = '" + time + "'");
+                "where sr.CinemaID = '" + cinemaID + "'and film.Name = N'" + name + "' and cast(st.Showtime as date) = '" + date + "'and st.ShowtimeHour = '" + time + "' and sr.RoomName = '" + row.Cells[0].Value.ToString() + "'");
             for (int i = 0; i < table.Rows.Count; i++)
             {
                 switch (table.Rows[i]["Seat"].ToString()){
@@ -252,7 +271,7 @@ namespace QLRapPhim.Staff
                     tbTongTien.Text = tongtien.ToString();
                 }
             }
-            this.ActiveControl = null;
+            this.ActiveControl = null;//Loai bo focus sau khi bam button
         }
 
         private void rbtnNguoiLon_CheckedChanged(object sender, EventArgs e)
@@ -358,7 +377,7 @@ namespace QLRapPhim.Staff
             this.Close();
         }
 
-        private void btnInHD_Click(object sender, EventArgs e)
+        private void btnThanhToan_Click(object sender, EventArgs e)
         {
             if(tbTenKH.Text == "" || tbGioiTinh.Text == "")
             {
@@ -378,15 +397,15 @@ namespace QLRapPhim.Staff
                 list.Add(tbGiamGia.Text);
                 list.Add(tbTienThu.Text);
 
-                if (rbtnNguoiLon.Enabled == true)
+                if (rbtnNguoiLon.Checked == true)
                 {
                     list.Add("Adult");
                 }
-                else if (rbtnSinhVien.Enabled == true)
+                else if (rbtnSinhVien.Checked == true)
                 {
                     list.Add("Student");
                 }
-                else if (rbtnTreEm.Enabled == true)
+                else if (rbtnTreEm.Checked == true)
                 {
                     list.Add("Child");
                 }
@@ -394,9 +413,9 @@ namespace QLRapPhim.Staff
                 userInfor.Add(tbGioiTinh.Text);
                 userInfor.Add(dtpNgaySinh.Value.ToString("yyyy-MM-dd"));
                 this.Hide();
-                frmInvoice invoice = new frmInvoice(staffID, cinemaID, date, seats, list, row, userInfor, showtimeID);
+                frmInvoice invoice = new frmInvoice(staffID, cinemaID, date, seats, list, row, userInfor, showtimeID, tbTenKH.Text, dtpNgaySinh.Value.ToString("dd-MM-yyyy"), tbGioiTinh.Text);
                 invoice.ShowDialog();
-                this.Show();
+                this.Close();
             }
         }
     }

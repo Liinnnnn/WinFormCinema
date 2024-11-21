@@ -71,7 +71,7 @@
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(115, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 32);
+            this.label1.Size = new System.Drawing.Size(150, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "VÉ XEM PHIM";
             // 
@@ -95,14 +95,15 @@
             this.lblDiaChi.TabIndex = 3;
             this.lblDiaChi.Text = "Tầng 3, TTTM IPH, ";
             // 
-            this.lblCinemaB.Text = "SKOPE ";
+            // lblCinemaB
+            // 
             this.lblCinemaB.AutoSize = true;
             this.lblCinemaB.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCinemaB.Location = new System.Drawing.Point(38, 183);
             this.lblCinemaB.Name = "lblCinemaB";
-            this.lblCinemaB.Size = new System.Drawing.Size(116, 19);
+            this.lblCinemaB.Size = new System.Drawing.Size(50, 18);
             this.lblCinemaB.TabIndex = 4;
-            this.lblCinemaB.Text = "SKOPE Cầu Giấy";
+            this.lblCinemaB.Text = "SKOPE ";
             // 
             // label2
             // 
@@ -110,7 +111,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(38, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 19);
+            this.label2.Size = new System.Drawing.Size(78, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Khách hàng";
             // 
@@ -140,7 +141,7 @@
             this.lblNhanVien.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhanVien.Location = new System.Drawing.Point(38, 254);
             this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(53, 19);
+            this.lblNhanVien.Size = new System.Drawing.Size(51, 18);
             this.lblNhanVien.TabIndex = 7;
             this.lblNhanVien.Text = "Seller: ";
             // 
@@ -193,7 +194,7 @@
             this.lblTenRap.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenRap.Location = new System.Drawing.Point(41, 368);
             this.lblTenRap.Name = "lblTenRap";
-            this.lblTenRap.Size = new System.Drawing.Size(42, 19);
+            this.lblTenRap.Size = new System.Drawing.Size(38, 18);
             this.lblTenRap.TabIndex = 13;
             this.lblTenRap.Text = "Rạp: ";
             // 
@@ -212,7 +213,7 @@
             this.lblGhe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGhe.Location = new System.Drawing.Point(235, 368);
             this.lblGhe.Name = "lblGhe";
-            this.lblGhe.Size = new System.Drawing.Size(43, 19);
+            this.lblGhe.Size = new System.Drawing.Size(40, 18);
             this.lblGhe.TabIndex = 15;
             this.lblGhe.Text = "Ghế: ";
             // 
@@ -266,7 +267,7 @@
             this.label20.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(41, 484);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 19);
+            this.label20.Size = new System.Drawing.Size(62, 18);
             this.label20.TabIndex = 22;
             this.label20.Text = "Discount";
             // 
@@ -285,7 +286,7 @@
             this.label31.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(41, 533);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(99, 19);
+            this.label31.Size = new System.Drawing.Size(90, 18);
             this.label31.TabIndex = 25;
             this.label31.Text = "PayMethods:";
             // 

@@ -43,7 +43,7 @@ namespace QLRapPhim.Staff
         private void frmBookTicket_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            frmMain frm = new frmMain();
+            frmMain frm = new frmMain(staffID, cinemaID);
             frm.ShowDialog();
             this.Close();
         }
@@ -67,7 +67,7 @@ namespace QLRapPhim.Staff
             {
                 DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, st.ShowtimeHour, 32-(select count(TicketID) " +
                     "from tblTicket where ShowtimeID = st.ShowtimeID ) as Status from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
-                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = 'SKPCG' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value + "'");
+                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = '" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
                 dgvLichChieu.DataSource = table;
                 dgvLichChieu.Columns[0].HeaderText = "Tên Phòng Chiếu";
                 dgvLichChieu.Columns[1].HeaderText = "Tên Phim";
@@ -82,7 +82,7 @@ namespace QLRapPhim.Staff
             if (e.RowIndex >= 0)
             {
                 var selectedRow = dgvLichChieu.Rows[e.RowIndex];
-                string time = selectedRow.Cells["Time"].Value.ToString();
+                string time = selectedRow.Cells["ShowtimeHour"].Value.ToString();
                 DataTable tb = data.ReadDatabase("select * from tblShowtime st join tblFilm film on film.FilmID = st.FilmID where st.CinemaID = '" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
                 frmSeatOptions frm = new frmSeatOptions(selectedRow, dtpNgayChieu.Value.ToString("yyyy-MM-dd"), time, cbbPhim.Text, staffID, cinemaID, tb.Rows[0]["ShowtimeID"].ToString());
                 frm.ShowDialog();

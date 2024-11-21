@@ -16,7 +16,7 @@ namespace QLRapPhim.Staff
     public partial class frmInvoice : Form
     {
         DataProcess process = new DataProcess();
-        private string cinemaID, staffID, date, showtimeID;
+        private string cinemaID, staffID, date, showtimeID, TenKH, GioiTinh, NgaySinh;
         private List<string> seatList, ticket, userInfor;
         private DataGridViewRow film;
         private PrintDocument printDocument;
@@ -25,7 +25,7 @@ namespace QLRapPhim.Staff
             InitializeComponent();
         }
 
-        public frmInvoice(string staff, string cinema, string date, List<string> seat, List<string> ticket, DataGridViewRow film, List<string> user, string showtimeID)
+        public frmInvoice(string staff, string cinema, string date, List<string> seat, List<string> ticket, DataGridViewRow film, List<string> user, string showtimeID, string TenKH, string NgaySinh, string GioiTinh)
         {
             this.cinemaID = cinema;
             this.staffID = staff;
@@ -35,6 +35,9 @@ namespace QLRapPhim.Staff
             this.date = date;
             this.userInfor = user;
             this.showtimeID = showtimeID;
+            this.TenKH = TenKH;
+            this.NgaySinh = NgaySinh;
+            this.GioiTinh = GioiTinh;
             InitializeComponent();
             printDocument = new PrintDocument();
             printDocument.PrintPage += new PrintPageEventHandler(PrintDocument1_PrintPage);
@@ -47,7 +50,6 @@ namespace QLRapPhim.Staff
             lblTienVietpay.Enabled = true;
         }
 
-        
 
         private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
@@ -72,7 +74,6 @@ namespace QLRapPhim.Staff
             Font titleFont = new Font("Arial", 15, FontStyle.Bold);
             Font bodyFont = new Font("Arial", 12);
             Font boldBodyFont = new Font("Arial", 12, FontStyle.Bold);
-            Font smallFont = new Font("Arial", 10);
             Brush brush = Brushes.Black;
 
             // Vị trí bắt đầu
@@ -94,7 +95,7 @@ namespace QLRapPhim.Staff
             y += lineSpacing + 10;
 
             // Thông tin giao dịch
-            g.DrawString("SKOPE " + tb2.Rows[0]["CinemaName"].ToString().Substring(10), boldBodyFont, brush, x, y);
+            g.DrawString("SKOPE " + tb2.Rows[0]["CinemaName"].ToString().Substring(6), boldBodyFont, brush, x, y);
             y += lineSpacing;
             g.DrawString("Cinema: " + tb2.Rows[0]["CinemaName"].ToString(), bodyFont, brush, x, y);
             y += lineSpacing;
@@ -144,16 +145,17 @@ namespace QLRapPhim.Staff
         {
             if (cbbThanhToan.SelectedIndex != -1)
             {
-                DataTable table1 = process.ReadDatabase("select * from tblUser order by UserID desc");
+                
                 process.ChangeDatabase("insert into tblUser(Name, Gender, BirthDay, TypeUser) values (N'" + userInfor[0] + "',N'" + userInfor[1] + "','" + userInfor[2] + "','" + ticket[3] +"')");
+                DataTable table1 = process.ReadDatabase("select * from tblUser order by UserID desc");
 
                 process.ChangeDatabase("insert into tblInvoice(PaymentDate, PaymentMethod, Discount, ToTal, UserID, StaffID) values ('" + DateTime.Now.ToString("yyyy-MM-dd") + "','" +
-                cbbThanhToan.Text + "','" + lblGiamGia.Text + "','" + lblTienVe.Text + "','" + table1.Rows[0]["UserID"] + "','" + staffID + "')");
+                cbbThanhToan.Text + "','" + lblGiamGia.Text + "','" + ticket[2] + "','" + table1.Rows[0]["UserID"] + "','" + staffID + "')");
 
                 DataTable table2 = process.ReadDatabase("select * from tblInvoice order by InvoiceID desc");
                 for(int i = 0; i<seatList.Count; i++)
                 {
-                    process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','" + ticket[2] + "')");
+                    process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','" + lblTienVe.Text + "')");
                 }
                 PrintDialog printDialog = new PrintDialog();
                 printDialog.Document = printDocument;
@@ -162,6 +164,9 @@ namespace QLRapPhim.Staff
                 {
                     printDocument.Print();
                 }
+                this.Hide();
+                var frm = new frmSeatOptions(film, date, film.Cells[2].Value.ToString(), film.Cells[1].Value.ToString(), staffID, cinemaID, showtimeID);
+                frm.ShowDialog();
                 this.Close();
             }
             else MessageBox.Show("Chưa chọn phương thức thanh toán");
@@ -179,9 +184,9 @@ namespace QLRapPhim.Staff
 
             cbbThanhToan.Items.Add("Cash");
             cbbThanhToan.Items.Add("VietQR");
-            lblCongTy.Text += tb2.Rows[0]["CinemaName"].ToString().Substring(10);
+            lblCongTy.Text += tb2.Rows[0]["CinemaName"].ToString().Substring(6);
             lblDiaChi.Text += tb2.Rows[0]["CinemaName"].ToString();
-            lblCinemaB.Text += tb2.Rows[0]["CinemaName"].ToString().Substring(10);
+            lblCinemaB.Text += tb2.Rows[0]["CinemaName"].ToString().Substring(6);
             lblCinema.Text += tb2.Rows[0]["CinemaName"].ToString();
             lblNgayGD.Text += DateTime.Now;
             lblNhanVien.Text += tb1.Rows[0]["Name"].ToString();
@@ -212,6 +217,9 @@ namespace QLRapPhim.Staff
         {
             if (MessageBox.Show("Bạn có muốn hủy không", "Hủy hóa đơn", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                this.Hide();
+                var frm = new frmSeatOptions(film, date, film.Cells[2].Value.ToString(), film.Cells[1].Value.ToString(), staffID, cinemaID, showtimeID, TenKH, NgaySinh, GioiTinh);
+                frm.ShowDialog();
                 this.Close();
             }
         }
