@@ -25,7 +25,7 @@ namespace QLRapPhim
             {
                 MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
             }
-            {
+            else{
                 DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
                 if (dt.Rows.Count == 0)
                 {
@@ -66,7 +66,7 @@ namespace QLRapPhim
                 {
                     MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
                 }
-                {
+                else{
                     DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
                     if (dt.Rows.Count == 0)
                     {
@@ -100,7 +100,7 @@ namespace QLRapPhim
                 {
                     MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
                 }
-                {
+                else{
                     DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
                     if (dt.Rows.Count == 0)
                     {

@@ -55,7 +55,7 @@
             this.btnLogin.Image = global::QLRapPhim.Properties.Resources.icons8_login_64;
             this.btnLogin.ImageSize = new System.Drawing.Size(30, 30);
             this.btnLogin.Location = new System.Drawing.Point(106, 163);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(112, 36);
             this.btnLogin.TabIndex = 11;
@@ -79,7 +79,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Violet;
             this.btnExit.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
             this.btnExit.Location = new System.Drawing.Point(242, 163);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 34);
             this.btnExit.TabIndex = 12;
@@ -129,12 +129,13 @@
             this.txtPassword.Location = new System.Drawing.Point(230, 107);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtPassword.PlaceholderText = "Nhập mật khẩu";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(182, 33);
             this.txtPassword.TabIndex = 16;
+            this.txtPassword.Tag = "";
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // lbUserName
@@ -145,7 +146,7 @@
             this.lbUserName.Location = new System.Drawing.Point(46, 38);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(154, 23);
+            this.lbUserName.Size = new System.Drawing.Size(139, 21);
             this.lbUserName.TabIndex = 17;
             this.lbUserName.Text = "TÊN ĐĂNG NHẬP :";
             // 
@@ -157,7 +158,7 @@
             this.lbPassword.Location = new System.Drawing.Point(96, 107);
             this.lbPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(104, 23);
+            this.lbPassword.Size = new System.Drawing.Size(94, 21);
             this.lbPassword.TabIndex = 18;
             this.lbPassword.Text = "MẬT KHẨU :";
             // 
@@ -174,7 +175,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
