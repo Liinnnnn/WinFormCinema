@@ -25,11 +25,12 @@ namespace QLRapPhim
             txtAddress.Text = "";
             cmbCinemaID.Text = "";
 
-            DataTable dt = process.ReadDatabase("Select * From tblCinema");
+            DataTable dt = process.ReadDatabase("Select CinemaID, CinemaName, Address,Status From tblCinema");
             dgvCinema.DataSource = dt;
             dgvCinema.Columns["CinemaID"].HeaderText = "Mã Rạp";
             dgvCinema.Columns["CinemaName"].HeaderText = "Tên Rạp";
             dgvCinema.Columns["Address"].HeaderText = "Địa Chỉ";
+            dgvCinema.Columns["Status"].HeaderText = "Trạng Thái";
             foreach (DataGridViewColumn column in dgvCinema.Columns)
             {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -48,7 +49,7 @@ namespace QLRapPhim
             txtCinemaID.Text = "";
             txtCinemaName.Text = "";
             txtAddress.Text = "";
-            cmbCinemaID.Text = "";
+            cmbCinemaID.SelectedIndex = -1;
         }
         public frmCinema()
         {
@@ -58,12 +59,15 @@ namespace QLRapPhim
         private void frmCinema_Load(object sender, EventArgs e)
         {
             txtCinemaID.Enabled = false;
-            btnAddDB.Visible = false;
-            btnUpdateDB.Visible = false;
-            btnDeleteDB.Visible = false;
-            btnSearch.Visible = true;
-            cmbCinemaID.Visible = true;
+            btnAddDB.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            btnSearch.Enabled = true;
+            cmbCinemaID.Enabled = true;
             LoadData();
+
+            cmbStatus.Items.Add("Hoạt Động");
+            cmbStatus.Items.Add("Dừng Hoạt Động");
+            dgvCinema.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
 
@@ -73,38 +77,30 @@ namespace QLRapPhim
             txtCinemaID.Text = dgvCinema.Rows[i].Cells["CinemaID"].Value.ToString();
             txtCinemaName.Text = dgvCinema.Rows[i].Cells["CinemaName"].Value.ToString();
             txtAddress.Text = dgvCinema.Rows[i].Cells["Address"].Value.ToString();
+            if (dgvCinema.Rows[i].Cells["Status"].Value.ToString() == "Hoạt Động") cmbStatus.SelectedIndex = 0;
+            else cmbStatus.SelectedIndex = 1;
             txtCinemaID.Enabled = false;
         }
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
             txtCinemaID.Enabled = true;
-            btnAddDB.Visible = true;
-            btnUpdateDB.Visible = false;
-            btnDeleteDB.Visible = false;
-            btnSearch.Visible = false;
-            cmbCinemaID.Visible = false;
+            btnAddDB.Enabled = true;
+            btnUpdateDB.Enabled = false;
+            btnSearch.Enabled = false;
+            cmbCinemaID.Enabled = false;
         }
 
         private void btnChange_Click_1(object sender, EventArgs e)
         {
             txtCinemaID.Enabled = false;
-            btnAddDB.Visible = false;
-            btnUpdateDB.Visible = true;
-            btnDeleteDB.Visible = false;
-            btnSearch.Visible = true;
-            cmbCinemaID.Visible = true;
+            btnAddDB.Enabled = false;
+            btnUpdateDB.Enabled = true;
+            btnSearch.Enabled = true;
+            cmbCinemaID.Enabled = true;
         }
 
-        private void btnDelete_Click_1(object sender, EventArgs e)
-        {
-            txtCinemaID.Enabled=false;
-            btnAddDB.Visible = false;
-            btnUpdateDB.Visible = false;
-            btnDeleteDB.Visible = true;
-            btnSearch.Visible = true;
-            cmbCinemaID.Visible = true;
-        }
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -136,12 +132,19 @@ namespace QLRapPhim
                     txtCinemaID.Text = dt.Rows[0]["CinemaID"].ToString();
                     txtCinemaName.Text = dt.Rows[0]["CinemaName"].ToString();
                     txtAddress.Text = dt.Rows[0]["Address"].ToString();
+                    if (dt.Rows[0]["Status"].ToString() == "Hoạt Động") cmbStatus.SelectedIndex = 0;
+                    else cmbStatus.SelectedIndex = 1;
                 }
             }    
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
+            txtCinemaID.Enabled = false;
+            btnAddDB.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            btnSearch.Enabled = true;
+            cmbCinemaID.Enabled = true;
             Cancel();
 
         }
@@ -149,7 +152,7 @@ namespace QLRapPhim
 
         private void btnAdđB_Click(object sender, EventArgs e)
         {
-            if (txtCinemaID.Text == "" || txtCinemaName.Text == "" || txtAddress.Text == "")
+            if (txtCinemaID.Text == "" || txtCinemaName.Text == "" || txtAddress.Text == "" || cmbStatus.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
             }
@@ -158,7 +161,7 @@ namespace QLRapPhim
                 DataTable dt = process.ReadDatabase("Select CinemaID From tblCinema Where CinemaID = '" + txtCinemaID.Text + "'");
                 if (dt.Rows.Count == 0)
                 {
-                    process.ChangeDatabase("insert into tblCinema (CinemaID,CinemaName,Address) values ('" + txtCinemaID.Text + "',N'" + txtCinemaName.Text + "',N'" + txtAddress.Text + "')");
+                    process.ChangeDatabase("insert into tblCinema (CinemaID,CinemaName,Address,Status) values ('" + txtCinemaID.Text + "',N'" + txtCinemaName.Text + "',N'" + txtAddress.Text + "',N'"+cmbStatus.Text+"')");
                     LoadData();
                 }
                 else
@@ -170,7 +173,7 @@ namespace QLRapPhim
 
         private void btnUpdateDB_Click(object sender, EventArgs e)
         {
-            if (txtCinemaID.Text == "" || txtCinemaName.Text == "" || txtAddress.Text == "")
+            if (txtCinemaID.Text == "" || txtCinemaName.Text == "" || txtAddress.Text == "" || cmbStatus.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK);
             }
@@ -178,23 +181,7 @@ namespace QLRapPhim
             {
                 if (MessageBox.Show("Bạn có muốn thay đổi thông tin rạp " + txtCinemaID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    process.ChangeDatabase("update tblCinema set CinemaName = N'" + txtCinemaName.Text + "', Address = N'" + txtAddress.Text + "' where CinemaID = '" + txtCinemaID.Text + "'");
-                    LoadData();
-                }
-            }
-        }
-
-        private void btnDeleteDB_Click(object sender, EventArgs e)
-        {
-            if (txtCinemaID.Text == "")
-            {
-                MessageBox.Show("Vui lòng chọn một rạp phim", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-                if (MessageBox.Show("Bạn có muốn xóa rạp " + txtCinemaID.Text + " không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    process.ChangeDatabase("Delete from tblCinema Where CinemaID = '" + txtCinemaID.Text + "'");
+                    process.ChangeDatabase("update tblCinema set CinemaName = N'" + txtCinemaName.Text + "', Address = N'" + txtAddress.Text + "', Status = N'"+cmbStatus.Text+"' where CinemaID = '" + txtCinemaID.Text + "'");
                     LoadData();
                 }
             }

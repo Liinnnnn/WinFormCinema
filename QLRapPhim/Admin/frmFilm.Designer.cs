@@ -69,7 +69,7 @@
             this.dgvFilm.Name = "dgvFilm";
             this.dgvFilm.RowHeadersWidth = 51;
             this.dgvFilm.RowTemplate.Height = 24;
-            this.dgvFilm.Size = new System.Drawing.Size(884, 133);
+            this.dgvFilm.Size = new System.Drawing.Size(1615, 189);
             this.dgvFilm.TabIndex = 0;
             this.dgvFilm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilm_CellContentClick);
             this.dgvFilm.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFilm_RowHeaderMouseClick);
@@ -79,7 +79,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbName.Location = new System.Drawing.Point(212, 207);
+            this.lbName.Location = new System.Drawing.Point(437, 306);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(83, 28);
             this.lbName.TabIndex = 1;
@@ -90,7 +90,7 @@
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbPrice.Location = new System.Drawing.Point(604, 262);
+            this.lbPrice.Location = new System.Drawing.Point(1210, 361);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(129, 28);
             this.lbPrice.TabIndex = 3;
@@ -101,7 +101,7 @@
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbDate.Location = new System.Drawing.Point(604, 207);
+            this.lbDate.Location = new System.Drawing.Point(1210, 306);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(154, 28);
             this.lbDate.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.lbDirector.AutoSize = true;
             this.lbDirector.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDirector.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbDirector.Location = new System.Drawing.Point(604, 150);
+            this.lbDirector.Location = new System.Drawing.Point(1210, 249);
             this.lbDirector.Name = "lbDirector";
             this.lbDirector.Size = new System.Drawing.Size(93, 28);
             this.lbDirector.TabIndex = 5;
@@ -123,7 +123,7 @@
             this.lbLanguage.AutoSize = true;
             this.lbLanguage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLanguage.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbLanguage.Location = new System.Drawing.Point(212, 262);
+            this.lbLanguage.Location = new System.Drawing.Point(437, 361);
             this.lbLanguage.Name = "lbLanguage";
             this.lbLanguage.Size = new System.Drawing.Size(106, 28);
             this.lbLanguage.TabIndex = 6;
@@ -132,52 +132,53 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(350, 203);
+            this.txtName.Location = new System.Drawing.Point(646, 305);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(221, 30);
+            this.txtName.Size = new System.Drawing.Size(311, 30);
             this.txtName.TabIndex = 7;
             // 
             // txtLanguage
             // 
             this.txtLanguage.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLanguage.Location = new System.Drawing.Point(350, 262);
+            this.txtLanguage.Location = new System.Drawing.Point(646, 364);
             this.txtLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLanguage.Name = "txtLanguage";
-            this.txtLanguage.Size = new System.Drawing.Size(221, 30);
+            this.txtLanguage.Size = new System.Drawing.Size(311, 30);
             this.txtLanguage.TabIndex = 8;
             // 
             // txtDirector
             // 
             this.txtDirector.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirector.Location = new System.Drawing.Point(796, 148);
+            this.txtDirector.Location = new System.Drawing.Point(1464, 250);
             this.txtDirector.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDirector.Name = "txtDirector";
-            this.txtDirector.Size = new System.Drawing.Size(221, 30);
+            this.txtDirector.Size = new System.Drawing.Size(311, 30);
             this.txtDirector.TabIndex = 9;
             // 
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(796, 260);
+            this.txtPrice.Location = new System.Drawing.Point(1464, 359);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(221, 30);
+            this.txtPrice.Size = new System.Drawing.Size(312, 30);
             this.txtPrice.TabIndex = 10;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // dtpDate
             // 
             this.dtpDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(796, 203);
+            this.dtpDate.Location = new System.Drawing.Point(1464, 302);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(220, 30);
+            this.dtpDate.Size = new System.Drawing.Size(311, 30);
             this.dtpDate.TabIndex = 11;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(244)))), ((int)(((byte)(230)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
@@ -186,7 +187,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 442);
+            this.panel1.Size = new System.Drawing.Size(291, 922);
             this.panel1.TabIndex = 15;
             // 
             // btnCancel
@@ -206,9 +207,9 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Violet;
             this.btnCancel.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(26, 333);
+            this.btnCancel.Location = new System.Drawing.Point(-1, 529);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(133, 40);
+            this.btnCancel.Size = new System.Drawing.Size(291, 40);
             this.btnCancel.TabIndex = 93;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseTransparentBackground = true;
@@ -231,9 +232,9 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Violet;
             this.btnAdd.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(26, 159);
+            this.btnAdd.Location = new System.Drawing.Point(-1, 239);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(133, 40);
+            this.btnAdd.Size = new System.Drawing.Size(291, 40);
             this.btnAdd.TabIndex = 90;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseTransparentBackground = true;
@@ -256,9 +257,9 @@
             this.btnChange.ForeColor = System.Drawing.Color.Violet;
             this.btnChange.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnChange.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnChange.Location = new System.Drawing.Point(26, 246);
+            this.btnChange.Location = new System.Drawing.Point(-1, 384);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(133, 40);
+            this.btnChange.Size = new System.Drawing.Size(291, 40);
             this.btnChange.TabIndex = 91;
             this.btnChange.Text = "SỬA";
             this.btnChange.UseTransparentBackground = true;
@@ -268,20 +269,20 @@
             // 
             this.panel2.Controls.Add(this.dgvFilm);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(180, 0);
+            this.panel2.Location = new System.Drawing.Point(291, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 133);
+            this.panel2.Size = new System.Drawing.Size(1615, 189);
             this.panel2.TabIndex = 16;
             // 
             // cmbFilmID
             // 
             this.cmbFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFilmID.FormattingEnabled = true;
-            this.cmbFilmID.Location = new System.Drawing.Point(350, 377);
+            this.cmbFilmID.Location = new System.Drawing.Point(971, 538);
             this.cmbFilmID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbFilmID.Name = "cmbFilmID";
-            this.cmbFilmID.Size = new System.Drawing.Size(221, 32);
+            this.cmbFilmID.Size = new System.Drawing.Size(311, 32);
             this.cmbFilmID.TabIndex = 63;
             // 
             // lbFilmIDSearch
@@ -289,7 +290,7 @@
             this.lbFilmIDSearch.AutoSize = true;
             this.lbFilmIDSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFilmIDSearch.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbFilmIDSearch.Location = new System.Drawing.Point(212, 375);
+            this.lbFilmIDSearch.Location = new System.Drawing.Point(863, 542);
             this.lbFilmIDSearch.Name = "lbFilmIDSearch";
             this.lbFilmIDSearch.Size = new System.Drawing.Size(89, 28);
             this.lbFilmIDSearch.TabIndex = 61;
@@ -300,7 +301,7 @@
             this.lbFilmID.AutoSize = true;
             this.lbFilmID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFilmID.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbFilmID.Location = new System.Drawing.Point(212, 150);
+            this.lbFilmID.Location = new System.Drawing.Point(437, 249);
             this.lbFilmID.Name = "lbFilmID";
             this.lbFilmID.Size = new System.Drawing.Size(89, 28);
             this.lbFilmID.TabIndex = 64;
@@ -309,10 +310,10 @@
             // txtFilmID
             // 
             this.txtFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilmID.Location = new System.Drawing.Point(350, 148);
+            this.txtFilmID.Location = new System.Drawing.Point(646, 250);
             this.txtFilmID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFilmID.Name = "txtFilmID";
-            this.txtFilmID.Size = new System.Drawing.Size(221, 30);
+            this.txtFilmID.Size = new System.Drawing.Size(311, 30);
             this.txtFilmID.TabIndex = 65;
             // 
             // label1
@@ -320,7 +321,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label1.Location = new System.Drawing.Point(212, 322);
+            this.label1.Location = new System.Drawing.Point(437, 421);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 28);
             this.label1.TabIndex = 79;
@@ -333,10 +334,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Đang chiếu",
             "Ngừng chiếu"});
-            this.comboBox1.Location = new System.Drawing.Point(350, 320);
+            this.comboBox1.Location = new System.Drawing.Point(646, 422);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 33);
+            this.comboBox1.Size = new System.Drawing.Size(311, 33);
             this.comboBox1.TabIndex = 80;
             // 
             // btnSearch
@@ -356,9 +357,9 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Violet;
             this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(644, 369);
+            this.btnSearch.Location = new System.Drawing.Point(1333, 538);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(142, 40);
+            this.btnSearch.Size = new System.Drawing.Size(142, 32);
             this.btnSearch.TabIndex = 88;
             this.btnSearch.Text = "TÌM KIẾM";
             this.btnSearch.UseTransparentBackground = true;
@@ -381,7 +382,7 @@
             this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
             this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDB.Location = new System.Drawing.Point(830, 369);
+            this.btnUpdateDB.Location = new System.Drawing.Point(947, 642);
             this.btnUpdateDB.Name = "btnUpdateDB";
             this.btnUpdateDB.Size = new System.Drawing.Size(125, 40);
             this.btnUpdateDB.TabIndex = 93;
@@ -406,7 +407,7 @@
             this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
             this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDB.Location = new System.Drawing.Point(831, 369);
+            this.btnAddDB.Location = new System.Drawing.Point(1209, 642);
             this.btnAddDB.Name = "btnAddDB";
             this.btnAddDB.Size = new System.Drawing.Size(124, 40);
             this.btnAddDB.TabIndex = 94;
@@ -419,7 +420,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1064, 442);
+            this.ClientSize = new System.Drawing.Size(1906, 922);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);

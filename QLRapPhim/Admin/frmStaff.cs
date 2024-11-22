@@ -22,7 +22,7 @@ namespace QLRapPhim
         private void LoadData()
         {
             cmbMNV.Items.Clear();
-            DataTable dt = process.ReadDatabase(@"Select StaffID, Name, Gender, BirthDay, NumberPhone, WorkStartDate, Password, CinemaID  
+            DataTable dt = process.ReadDatabase(@"Select StaffID, Name, Gender, BirthDay, NumberPhone, WorkStartDate, Password, CinemaID,Status
                                    From tblStaff
                                    Where Type_Account = '" +"Staff"+"'");
             dgvStaff.DataSource = dt;
@@ -34,6 +34,7 @@ namespace QLRapPhim
             dgvStaff.Columns["WorkStartDate"].HeaderText = "Ngày Vào Làm";
             dgvStaff.Columns["Password"].HeaderText = "Mật Khẩu";
             dgvStaff.Columns["CinemaID"].HeaderText = "Cơ Sở";
+            dgvStaff.Columns["Status"].HeaderText = "Trạng Thái";
             foreach (DataGridViewColumn column in dgvStaff.Columns)
             {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -44,11 +45,6 @@ namespace QLRapPhim
                 cmbMNV.Items.Add(dtnv.Rows[i]["StaffID"].ToString());
             }
 
-            lbNPhoneNumber.Visible = false;
-            lbNBranch.Visible = false;
-            lbNGender.Visible = false;
-            lbNPass.Visible = false;
-            lbNName.Visible = false;
             txtStaffID.Enabled = false;
         }
 
@@ -64,17 +60,19 @@ namespace QLRapPhim
             rdoNam.Checked = false;
             rdoNu.Checked = false;
 
+            comboBox1.SelectedIndex = -1;
             
         }
 
         private void frmStaff_Load(object sender, EventArgs e)
         {
-            btnAddDB.Visible = false;
-            btnSearch.Visible = false;
-            lbMNVSearch.Visible = false;
-            cmbMNV.Visible = false;
-            btnUpdateDB.Visible = false;
+            btnAddDB.Enabled = false;
+            btnSearch.Enabled = false;
+            lbMNVSearch.Enabled = false;
+            cmbMNV.Enabled = false;
+            btnUpdateDB.Enabled = false;
             LoadData();
+            dgvStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataTable dtb = process.ReadDatabase("Select CinemaID From tblCinema");
             for (int i = 0; i < dtb.Rows.Count; i++)
             {
@@ -95,15 +93,18 @@ namespace QLRapPhim
             dtpWSDate.Text = dgvStaff.Rows[i].Cells[5].Value.ToString();
             txtPassword.Text = dgvStaff.Rows[i].Cells[6].Value.ToString();
             cmbBrach.Text = dgvStaff.Rows[i].Cells[7].Value.ToString();
+
+            if (dgvStaff.Rows[i].Cells["Status"].Value.ToString() == "Đang làm") comboBox1.SelectedIndex = 0;
+            else comboBox1.SelectedIndex = 1;
         }
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            btnAddDB.Visible = true;
-            btnSearch.Visible = false;
-            lbMNVSearch.Visible = false;
-            cmbMNV.Visible = false;
-            btnUpdateDB.Visible = false;
+            btnAddDB.Enabled = true;
+            btnSearch.Enabled = false;
+            lbMNVSearch.Enabled = false;
+            cmbMNV.Enabled = false;
+            btnUpdateDB.Enabled = false;
 
             DataTable dt = process.ReadDatabase("Select top 1 StaffID from tblStaff order by StaffID Desc");
             if(dt.Rows.Count == 0)
@@ -119,21 +120,21 @@ namespace QLRapPhim
 
         private void btnChange_Click_1(object sender, EventArgs e)
         {
-            btnAddDB.Visible = false;
-            btnSearch.Visible = true;
-            lbMNVSearch.Visible = true;
-            cmbMNV.Visible = true;
-            btnUpdateDB.Visible = true;
+            btnAddDB.Enabled = false;
+            btnSearch.Enabled = true;
+            lbMNVSearch.Enabled = true;
+            cmbMNV.Enabled = true;
+            btnUpdateDB.Enabled = true;
         }
 
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            btnAddDB.Visible = false;
-            btnSearch.Visible = false;
-            lbMNVSearch.Visible = false;
-            cmbMNV.Visible = false;
-            btnUpdateDB.Visible = false;
+            btnAddDB.Enabled = false;
+            btnSearch.Enabled = true;
+            lbMNVSearch.Enabled = true;
+            cmbMNV.Enabled = true;
+            btnUpdateDB.Enabled = false;
             Cancel();
             //LoadData();
         }
@@ -179,25 +180,16 @@ namespace QLRapPhim
                 cmbBrach.Text = dt.Rows[0]["CinemaID"].ToString();
                 dtpWSDate.Text = dt.Rows[0]["WorkStartDate"].ToString();
 
-
+                if (dt.Rows[0]["Status"].ToString() == "Đang làm") comboBox1.SelectedIndex = 0;
+                else comboBox1.SelectedIndex = 1;
             }
         }
 
         private void btnAddDB_Click(object sender, EventArgs e)
         {
-            lbNPhoneNumber.Visible = false;
-            lbNBranch.Visible = false;
-            lbNGender.Visible = false;
-            lbNPass.Visible = false;
-            lbNName.Visible = false;
             if (txtStaffID.Text == "" || txtName.Text == "" || txtPhoneNB.Text == "" || txtPassword.Text == "" || cmbBrach.Text == "" || dtpBirthday.Text == "" || dtpWSDate.Text == "" || (rdoKhac.Checked == false && rdoNam.Checked == false && rdoNu.Checked == false)||comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên", "Thông báo", MessageBoxButtons.OK);
-                if (txtName.Text == "") lbNName.Visible = true;
-                if (rdoKhac.Checked == false && rdoNam.Checked == false && rdoNu.Checked == false) lbNGender.Visible = true;
-                if (txtPhoneNB.Text == "") lbNPhoneNumber.Visible = true;
-                if (cmbBrach.Text == "") lbNBranch.Visible = true;
-                if (txtPassword.Text == "") lbNPass.Visible = true;
             }
             else
             {
@@ -223,7 +215,7 @@ namespace QLRapPhim
 
         private void btnUpdateDB_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || txtPhoneNB.Text == "" || txtPassword.Text == "" || cmbBrach.Text == "" || dtpBirthday.Text == "" || dtpWSDate.Text == "" || (rdoKhac.Checked == false && rdoNam.Checked == false && rdoNu.Checked == false))
+            if (txtName.Text == "" || txtPhoneNB.Text == "" || txtPassword.Text == "" || cmbBrach.Text == "" || dtpBirthday.Text == "" || dtpWSDate.Text == "" || (rdoKhac.Checked == false && rdoNam.Checked == false && rdoNu.Checked == false) || comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên", "Thông báo", MessageBoxButtons.OK);
             }
@@ -233,7 +225,7 @@ namespace QLRapPhim
                 if (rdoKhac.Checked == true) gender = "Khác";
                 if (rdoNam.Checked == true) gender = "Nam";
                 if (rdoNu.Checked == true) gender = "Nữ";
-                string query = @"update tblStaff set Name = N'" + txtName.Text + "', Gender = N'" + gender + "', BirthDay = '" + dtpBirthday.Text + "', NumberPhone = '" + txtPhoneNB.Text + "', WorkStartDate = '" + dtpWSDate.Text + "', Password = '" + txtPassword.Text + "', CinemaID = '" + cmbBrach.Text + "' , Status = N'"+comboBox1.Text+"' where StaffID = '" + txtStaffID.Text + "'";
+                string query = @"update tblStaff set Name = N'" + txtName.Text + "', Gender = N'" + gender + "', BirthDay = '" + dtpBirthday.Value.ToString("yyyy-MM-dd") + "', NumberPhone = '" + txtPhoneNB.Text + "', WorkStartDate = '" + dtpWSDate.Value.ToString("yyyy-MM-dd") + "', Password = '" + txtPassword.Text + "', CinemaID = '" + cmbBrach.Text + "' , Status = N'"+comboBox1.Text+"' where StaffID = '" + txtStaffID.Text + "'";
 
                 if (MessageBox.Show("Bạn có muốn thay đổi thông tin nhân viên " + txtStaffID.Text, "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
@@ -244,5 +236,14 @@ namespace QLRapPhim
             }
         }
 
+        private void pnMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -37,11 +37,11 @@ namespace QLRapPhim
             cmbRoomID.Text = "";
             cmbHour.Text = "";
             txtShowTimeID.Enabled = false;
-            btnAddDB.Visible = false;
-            btnDeleteDB.Visible = false;
-            btnUpdateDB.Visible = false;
-            lbNote.Visible = true;
-            btnSearch.Visible = true;
+            btnAddDB.Enabled = false;
+            btnDeleteDB.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            lbNote.Enabled = true;
+            btnSearch.Enabled = true;
 
 
         }
@@ -53,6 +53,7 @@ namespace QLRapPhim
         private void frmShowTime_Load(object sender, EventArgs e)
         {
             LoadData();
+            dgvShowTime.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvShowTime.Columns["ShowtimeID"].HeaderText = "Mã Chiếu";
             dgvShowTime.Columns["Showtime"].HeaderText = "Ngày Chiếu";
             dgvShowTime.Columns["FilmID"].HeaderText = "Mã Phim";
@@ -63,11 +64,11 @@ namespace QLRapPhim
             dgvShowTime.Columns["ShowtimeHour"].HeaderText = "Giờ Chiếu";
 
             txtShowTimeID.Enabled = false;
-            btnAddDB.Visible = false;
-            btnDeleteDB.Visible = false;
-            btnUpdateDB.Visible = false;
-            lbNote.Visible = true;
-            btnSearch.Visible = true;
+            btnAddDB.Enabled = false;
+            btnDeleteDB.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            lbNote.Enabled = true;
+            btnSearch.Enabled = true;
 
             foreach (DataGridViewColumn column in dgvShowTime.Columns)
             {
@@ -129,11 +130,11 @@ namespace QLRapPhim
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            btnAddDB.Visible = true;
-            btnDeleteDB.Visible = false;
-            btnUpdateDB.Visible = false;
-            lbNote.Visible = false;
-            btnSearch.Visible = false;
+            btnAddDB.Enabled = true;
+            btnDeleteDB.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            lbNote.Enabled = false;
+            btnSearch.Enabled = false;
             txtFilm.Text = "";
             txtCinema.Text = "";
             cmbCinemaID.Text = "";
@@ -154,21 +155,21 @@ namespace QLRapPhim
         private void btnChange_Click_1(object sender, EventArgs e)
         {
 
-            btnAddDB.Visible = false;
-            btnDeleteDB.Visible = false;
-            btnUpdateDB.Visible = true;
-            lbNote.Visible = true;
-            btnSearch.Visible = true;
+            btnAddDB.Enabled = false;
+            btnDeleteDB.Enabled = false;
+            btnUpdateDB.Enabled = true;
+            lbNote.Enabled = true;
+            btnSearch.Enabled = true;
 
         }
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
-            btnAddDB.Visible = false;
-            btnDeleteDB.Visible = true;
-            btnUpdateDB.Visible = false;
-            lbNote.Visible = true;
-            btnSearch.Visible = true;
+            btnAddDB.Enabled = false;
+            btnDeleteDB.Enabled = true;
+            btnUpdateDB.Enabled = false;
+            lbNote.Enabled = true;
+            btnSearch.Enabled = true;
         }
 
         private void btnSearch_Click_1(object sender, EventArgs e)

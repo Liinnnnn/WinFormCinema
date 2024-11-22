@@ -63,7 +63,7 @@
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(956, 64);
+            this.pnTop.Size = new System.Drawing.Size(1924, 64);
             this.pnTop.TabIndex = 11;
             // 
             // guna2PictureBox2
@@ -94,7 +94,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(956, 64);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 64);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -218,17 +218,18 @@
             this.pnMain.Location = new System.Drawing.Point(0, 64);
             this.pnMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(956, 469);
+            this.pnMain.Size = new System.Drawing.Size(1924, 969);
             this.pnMain.TabIndex = 12;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2PictureBox1.Image = global::QLRapPhim.Properties.Resources.wPWKnGo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-264, 0);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1489, 489);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1924, 969);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
@@ -240,7 +241,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(956, 533);
+            this.ClientSize = new System.Drawing.Size(1924, 1033);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnTop);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -249,7 +250,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAdmin";
+            this.Text = "Admin";
             this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.pnTop.ResumeLayout(false);
             this.pnTop.PerformLayout();
