@@ -18,7 +18,7 @@ namespace QLRapPhim
         {
             cmbFilmID.Items.Clear();
             
-            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate, Price From tblFilm where Status = N'Đang chiếu'");
+            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate, Price, Status From tblFilm");
             dgvFilm.DataSource = dt;
             dgvFilm.Columns["FilmID"].HeaderText = "Mã Phim";
             dgvFilm.Columns["Name"].HeaderText = "Tên Phim";
@@ -26,12 +26,13 @@ namespace QLRapPhim
             dgvFilm.Columns["Director"].HeaderText = "Đạo Diễn";
             dgvFilm.Columns["ProductionDate"].HeaderText = "Ngày Phát Hành";
             dgvFilm.Columns["Price"].HeaderText = "Giá Vé";
+            dgvFilm.Columns["Status"].HeaderText = "Trạng Thái";
             foreach (DataGridViewColumn column in dgvFilm.Columns)
             {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
 
-            DataTable dtf = process.ReadDatabase("Select FilmID From tblFilm");
+            DataTable dtf = process.ReadDatabase("Select FilmID From tblFilm Where Status = N'"+"Đang Chiếu"+"'");
             foreach (DataRow row in dtf.Rows)
             {
                 cmbFilmID.Items.Add(row["FilmID"].ToString());
@@ -57,11 +58,14 @@ namespace QLRapPhim
             txtPrice.Text = "";
             dtpDate.Value = DateTime.Now;
 
-            lbFilmIDSearch.Visible = true;
-            cmbFilmID.Visible = true;
-            btnSearch.Visible = true;
-            btnUpdateDB.Visible = false;
-            btnAddDB.Visible = false;
+            lbFilmIDSearch.Enabled = true;
+            cmbFilmID.Enabled = true;
+            btnSearch.Enabled = true;
+            btnUpdateDB.Enabled = false;
+            btnAddDB.Enabled = false;
+
+            comboBox1.SelectedIndex = -1;
+
         }
         public frmFilm()
         {
@@ -72,12 +76,13 @@ namespace QLRapPhim
         private void frmFilm_Load(object sender, EventArgs e)
         {
             txtFilmID.Enabled = false;
-            lbFilmIDSearch.Visible = true;
-            cmbFilmID.Visible = true;
-            btnSearch.Visible = true;
-            btnUpdateDB.Visible = false;
-            btnAddDB.Visible = false;
+            lbFilmIDSearch.Enabled = true;
+            cmbFilmID.Enabled = true;
+            btnSearch.Enabled = true;
+            btnUpdateDB.Enabled = false;
+            btnAddDB.Enabled = false;
             LoadData();
+            dgvFilm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void dgvFilm_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -89,7 +94,8 @@ namespace QLRapPhim
             txtDirector.Text = dgvFilm.Rows[i].Cells["Director"].Value.ToString();
             dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
             txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
-            comboBox1.SelectedIndex = 0;
+            if (dgvFilm.Rows[i].Cells["Status"].Value.ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
+            else comboBox1.SelectedIndex = 1;
         }
 
 
@@ -98,21 +104,25 @@ namespace QLRapPhim
         {
             Cancel();
             txtFilmID.Enabled = true;
-            lbFilmIDSearch.Visible = false;
-            cmbFilmID.Visible = false;
-            btnSearch.Visible = false;
-            btnUpdateDB.Visible = false;
-            btnAddDB.Visible = true;
+            lbFilmIDSearch.Enabled = false;
+            cmbFilmID.Enabled = false;
+            btnSearch.Enabled = false;
+            btnUpdateDB.Enabled = false;
+            btnAddDB.Enabled = true;
+            comboBox1.SelectedIndex = -1;
+
+
         }
 
         private void btnChange_Click_1(object sender, EventArgs e)
         {
             txtFilmID.Enabled = false;
-            lbFilmIDSearch.Visible = true;
-            cmbFilmID.Visible = true;
-            btnSearch.Visible = true;
-            btnUpdateDB.Visible = true;
-            btnAddDB.Visible = false;
+            lbFilmIDSearch.Enabled = true;
+            cmbFilmID.Enabled = true;
+            btnSearch.Enabled = true;
+            btnUpdateDB.Enabled = true;
+            btnAddDB.Enabled = false;
+
         }
 
 
@@ -123,7 +133,7 @@ namespace QLRapPhim
 
         private void btnAddDB_Click(object sender, EventArgs e)
         {
-            if(txtFilmID.Text == "" || txtName.Text == "" || txtLanguage.Text == "" || txtDirector.Text == "" || txtPrice.Text == "")
+            if(txtFilmID.Text == "" || txtName.Text == "" || txtLanguage.Text == "" || txtDirector.Text == "" || txtPrice.Text == "" || comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin phim", "Thông báo", MessageBoxButtons.OK);
                 //if (txtFilmID.Text == "") lbNFilmID.Visible = true;
@@ -142,7 +152,7 @@ namespace QLRapPhim
                 }
                 else
                 {
-                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate, Price,Status) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Text + "', '" + txtPrice.Text + "',N'"+comboBox1.Text+"')");
+                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate, Price,Status) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Value.ToString("yyyy-MM-dd") + "', '" + txtPrice.Text + "',N'"+comboBox1.Text+"')");
                     LoadData();
                 }
             }
@@ -180,7 +190,8 @@ namespace QLRapPhim
                     txtDirector.Text = dt.Rows[0]["Director"].ToString();
                     txtPrice.Text = dt.Rows[0]["Price"].ToString();
                     dtpDate.Text = dt.Rows[0]["ProductionDate"].ToString();
-                    comboBox1.SelectedIndex = 0;
+                    if (dt.Rows[0]["Status"].ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
+                    else comboBox1.SelectedIndex = 1;
                 }
             }
         }
@@ -221,6 +232,14 @@ namespace QLRapPhim
             dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
             comboBox1.SelectedIndex = 0;
             txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

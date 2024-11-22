@@ -54,10 +54,10 @@
             this.btnLogin.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.btnLogin.Image = global::QLRapPhim.Properties.Resources.icons8_login_64;
             this.btnLogin.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogin.Location = new System.Drawing.Point(106, 163);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(87, 216);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(112, 36);
+            this.btnLogin.Size = new System.Drawing.Size(149, 44);
             this.btnLogin.TabIndex = 11;
             this.btnLogin.Text = "ĐĂNG NHẬP";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -78,10 +78,10 @@
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.Violet;
             this.btnExit.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
-            this.btnExit.Location = new System.Drawing.Point(242, 163);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(357, 216);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(96, 34);
+            this.btnExit.Size = new System.Drawing.Size(149, 44);
             this.btnExit.TabIndex = 12;
             this.btnExit.Text = "THOÁT";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -101,14 +101,14 @@
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.IconLeft = global::QLRapPhim.Properties.Resources.icons8_user_default_64;
             this.txtUserName.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtUserName.Location = new System.Drawing.Point(230, 38);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtUserName.Location = new System.Drawing.Point(307, 47);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtUserName.PlaceholderText = "Nhập tên đăng nhập";
             this.txtUserName.SelectedText = "";
-            this.txtUserName.Size = new System.Drawing.Size(182, 37);
+            this.txtUserName.Size = new System.Drawing.Size(243, 46);
             this.txtUserName.TabIndex = 15;
             // 
             // txtPassword
@@ -126,14 +126,14 @@
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.IconLeft = global::QLRapPhim.Properties.Resources.icons8_password_64;
             this.txtPassword.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtPassword.Location = new System.Drawing.Point(230, 107);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPassword.Location = new System.Drawing.Point(307, 132);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtPassword.PlaceholderText = "Nhập mật khẩu";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(182, 33);
+            this.txtPassword.Size = new System.Drawing.Size(243, 41);
             this.txtPassword.TabIndex = 16;
             this.txtPassword.Tag = "";
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
@@ -143,10 +143,9 @@
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserName.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbUserName.Location = new System.Drawing.Point(46, 38);
-            this.lbUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbUserName.Location = new System.Drawing.Point(61, 47);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(139, 21);
+            this.lbUserName.Size = new System.Drawing.Size(175, 28);
             this.lbUserName.TabIndex = 17;
             this.lbUserName.Text = "TÊN ĐĂNG NHẬP :";
             // 
@@ -155,19 +154,18 @@
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.Color.Violet;
-            this.lbPassword.Location = new System.Drawing.Point(96, 107);
-            this.lbPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPassword.Location = new System.Drawing.Point(61, 132);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(94, 21);
+            this.lbPassword.Size = new System.Drawing.Size(120, 28);
             this.lbPassword.TabIndex = 18;
             this.lbPassword.Text = "MẬT KHẨU :";
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(446, 245);
+            this.ClientSize = new System.Drawing.Size(595, 302);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.txtPassword);
@@ -175,7 +173,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";

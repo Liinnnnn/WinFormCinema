@@ -35,11 +35,6 @@
             this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbNPass = new System.Windows.Forms.Label();
-            this.lbNBranch = new System.Windows.Forms.Label();
-            this.lbNPhoneNumber = new System.Windows.Forms.Label();
-            this.lbNGender = new System.Windows.Forms.Label();
-            this.lbNName = new System.Windows.Forms.Label();
             this.cmbMNV = new System.Windows.Forms.ComboBox();
             this.lbMNVSearch = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -80,11 +75,6 @@
             this.pnMain.Controls.Add(this.btnSearch);
             this.pnMain.Controls.Add(this.comboBox1);
             this.pnMain.Controls.Add(this.label1);
-            this.pnMain.Controls.Add(this.lbNPass);
-            this.pnMain.Controls.Add(this.lbNBranch);
-            this.pnMain.Controls.Add(this.lbNPhoneNumber);
-            this.pnMain.Controls.Add(this.lbNGender);
-            this.pnMain.Controls.Add(this.lbNName);
             this.pnMain.Controls.Add(this.cmbMNV);
             this.pnMain.Controls.Add(this.lbMNVSearch);
             this.pnMain.Controls.Add(this.panel2);
@@ -111,8 +101,9 @@
             this.pnMain.Location = new System.Drawing.Point(0, 0);
             this.pnMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1064, 442);
+            this.pnMain.Size = new System.Drawing.Size(1906, 922);
             this.pnMain.TabIndex = 4;
+            this.pnMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnMain_Paint);
             // 
             // btnUpdateDB
             // 
@@ -131,7 +122,7 @@
             this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
             this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDB.Location = new System.Drawing.Point(887, 379);
+            this.btnUpdateDB.Location = new System.Drawing.Point(1388, 666);
             this.btnUpdateDB.Name = "btnUpdateDB";
             this.btnUpdateDB.Size = new System.Drawing.Size(124, 40);
             this.btnUpdateDB.TabIndex = 104;
@@ -156,7 +147,7 @@
             this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
             this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDB.Location = new System.Drawing.Point(887, 379);
+            this.btnAddDB.Location = new System.Drawing.Point(821, 666);
             this.btnAddDB.Name = "btnAddDB";
             this.btnAddDB.Size = new System.Drawing.Size(124, 40);
             this.btnAddDB.TabIndex = 105;
@@ -181,7 +172,7 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Violet;
             this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(727, 380);
+            this.btnSearch.Location = new System.Drawing.Point(1376, 573);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(136, 40);
             this.btnSearch.TabIndex = 99;
@@ -196,10 +187,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Đang làm",
             "Nghỉ làm"});
-            this.comboBox1.Location = new System.Drawing.Point(345, 331);
+            this.comboBox1.Location = new System.Drawing.Point(624, 488);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(209, 33);
+            this.comboBox1.Size = new System.Drawing.Size(311, 33);
             this.comboBox1.TabIndex = 82;
             // 
             // label1
@@ -207,74 +198,17 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label1.Location = new System.Drawing.Point(195, 334);
+            this.label1.Location = new System.Drawing.Point(411, 488);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 28);
             this.label1.TabIndex = 81;
             this.label1.Text = "Trạng Thái";
             // 
-            // lbNPass
-            // 
-            this.lbNPass.AutoSize = true;
-            this.lbNPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNPass.ForeColor = System.Drawing.Color.Red;
-            this.lbNPass.Location = new System.Drawing.Point(1008, 283);
-            this.lbNPass.Name = "lbNPass";
-            this.lbNPass.Size = new System.Drawing.Size(25, 32);
-            this.lbNPass.TabIndex = 67;
-            this.lbNPass.Text = "*";
-            // 
-            // lbNBranch
-            // 
-            this.lbNBranch.AutoSize = true;
-            this.lbNBranch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNBranch.ForeColor = System.Drawing.Color.Red;
-            this.lbNBranch.Location = new System.Drawing.Point(1007, 193);
-            this.lbNBranch.Name = "lbNBranch";
-            this.lbNBranch.Size = new System.Drawing.Size(25, 32);
-            this.lbNBranch.TabIndex = 66;
-            this.lbNBranch.Text = "*";
-            this.lbNBranch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbNPhoneNumber
-            // 
-            this.lbNPhoneNumber.AutoSize = true;
-            this.lbNPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNPhoneNumber.ForeColor = System.Drawing.Color.Red;
-            this.lbNPhoneNumber.Location = new System.Drawing.Point(1007, 149);
-            this.lbNPhoneNumber.Name = "lbNPhoneNumber";
-            this.lbNPhoneNumber.Size = new System.Drawing.Size(25, 32);
-            this.lbNPhoneNumber.TabIndex = 65;
-            this.lbNPhoneNumber.Text = "*";
-            // 
-            // lbNGender
-            // 
-            this.lbNGender.AutoSize = true;
-            this.lbNGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNGender.ForeColor = System.Drawing.Color.Red;
-            this.lbNGender.Location = new System.Drawing.Point(561, 238);
-            this.lbNGender.Name = "lbNGender";
-            this.lbNGender.Size = new System.Drawing.Size(25, 32);
-            this.lbNGender.TabIndex = 64;
-            this.lbNGender.Text = "*";
-            // 
-            // lbNName
-            // 
-            this.lbNName.AutoSize = true;
-            this.lbNName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNName.ForeColor = System.Drawing.Color.Red;
-            this.lbNName.Location = new System.Drawing.Point(561, 192);
-            this.lbNName.Name = "lbNName";
-            this.lbNName.Size = new System.Drawing.Size(25, 32);
-            this.lbNName.TabIndex = 62;
-            this.lbNName.Text = "*";
-            this.lbNName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // cmbMNV
             // 
             this.cmbMNV.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMNV.FormattingEnabled = true;
-            this.cmbMNV.Location = new System.Drawing.Point(473, 383);
+            this.cmbMNV.Location = new System.Drawing.Point(1051, 581);
             this.cmbMNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMNV.Name = "cmbMNV";
             this.cmbMNV.Size = new System.Drawing.Size(211, 32);
@@ -285,7 +219,7 @@
             this.lbMNVSearch.AutoSize = true;
             this.lbMNVSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMNVSearch.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbMNVSearch.Location = new System.Drawing.Point(341, 387);
+            this.lbMNVSearch.Location = new System.Drawing.Point(817, 585);
             this.lbMNVSearch.Name = "lbMNVSearch";
             this.lbMNVSearch.Size = new System.Drawing.Size(120, 23);
             this.lbMNVSearch.TabIndex = 58;
@@ -297,10 +231,10 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.panel2.Location = new System.Drawing.Point(180, 0);
+            this.panel2.Location = new System.Drawing.Point(291, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 133);
+            this.panel2.Size = new System.Drawing.Size(1615, 185);
             this.panel2.TabIndex = 6;
             // 
             // dgvStaff
@@ -313,13 +247,13 @@
             this.dgvStaff.Name = "dgvStaff";
             this.dgvStaff.RowHeadersWidth = 51;
             this.dgvStaff.RowTemplate.Height = 24;
-            this.dgvStaff.Size = new System.Drawing.Size(884, 133);
+            this.dgvStaff.Size = new System.Drawing.Size(1615, 185);
             this.dgvStaff.TabIndex = 0;
             this.dgvStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellContentClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(244)))), ((int)(((byte)(230)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
@@ -328,8 +262,9 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 442);
+            this.panel1.Size = new System.Drawing.Size(291, 922);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCancel
             // 
@@ -348,9 +283,9 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Violet;
             this.btnCancel.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(23, 346);
+            this.btnCancel.Location = new System.Drawing.Point(-1, 562);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(136, 40);
+            this.btnCancel.Size = new System.Drawing.Size(291, 40);
             this.btnCancel.TabIndex = 96;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseTransparentBackground = true;
@@ -373,9 +308,9 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Violet;
             this.btnAdd.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(23, 172);
+            this.btnAdd.Location = new System.Drawing.Point(-1, 172);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(136, 40);
+            this.btnAdd.Size = new System.Drawing.Size(291, 40);
             this.btnAdd.TabIndex = 94;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseTransparentBackground = true;
@@ -398,9 +333,9 @@
             this.btnChange.ForeColor = System.Drawing.Color.Violet;
             this.btnChange.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnChange.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnChange.Location = new System.Drawing.Point(23, 258);
+            this.btnChange.Location = new System.Drawing.Point(-1, 367);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(136, 40);
+            this.btnChange.Size = new System.Drawing.Size(291, 40);
             this.btnChange.TabIndex = 95;
             this.btnChange.Text = "SỬA";
             this.btnChange.UseTransparentBackground = true;
@@ -410,8 +345,8 @@
             // 
             this.rdoKhac.AutoSize = true;
             this.rdoKhac.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoKhac.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdoKhac.Location = new System.Drawing.Point(489, 235);
+            this.rdoKhac.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.rdoKhac.Location = new System.Drawing.Point(767, 359);
             this.rdoKhac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoKhac.Name = "rdoKhac";
             this.rdoKhac.Size = new System.Drawing.Size(68, 28);
@@ -424,12 +359,12 @@
             // 
             this.dtpWSDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpWSDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpWSDate.Location = new System.Drawing.Point(802, 233);
+            this.dtpWSDate.Location = new System.Drawing.Point(1496, 365);
             this.dtpWSDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpWSDate.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
             this.dtpWSDate.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.dtpWSDate.Name = "dtpWSDate";
-            this.dtpWSDate.Size = new System.Drawing.Size(209, 30);
+            this.dtpWSDate.Size = new System.Drawing.Size(311, 30);
             this.dtpWSDate.TabIndex = 56;
             this.dtpWSDate.Value = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             // 
@@ -438,7 +373,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbName.Location = new System.Drawing.Point(195, 196);
+            this.lbName.Location = new System.Drawing.Point(410, 293);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(98, 28);
             this.lbName.TabIndex = 38;
@@ -449,7 +384,7 @@
             this.lbWSDate.AutoSize = true;
             this.lbWSDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWSDate.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbWSDate.Location = new System.Drawing.Point(623, 239);
+            this.lbWSDate.Location = new System.Drawing.Point(1241, 366);
             this.lbWSDate.Name = "lbWSDate";
             this.lbWSDate.Size = new System.Drawing.Size(138, 28);
             this.lbWSDate.TabIndex = 55;
@@ -460,7 +395,7 @@
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbPassword.Location = new System.Drawing.Point(623, 284);
+            this.lbPassword.Location = new System.Drawing.Point(1241, 435);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(96, 28);
             this.lbPassword.TabIndex = 39;
@@ -469,10 +404,10 @@
             // txtPhoneNB
             // 
             this.txtPhoneNB.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNB.Location = new System.Drawing.Point(802, 145);
+            this.txtPhoneNB.Location = new System.Drawing.Point(1496, 229);
             this.txtPhoneNB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneNB.Name = "txtPhoneNB";
-            this.txtPhoneNB.Size = new System.Drawing.Size(209, 30);
+            this.txtPhoneNB.Size = new System.Drawing.Size(311, 30);
             this.txtPhoneNB.TabIndex = 54;
             // 
             // lbStaffID
@@ -480,7 +415,7 @@
             this.lbStaffID.AutoSize = true;
             this.lbStaffID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStaffID.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbStaffID.Location = new System.Drawing.Point(195, 149);
+            this.lbStaffID.Location = new System.Drawing.Point(410, 228);
             this.lbStaffID.Name = "lbStaffID";
             this.lbStaffID.Size = new System.Drawing.Size(135, 28);
             this.lbStaffID.TabIndex = 40;
@@ -491,7 +426,7 @@
             this.lbNBPhone.AutoSize = true;
             this.lbNBPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNBPhone.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbNBPhone.Location = new System.Drawing.Point(623, 149);
+            this.lbNBPhone.Location = new System.Drawing.Point(1241, 228);
             this.lbNBPhone.Name = "lbNBPhone";
             this.lbNBPhone.Size = new System.Drawing.Size(133, 28);
             this.lbNBPhone.TabIndex = 53;
@@ -502,7 +437,7 @@
             this.lbBirthday.AutoSize = true;
             this.lbBirthday.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBirthday.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbBirthday.Location = new System.Drawing.Point(195, 283);
+            this.lbBirthday.Location = new System.Drawing.Point(410, 423);
             this.lbBirthday.Name = "lbBirthday";
             this.lbBirthday.Size = new System.Drawing.Size(102, 28);
             this.lbBirthday.TabIndex = 41;
@@ -512,10 +447,10 @@
             // 
             this.cmbBrach.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBrach.FormattingEnabled = true;
-            this.cmbBrach.Location = new System.Drawing.Point(802, 192);
+            this.cmbBrach.Location = new System.Drawing.Point(1496, 296);
             this.cmbBrach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBrach.Name = "cmbBrach";
-            this.cmbBrach.Size = new System.Drawing.Size(209, 32);
+            this.cmbBrach.Size = new System.Drawing.Size(311, 32);
             this.cmbBrach.TabIndex = 52;
             // 
             // lbGender
@@ -523,7 +458,7 @@
             this.lbGender.AutoSize = true;
             this.lbGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGender.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbGender.Location = new System.Drawing.Point(195, 239);
+            this.lbGender.Location = new System.Drawing.Point(410, 358);
             this.lbGender.Name = "lbGender";
             this.lbGender.Size = new System.Drawing.Size(90, 28);
             this.lbGender.TabIndex = 43;
@@ -534,7 +469,7 @@
             this.lbBrach.AutoSize = true;
             this.lbBrach.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBrach.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbBrach.Location = new System.Drawing.Point(623, 196);
+            this.lbBrach.Location = new System.Drawing.Point(1241, 297);
             this.lbBrach.Name = "lbBrach";
             this.lbBrach.Size = new System.Drawing.Size(126, 28);
             this.lbBrach.TabIndex = 51;
@@ -543,50 +478,50 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(802, 278);
+            this.txtPassword.Location = new System.Drawing.Point(1496, 432);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(209, 30);
+            this.txtPassword.Size = new System.Drawing.Size(311, 30);
             this.txtPassword.TabIndex = 44;
             // 
             // dtpBirthday
             // 
             this.dtpBirthday.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthday.Location = new System.Drawing.Point(345, 278);
+            this.dtpBirthday.Location = new System.Drawing.Point(624, 422);
             this.dtpBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpBirthday.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpBirthday.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(209, 30);
+            this.dtpBirthday.Size = new System.Drawing.Size(311, 30);
             this.dtpBirthday.TabIndex = 50;
             this.dtpBirthday.Value = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             // 
             // txtStaffID
             // 
             this.txtStaffID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStaffID.Location = new System.Drawing.Point(345, 143);
+            this.txtStaffID.Location = new System.Drawing.Point(624, 229);
             this.txtStaffID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStaffID.Name = "txtStaffID";
-            this.txtStaffID.Size = new System.Drawing.Size(209, 30);
+            this.txtStaffID.Size = new System.Drawing.Size(311, 30);
             this.txtStaffID.TabIndex = 45;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(345, 192);
+            this.txtName.Location = new System.Drawing.Point(624, 294);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(209, 30);
+            this.txtName.Size = new System.Drawing.Size(311, 30);
             this.txtName.TabIndex = 46;
             // 
             // rdoNu
             // 
             this.rdoNu.AutoSize = true;
             this.rdoNu.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdoNu.Location = new System.Drawing.Point(420, 236);
+            this.rdoNu.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.rdoNu.Location = new System.Drawing.Point(698, 360);
             this.rdoNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoNu.Name = "rdoNu";
             this.rdoNu.Size = new System.Drawing.Size(51, 28);
@@ -599,8 +534,8 @@
             // 
             this.rdoNam.AutoSize = true;
             this.rdoNam.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdoNam.Location = new System.Drawing.Point(348, 235);
+            this.rdoNam.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.rdoNam.Location = new System.Drawing.Point(626, 359);
             this.rdoNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdoNam.Name = "rdoNam";
             this.rdoNam.Size = new System.Drawing.Size(67, 28);
@@ -614,7 +549,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1064, 442);
+            this.ClientSize = new System.Drawing.Size(1906, 922);
             this.Controls.Add(this.pnMain);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -656,11 +591,6 @@
         private System.Windows.Forms.RadioButton rdoNu;
         private System.Windows.Forms.RadioButton rdoNam;
         private System.Windows.Forms.ComboBox cmbMNV;
-        private System.Windows.Forms.Label lbNName;
-        private System.Windows.Forms.Label lbNPass;
-        private System.Windows.Forms.Label lbNBranch;
-        private System.Windows.Forms.Label lbNPhoneNumber;
-        private System.Windows.Forms.Label lbNGender;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton btnCancel;

@@ -72,14 +72,14 @@
             this.dgvShowTime.Name = "dgvShowTime";
             this.dgvShowTime.RowHeadersWidth = 51;
             this.dgvShowTime.RowTemplate.Height = 24;
-            this.dgvShowTime.Size = new System.Drawing.Size(884, 133);
+            this.dgvShowTime.Size = new System.Drawing.Size(1615, 183);
             this.dgvShowTime.TabIndex = 0;
             this.dgvShowTime.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShowTime_CellContentClick);
             this.dgvShowTime.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvShowTime_RowHeaderMouseClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(244)))), ((int)(((byte)(230)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
@@ -89,7 +89,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 442);
+            this.panel1.Size = new System.Drawing.Size(291, 922);
             this.panel1.TabIndex = 6;
             // 
             // btnCancel
@@ -109,9 +109,9 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Violet;
             this.btnCancel.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(32, 359);
+            this.btnCancel.Location = new System.Drawing.Point(-1, 520);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(119, 40);
+            this.btnCancel.Size = new System.Drawing.Size(291, 40);
             this.btnCancel.TabIndex = 97;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseTransparentBackground = true;
@@ -134,9 +134,9 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Violet;
             this.btnAdd.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(32, 142);
+            this.btnAdd.Location = new System.Drawing.Point(-1, 142);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(118, 40);
+            this.btnAdd.Size = new System.Drawing.Size(291, 40);
             this.btnAdd.TabIndex = 94;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseTransparentBackground = true;
@@ -159,9 +159,9 @@
             this.btnDelete.ForeColor = System.Drawing.Color.Violet;
             this.btnDelete.Image = global::QLRapPhim.Properties.Resources.icons8_delete_64;
             this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDelete.Location = new System.Drawing.Point(32, 282);
+            this.btnDelete.Location = new System.Drawing.Point(-1, 394);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(118, 40);
+            this.btnDelete.Size = new System.Drawing.Size(291, 40);
             this.btnDelete.TabIndex = 96;
             this.btnDelete.Text = "XÓA";
             this.btnDelete.UseTransparentBackground = true;
@@ -184,9 +184,9 @@
             this.btnChange.ForeColor = System.Drawing.Color.Violet;
             this.btnChange.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnChange.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnChange.Location = new System.Drawing.Point(31, 214);
+            this.btnChange.Location = new System.Drawing.Point(-1, 268);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(119, 40);
+            this.btnChange.Size = new System.Drawing.Size(291, 40);
             this.btnChange.TabIndex = 95;
             this.btnChange.Text = "SỬA";
             this.btnChange.UseTransparentBackground = true;
@@ -197,7 +197,7 @@
             this.lbShowTime.AutoSize = true;
             this.lbShowTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbShowTime.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbShowTime.Location = new System.Drawing.Point(633, 178);
+            this.lbShowTime.Location = new System.Drawing.Point(1246, 247);
             this.lbShowTime.Name = "lbShowTime";
             this.lbShowTime.Size = new System.Drawing.Size(110, 28);
             this.lbShowTime.TabIndex = 8;
@@ -208,7 +208,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label2.Location = new System.Drawing.Point(633, 230);
+            this.label2.Location = new System.Drawing.Point(1246, 311);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 28);
             this.label2.TabIndex = 10;
@@ -219,7 +219,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label4.Location = new System.Drawing.Point(633, 277);
+            this.label4.Location = new System.Drawing.Point(1246, 375);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 28);
             this.label4.TabIndex = 12;
@@ -228,50 +228,50 @@
             // txtShowTimeID
             // 
             this.txtShowTimeID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShowTimeID.Location = new System.Drawing.Point(356, 172);
+            this.txtShowTimeID.Location = new System.Drawing.Point(616, 248);
             this.txtShowTimeID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtShowTimeID.Name = "txtShowTimeID";
-            this.txtShowTimeID.Size = new System.Drawing.Size(220, 30);
+            this.txtShowTimeID.Size = new System.Drawing.Size(311, 30);
             this.txtShowTimeID.TabIndex = 13;
             // 
             // txtFilm
             // 
             this.txtFilm.Enabled = false;
             this.txtFilm.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilm.Location = new System.Drawing.Point(783, 224);
+            this.txtFilm.Location = new System.Drawing.Point(1477, 311);
             this.txtFilm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFilm.Name = "txtFilm";
-            this.txtFilm.Size = new System.Drawing.Size(220, 30);
+            this.txtFilm.Size = new System.Drawing.Size(316, 30);
             this.txtFilm.TabIndex = 14;
             // 
             // txtCinema
             // 
             this.txtCinema.Enabled = false;
             this.txtCinema.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCinema.Location = new System.Drawing.Point(783, 267);
+            this.txtCinema.Location = new System.Drawing.Point(1477, 375);
             this.txtCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCinema.Name = "txtCinema";
-            this.txtCinema.Size = new System.Drawing.Size(220, 30);
+            this.txtCinema.Size = new System.Drawing.Size(316, 30);
             this.txtCinema.TabIndex = 15;
             // 
             // dtpShowTime
             // 
             this.dtpShowTime.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpShowTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpShowTime.Location = new System.Drawing.Point(783, 175);
+            this.dtpShowTime.Location = new System.Drawing.Point(1477, 247);
             this.dtpShowTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpShowTime.Name = "dtpShowTime";
-            this.dtpShowTime.Size = new System.Drawing.Size(220, 30);
+            this.dtpShowTime.Size = new System.Drawing.Size(316, 30);
             this.dtpShowTime.TabIndex = 16;
             // 
             // cmbFilmID
             // 
             this.cmbFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFilmID.FormattingEnabled = true;
-            this.cmbFilmID.Location = new System.Drawing.Point(356, 224);
+            this.cmbFilmID.Location = new System.Drawing.Point(616, 312);
             this.cmbFilmID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbFilmID.Name = "cmbFilmID";
-            this.cmbFilmID.Size = new System.Drawing.Size(220, 32);
+            this.cmbFilmID.Size = new System.Drawing.Size(311, 32);
             this.cmbFilmID.TabIndex = 17;
             this.cmbFilmID.SelectedIndexChanged += new System.EventHandler(this.cmbFilmID_SelectedIndexChanged);
             // 
@@ -279,10 +279,10 @@
             // 
             this.cmbCinemaID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCinemaID.FormattingEnabled = true;
-            this.cmbCinemaID.Location = new System.Drawing.Point(356, 267);
+            this.cmbCinemaID.Location = new System.Drawing.Point(616, 378);
             this.cmbCinemaID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCinemaID.Name = "cmbCinemaID";
-            this.cmbCinemaID.Size = new System.Drawing.Size(220, 32);
+            this.cmbCinemaID.Size = new System.Drawing.Size(311, 32);
             this.cmbCinemaID.TabIndex = 18;
             this.cmbCinemaID.SelectedIndexChanged += new System.EventHandler(this.cmbCinemaID_SelectedIndexChanged);
             // 
@@ -290,10 +290,10 @@
             // 
             this.panel2.Controls.Add(this.dgvShowTime);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(180, 0);
+            this.panel2.Location = new System.Drawing.Point(291, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 133);
+            this.panel2.Size = new System.Drawing.Size(1615, 183);
             this.panel2.TabIndex = 19;
             // 
             // lbNote
@@ -301,7 +301,7 @@
             this.lbNote.AutoSize = true;
             this.lbNote.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNote.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbNote.Location = new System.Drawing.Point(362, 382);
+            this.lbNote.Location = new System.Drawing.Point(781, 544);
             this.lbNote.Name = "lbNote";
             this.lbNote.Size = new System.Drawing.Size(179, 17);
             this.lbNote.TabIndex = 24;
@@ -312,7 +312,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label1.Location = new System.Drawing.Point(210, 316);
+            this.label1.Location = new System.Drawing.Point(385, 442);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 28);
             this.label1.TabIndex = 82;
@@ -322,10 +322,10 @@
             // 
             this.cmbRoomID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRoomID.FormattingEnabled = true;
-            this.cmbRoomID.Location = new System.Drawing.Point(356, 313);
+            this.cmbRoomID.Location = new System.Drawing.Point(616, 444);
             this.cmbRoomID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbRoomID.Name = "cmbRoomID";
-            this.cmbRoomID.Size = new System.Drawing.Size(220, 32);
+            this.cmbRoomID.Size = new System.Drawing.Size(311, 32);
             this.cmbRoomID.TabIndex = 83;
             // 
             // label5
@@ -333,7 +333,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label5.Location = new System.Drawing.Point(633, 316);
+            this.label5.Location = new System.Drawing.Point(1242, 439);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 28);
             this.label5.TabIndex = 84;
@@ -343,10 +343,10 @@
             // 
             this.cmbHour.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbHour.FormattingEnabled = true;
-            this.cmbHour.Location = new System.Drawing.Point(783, 316);
+            this.cmbHour.Location = new System.Drawing.Point(1477, 439);
             this.cmbHour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbHour.Name = "cmbHour";
-            this.cmbHour.Size = new System.Drawing.Size(220, 32);
+            this.cmbHour.Size = new System.Drawing.Size(316, 32);
             this.cmbHour.TabIndex = 85;
             // 
             // btnSearch
@@ -366,7 +366,7 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Violet;
             this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(597, 373);
+            this.btnSearch.Location = new System.Drawing.Point(1153, 535);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(159, 40);
             this.btnSearch.TabIndex = 92;
@@ -391,7 +391,7 @@
             this.btnDeleteDB.ForeColor = System.Drawing.Color.Violet;
             this.btnDeleteDB.Image = global::QLRapPhim.Properties.Resources.icons8_delete_64;
             this.btnDeleteDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeleteDB.Location = new System.Drawing.Point(828, 373);
+            this.btnDeleteDB.Location = new System.Drawing.Point(991, 659);
             this.btnDeleteDB.Name = "btnDeleteDB";
             this.btnDeleteDB.Size = new System.Drawing.Size(135, 40);
             this.btnDeleteDB.TabIndex = 96;
@@ -416,7 +416,7 @@
             this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
             this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDB.Location = new System.Drawing.Point(829, 373);
+            this.btnUpdateDB.Location = new System.Drawing.Point(1280, 659);
             this.btnUpdateDB.Name = "btnUpdateDB";
             this.btnUpdateDB.Size = new System.Drawing.Size(132, 40);
             this.btnUpdateDB.TabIndex = 97;
@@ -441,7 +441,7 @@
             this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
             this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDB.Location = new System.Drawing.Point(828, 373);
+            this.btnAddDB.Location = new System.Drawing.Point(704, 659);
             this.btnAddDB.Name = "btnAddDB";
             this.btnAddDB.Size = new System.Drawing.Size(133, 40);
             this.btnAddDB.TabIndex = 98;
@@ -454,7 +454,7 @@
             this.lbShowTimeID.AutoSize = true;
             this.lbShowTimeID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbShowTimeID.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbShowTimeID.Location = new System.Drawing.Point(210, 175);
+            this.lbShowTimeID.Location = new System.Drawing.Point(385, 247);
             this.lbShowTimeID.Name = "lbShowTimeID";
             this.lbShowTimeID.Size = new System.Drawing.Size(94, 28);
             this.lbShowTimeID.TabIndex = 7;
@@ -465,7 +465,7 @@
             this.lbFilmID.AutoSize = true;
             this.lbFilmID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFilmID.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbFilmID.Location = new System.Drawing.Point(210, 226);
+            this.lbFilmID.Location = new System.Drawing.Point(385, 312);
             this.lbFilmID.Name = "lbFilmID";
             this.lbFilmID.Size = new System.Drawing.Size(89, 28);
             this.lbFilmID.TabIndex = 9;
@@ -476,7 +476,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label3.Location = new System.Drawing.Point(210, 274);
+            this.label3.Location = new System.Drawing.Point(385, 377);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 28);
             this.label3.TabIndex = 11;
@@ -487,7 +487,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1064, 442);
+            this.ClientSize = new System.Drawing.Size(1906, 922);
             this.Controls.Add(this.btnDeleteDB);
             this.Controls.Add(this.btnUpdateDB);
             this.Controls.Add(this.btnAddDB);
