@@ -40,7 +40,6 @@
             this.rạpPhimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchRạpChiếuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doanhThuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.phToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +60,7 @@
             this.pnTop.Controls.Add(this.menuStrip1);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnTop.Margin = new System.Windows.Forms.Padding(2);
             this.pnTop.Name = "pnTop";
             this.pnTop.Size = new System.Drawing.Size(1443, 52);
             this.pnTop.TabIndex = 11;
@@ -72,7 +71,7 @@
             this.guna2PictureBox2.Image = global::QLRapPhim.Properties.Resources.boobookitty;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(659, 2);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(245, 33);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,8 +140,7 @@
             // 
             this.rạpPhimToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.danhSáchRạpChiếuToolStripMenuItem,
-            this.doanhThuToolStripMenuItem1,
-            this.phToolStripMenuItem});
+            this.doanhThuToolStripMenuItem1});
             this.rạpPhimToolStripMenuItem.Name = "rạpPhimToolStripMenuItem";
             this.rạpPhimToolStripMenuItem.Size = new System.Drawing.Size(100, 48);
             this.rạpPhimToolStripMenuItem.Text = "Rạp Chiếu";
@@ -160,12 +158,6 @@
             this.doanhThuToolStripMenuItem1.Size = new System.Drawing.Size(247, 28);
             this.doanhThuToolStripMenuItem1.Text = "Doanh Thu";
             this.doanhThuToolStripMenuItem1.Click += new System.EventHandler(this.doanhThuToolStripMenuItem1_Click);
-            // 
-            // phToolStripMenuItem
-            // 
-            this.phToolStripMenuItem.Name = "phToolStripMenuItem";
-            this.phToolStripMenuItem.Size = new System.Drawing.Size(247, 28);
-            this.phToolStripMenuItem.Text = "Phòng Chiếu";
             // 
             // nhânViênToolStripMenuItem
             // 
@@ -197,7 +189,7 @@
             this.thoátToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thoátToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
-            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(188, 28);
+            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(163, 28);
             this.thoátToolStripMenuItem1.Text = "Thoát";
             this.thoátToolStripMenuItem1.Click += new System.EventHandler(this.thoátToolStripMenuItem1_Click);
             // 
@@ -206,7 +198,7 @@
             this.đăngXuấtToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.đăngXuấtToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(188, 28);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(163, 28);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -217,7 +209,7 @@
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Font = new System.Drawing.Font("Calibri", 7.841584F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.pnMain.Location = new System.Drawing.Point(0, 52);
-            this.pnMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnMain.Margin = new System.Windows.Forms.Padding(2);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(1443, 787);
             this.pnMain.TabIndex = 12;
@@ -229,14 +221,13 @@
             this.guna2PictureBox1.Image = global::QLRapPhim.Properties.Resources.wPWKnGo;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(1443, 787);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // frmAdmin
             // 
@@ -249,7 +240,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -282,7 +273,6 @@
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchNhânViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
