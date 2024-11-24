@@ -73,6 +73,16 @@ namespace QLRapPhim.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anh {
+            get {
+                object obj = ResourceManager.GetObject("anh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boobookitty {
             get {
                 object obj = ResourceManager.GetObject("boobookitty", resourceCulture);
