@@ -74,9 +74,9 @@ namespace QLRapPhim
             {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
-            DataTable film = process.ReadDatabase("Select FilmID From tblFilm");
-            DataTable cinema = process.ReadDatabase("Select CinemaID From tblCinema");
-            DataTable room = process.ReadDatabase("Select RoomName from tblShowRoom");
+            DataTable film = process.ReadDatabase("Select FilmID From tblFilm where Status = N'"+"Đang Chiếu"+"'");
+            DataTable cinema = process.ReadDatabase("Select CinemaID From tblCinema where Status = N'"+"Hoạt Động"+"'");
+            DataTable room = process.ReadDatabase("Select RoomName from tblShowRoom inner join tblCinema on tblShowRoom.CinemaID = tblCinema.CinemaID where Status = N'"+"Hoạt Động"+"'");
             for (int i = 0; i < film.Rows.Count; i++)
             {
                 cmbFilmID.Items.Add(film.Rows[i]["FilmID"]);
