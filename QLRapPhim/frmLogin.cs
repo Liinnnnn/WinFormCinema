@@ -25,7 +25,8 @@ namespace QLRapPhim
             {
                 MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
             }
-            else{
+            else
+            {
                 DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
                 if (dt.Rows.Count == 0)
                 {
@@ -46,6 +47,7 @@ namespace QLRapPhim
                         frmAdmin frmAdmin = new frmAdmin();
                         frmAdmin.ShowDialog();
                     }
+                    this.Close();
                 }
             }
         }
@@ -61,13 +63,15 @@ namespace QLRapPhim
 
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) {
+            if (e.KeyCode == Keys.Enter)
+            {
                 if (txtUserName.Text == "" || txtPassword.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
                 }
-                else{
-                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
+                else
+                {
+                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Status = N'Đang làm'");
                     if (dt.Rows.Count == 0)
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
@@ -100,27 +104,26 @@ namespace QLRapPhim
                 {
                     MessageBox.Show("Vui lòng nhập đẩy đủ thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK);
                 }
-                else{
-                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "'");
-                    if (dt.Rows.Count == 0)
+                else
+                {
+                    DataTable dt1 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Status = N'Đang làm' and Type_Account = 'Staff'");
+                    DataTable dt2 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Type_Account = 'Admin'");
+                    if (dt2.Rows.Count == 0 && dt1.Rows.Count == 0)
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
                     }
-                    else
+                    else if (dt2.Rows.Count > 0)
+                    {
+                        frmAdmin frmAdmin = new frmAdmin();
+                        frmAdmin.ShowDialog();
+                    }
+                    else if (dt1.Rows.Count > 0)
                     {
                         this.Hide();
-                        if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
-                        {
-                            string staffID = dt.Rows[0]["StaffID"].ToString();
-                            string cinemaID = dt.Rows[0]["CinemaID"].ToString();
-                            frmMain main = new frmMain(staffID, cinemaID);
-                            main.ShowDialog();
-                        }
-                        else
-                        {
-                            frmAdmin frmAdmin = new frmAdmin();
-                            frmAdmin.ShowDialog();
-                        }
+                        string staffID = dt1.Rows[0]["StaffID"].ToString();
+                        string cinemaID = dt1.Rows[0]["CinemaID"].ToString();
+                        frmMain main = new frmMain(staffID, cinemaID);
+                        main.ShowDialog();
                     }
                 }
             }

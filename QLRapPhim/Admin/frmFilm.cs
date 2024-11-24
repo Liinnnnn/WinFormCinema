@@ -35,7 +35,7 @@ namespace QLRapPhim
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
 
-            DataTable dtf = process.ReadDatabase("Select FilmID From tblFilm");
+            DataTable dtf = process.ReadDatabase("Select FilmID From tblFilm Where Status = N'"+"Đang Chiếu"+"'");
             foreach (DataRow row in dtf.Rows)
             {
                 cmbFilmID.Items.Add(row["FilmID"].ToString());
@@ -89,9 +89,6 @@ namespace QLRapPhim
             btnAnh.Enabled = false;
             LoadData();
             dgvFilm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            comboBox1.Items.Add("Đang chiếu");
-            comboBox1.Items.Add("Ngừng chiếu");
         }
 
         private void dgvFilm_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -123,12 +120,10 @@ namespace QLRapPhim
                     pbFilm.Image = null; 
                 }
             }
-            string status = dgvFilm.Rows[i].Cells["Status"].Value?.ToString();
+            if (dgvFilm.Rows[i].Cells["Status"].Value.ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
+            else comboBox1.SelectedIndex = 1;
 
-            if (status == "Đang chiếu" && comboBox1.SelectedIndex != 0)
-                comboBox1.SelectedIndex = 0;
-            else if (status == "Ngừng chiếu" && comboBox1.SelectedIndex != 1)
-                comboBox1.SelectedIndex = 1;
+           
         }
 
 
@@ -246,7 +241,7 @@ namespace QLRapPhim
                             pbFilm.Image = null;
                         }
                     }
-                    if (dt.Rows[0]["Status"].ToString() == "Đang chiếu") comboBox1.SelectedIndex = 0;
+                    if (dt.Rows[0]["Status"].ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
                     else comboBox1.SelectedIndex = 1;
                 }
             }
