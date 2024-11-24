@@ -77,7 +77,7 @@ namespace QLRapPhim
 
         private void doanhThuToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            OpenChilForm(new frmFRevenue());
+            OpenChilForm(new frmCRevenue());
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
