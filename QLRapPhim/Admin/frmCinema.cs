@@ -65,8 +65,8 @@ namespace QLRapPhim
             cmbCinemaID.Enabled = true;
             LoadData();
 
-            cmbStatus.Items.Add("Hoạt Động");
-            cmbStatus.Items.Add("Dừng Hoạt Động");
+            cmbStatus.Items.Add("Hoạt động");
+            cmbStatus.Items.Add("Dừng hoạt động");
             dgvCinema.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -77,7 +77,7 @@ namespace QLRapPhim
             txtCinemaID.Text = dgvCinema.Rows[i].Cells["CinemaID"].Value.ToString();
             txtCinemaName.Text = dgvCinema.Rows[i].Cells["CinemaName"].Value.ToString();
             txtAddress.Text = dgvCinema.Rows[i].Cells["Address"].Value.ToString();
-            if (dgvCinema.Rows[i].Cells["Status"].Value.ToString() == "Hoạt Động") cmbStatus.SelectedIndex = 0;
+            if (dgvCinema.Rows[i].Cells["Status"].Value.ToString() == "Hoạt động") cmbStatus.SelectedIndex = 0;
             else cmbStatus.SelectedIndex = 1;
             txtCinemaID.Enabled = false;
         }
@@ -132,7 +132,7 @@ namespace QLRapPhim
                     txtCinemaID.Text = dt.Rows[0]["CinemaID"].ToString();
                     txtCinemaName.Text = dt.Rows[0]["CinemaName"].ToString();
                     txtAddress.Text = dt.Rows[0]["Address"].ToString();
-                    if (dt.Rows[0]["Status"].ToString() == "Hoạt Động") cmbStatus.SelectedIndex = 0;
+                    if (dt.Rows[0]["Status"].ToString() == "Hoạt động") cmbStatus.SelectedIndex = 0;
                     else cmbStatus.SelectedIndex = 1;
                 }
             }    

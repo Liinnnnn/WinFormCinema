@@ -74,9 +74,9 @@ namespace QLRapPhim
             {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
-            DataTable film = process.ReadDatabase("Select FilmID From tblFilm");
-            DataTable cinema = process.ReadDatabase("Select CinemaID From tblCinema");
-            DataTable room = process.ReadDatabase("Select RoomName from tblShowRoom");
+            DataTable film = process.ReadDatabase("Select FilmID From tblFilm where Status = N'"+"Đang Chiếu"+"'");
+            DataTable cinema = process.ReadDatabase("Select CinemaID From tblCinema where Status = N'"+"Hoạt Động"+"'");
+            //DataTable room = process.ReadDatabase("Select RoomName from tblShowRoom inner join tblCinema on tblShowRoom.CinemaID = tblCinema.CinemaID where Status = N'"+"Hoạt Động"+"'");
             for (int i = 0; i < film.Rows.Count; i++)
             {
                 cmbFilmID.Items.Add(film.Rows[i]["FilmID"]);
@@ -86,10 +86,10 @@ namespace QLRapPhim
             {
                 cmbCinemaID.Items.Add(cinema.Rows[i]["CinemaID"]);
             }
-            for (int i = 0; i < room.Rows.Count; i++)
-            {
-                cmbRoomID.Items.Add(room.Rows[i]["RoomName"]);
-            }
+            //for (int i = 0; i < room.Rows.Count; i++)
+            //{
+            //    cmbRoomID.Items.Add(room.Rows[i]["RoomName"]);
+            //}
             dtpShowTime.MinDate = DateTime.Today;
             dtpShowTime.MaxDate = DateTime.Today.AddDays(7);
             cmbHour.Items.Add("13:00");
@@ -125,6 +125,14 @@ namespace QLRapPhim
             string selectd = cmbCinemaID.SelectedItem.ToString();
             DataTable dt = process.ReadDatabase("Select CinemaName From tblCinema where CinemaID = '" + selectd + "'");
             txtCinema.Text = dt.Rows[0]["CinemaName"].ToString();
+            cmbRoomID.Items.Clear();
+            cmbRoomID.Text = "";
+            cmbRoomID.SelectedIndex = -1;
+            DataTable check = process.ReadDatabase("Select RoomName From tblShowroom where CinemaID = '" + selectd + "'");
+            for (int i = 0; i < check.Rows.Count; i++)
+            {
+                cmbRoomID.Items.Add(check.Rows[i]["RoomName"]);
+            }
         }
 
 
@@ -140,15 +148,20 @@ namespace QLRapPhim
             cmbCinemaID.Text = "";
             cmbFilmID.Text = "";
             cmbRoomID.Text = "";
-            DataTable dt = process.ReadDatabase("Select top 1 ShowTimeID from tblShowtime order by ShowTimeID Desc");
+            DataTable dt = process.ReadDatabase("select top 1 ShowTimeID from tblShowtime order by cast(substring(ShowTimeID, 3, LEN(ShowTimeID)) as int ) DESC");
+
             if (dt.Rows.Count == 0)
             {
                 txtShowTimeID.Text = "ST1";
             }
             else
             {
-                string number = Convert.ToString(int.Parse(dt.Rows[0]["ShowTimeID"].ToString().Substring(2)) + 1);
-                txtShowTimeID.Text = $"ST{number}";
+
+                string number = dt.Rows[0]["ShowTimeID"].ToString().Substring(2);
+                int newNumber = int.Parse(number) + 1;
+
+
+                txtShowTimeID.Text = $"ST{newNumber}";
             }
         }
 
@@ -222,16 +235,35 @@ namespace QLRapPhim
             else
             {
                 string roomName = cmbRoomID.Text;
-                string queryRoomID = "SELECT RoomID FROM tblShowroom WHERE RoomName = '" + roomName + "'";
+                string queryRoomID = "select RoomID FROM tblShowroom where RoomName = '" + roomName + "'";
                 DataTable dtRoom = process.ReadDatabase(queryRoomID);
+                if (dtRoom.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy mã phòng!", "Thông báo");
+                    return;
+                }
                 string room = dtRoom.Rows[0]["RoomID"].ToString();
-                int roomID=Convert.ToInt32(room);
+                int roomID = Convert.ToInt32(room);
                 string showtimeFormatted = dtpShowTime.Value.ToString("yyyy-MM-dd ");
                 //string query = "Select ShowtimeID from tblShowtime where S ";
                 //DataTable dt = process.ReadDatabase(query);
-                process.ChangeDatabase("insert into tblShowtime (ShowtimeID, Showtime, FilmID, CinemaID,RoomID,ShowtimeHour) values ('" + txtShowTimeID.Text + "','" + showtimeFormatted + "','" + cmbFilmID.Text + "','" + cmbCinemaID.Text + "','" + roomID + "','" + cmbHour.Text + "')");
-                LoadData();
-                Clear();
+
+                string checkQuery = "select * from tblShowtime where Showtime = '" + showtimeFormatted + "' AND ShowtimeHour = '" + cmbHour.Text + "' AND RoomID = " + roomID;
+                DataTable dtCheck = process.ReadDatabase(checkQuery);
+
+                if (dtCheck.Rows.Count > 0)
+                {
+                    MessageBox.Show("Lịch chiếu này đã tồn tại trong hệ thống!", "Thông báo");
+                }
+                else
+                {
+
+                    process.ChangeDatabase("insert into tblShowtime (ShowtimeID, Showtime, FilmID, CinemaID, RoomID, ShowtimeHour) " +
+                                           "values ('" + txtShowTimeID.Text + "','" + showtimeFormatted + "','" + cmbFilmID.Text + "','" + cmbCinemaID.Text + "'," + roomID + ",'" + cmbHour.Text + "')");
+                    MessageBox.Show("Lịch chiếu đã được thêm thành công.", "Thông báo", MessageBoxButtons.OK);
+                    LoadData();
+                    Clear();
+                }
             }
         }
 
