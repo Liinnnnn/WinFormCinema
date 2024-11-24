@@ -14,6 +14,7 @@ CREATE TABLE tblCinema (
     CinemaID varchar(20) primary key,
     CinemaName NVARCHAR(50) NOT NULL,
 	Status nvarchar(20),
+	Amount int,
     Address NVARCHAR(100)
 );
 
@@ -106,10 +107,10 @@ insert tblUser(TypeUser,BirthDay,Gender,Name) values('Student','2004-04-18','Mal
 
 
 --insert tblCinema
-insert tblCinema (CinemaID,CinemaName,Address,Status) values (N'SKPGP',N'Skope Giải Phóng',N'67-Định Công-Hoàng Mai-Hà Nội',N'Hoạt động')
-insert tblCinema (CinemaID,CinemaName,Address,Status) values (N'SKPNT',N'Skope Nguyễn Trãi',N'120-Nguyễn Trãi-Thanh Xuân-Hà Nội',N'Dừng Hoạt động')
-insert tblCinema (CinemaID,CinemaName,Address,Status) values (N'SKPCG',N'Skope Cầu Giấy',N'3-Cầu Giấy-Đống Đa-Hà Nội',N'Hoạt động')
-insert tblCinema (CinemaID,CinemaName,Address,Status) values (N'SKPHD',N'Skope Hải Dương',N'158-Ngô Quyền-Hải Dương',N'Hoạt động')
+insert tblCinema (CinemaID,CinemaName,Address,Status,Amount) values (N'SKPGP',N'Skope Giải Phóng',N'67-Định Công-Hoàng Mai-Hà Nội',N'Hoạt động',4)
+insert tblCinema (CinemaID,CinemaName,Address,Status,Amount) values (N'SKPNT',N'Skope Nguyễn Trãi',N'120-Nguyễn Trãi-Thanh Xuân-Hà Nội',N'Dừng Hoạt động',3)
+insert tblCinema (CinemaID,CinemaName,Address,Status,Amount) values (N'SKPCG',N'Skope Cầu Giấy',N'3-Cầu Giấy-Đống Đa-Hà Nội',N'Hoạt động',5)
+insert tblCinema (CinemaID,CinemaName,Address,Status,Amount) values (N'SKPHD',N'Skope Hải Dương',N'158-Ngô Quyền-Hải Dương',N'Hoạt động',4)
 --insert tblStaff
 insert tblStaff (StaffID,Name,Password,Type_Account) values ('Admin','admin','admin','Admin')
 insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV001',N'Nguyễn Thế Định',N'Nam','5-18-2004','0984983258','2-25-2024','123','Staff','SKPHD',N'Đang làm')
@@ -120,7 +121,7 @@ insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password
 insert tblStaff (StaffID,Name,Gender,BirthDay,NumberPhone,WorkStartDate,Password,Type_Account,CinemaID,Status) values (N'NV006',N'Nguyễn Minh Hiếu','Nam','4-4-2004','0985746375','2-25-2024','123','Staff','SKPHD',N'Đang làm')
 --insert tblFilm
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'PB',N'Peaky Blinders',N'Tiếng Anh',N'Steven Knight','9-12-2013',50000,N'Đang chiếu','/Resources/peakyblinders.jpg','17')
-insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'CC',N'CoCo',N'Tiếng Anh',N'Lee Unkrich','10-20-2017',70000,'Đang chiếu','/Resources/coco.png','13')
+insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'CC',N'CoCo',N'Tiếng Anh',N'Lee Unkrich','10-20-2017',70000,N'Đang chiếu','/Resources/coco.png','13')
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'MDD',N'Mộ Đom Đóm',N'Tiếng Nhật',N'Takahata Isao','4-16-1988',70000,N'Đang chiếu','/Resources/modomdom.jpg','13')
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'BWY',N'Be With You',N'Tiếng Hàn',N'Lee Jang-hoon','3-14-2018',70000,N'Đang chiếu','/Resources/bewithyou.jpg','13')
 insert tblFilm (FilmID,Name,Language,Director,ProductionDate,Price,Status,FilmImg,AgeAllowed) values (N'NBN',N'Nhà Bà Nữ',N'Tiếng Việt',N'Trấn Thành','1-11-2523',80000,N'Ngừng chiếu','/Resources/nhabanu.jpg','13')

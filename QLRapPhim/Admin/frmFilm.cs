@@ -20,14 +20,13 @@ namespace QLRapPhim
         {
             cmbFilmID.Items.Clear();
             
-            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate, Price,FilmImg, Status From tblFilm");
+            DataTable dt = process.ReadDatabase("Select FilmID, Name, Language, Director, ProductionDate,FilmImg, Status From tblFilm");
             dgvFilm.DataSource = dt;
             dgvFilm.Columns["FilmID"].HeaderText = "Mã Phim";
             dgvFilm.Columns["Name"].HeaderText = "Tên Phim";
             dgvFilm.Columns["Language"].HeaderText = "Ngôn Ngữ";
             dgvFilm.Columns["Director"].HeaderText = "Đạo Diễn";
             dgvFilm.Columns["ProductionDate"].HeaderText = "Ngày Phát Hành";
-            dgvFilm.Columns["Price"].HeaderText = "Giá Vé";
             dgvFilm.Columns["FilmImg"].HeaderText = "Ảnh";
             dgvFilm.Columns["Status"].HeaderText = "Trạng Thái";
             foreach (DataGridViewColumn column in dgvFilm.Columns)
@@ -46,7 +45,6 @@ namespace QLRapPhim
             txtLanguage.Text = "";
             txtName.Text = "";
             cmbFilmID.Text = "";
-            txtPrice.Text = "";
             comboBox1.SelectedIndex = -1;
             dtpDate.Value = DateTime.Now;
         }
@@ -58,7 +56,6 @@ namespace QLRapPhim
             txtName.Text = "";
             txtLanguage.Text = "";
             txtDirector.Text = "";
-            txtPrice.Text = "";
             dtpDate.Value = DateTime.Now;
 
             lbFilmIDSearch.Enabled = true;
@@ -99,7 +96,6 @@ namespace QLRapPhim
             txtLanguage.Text = dgvFilm.Rows[i].Cells["Language"].Value.ToString();
             txtDirector.Text = dgvFilm.Rows[i].Cells["Director"].Value.ToString();
             dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
-            txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
             // Hiển thị ảnh đại diện nếu có ở bin/debug
 
             string imageFileName = dgvFilm.Rows[i].Cells["FilmImg"].Value.ToString();
@@ -120,7 +116,7 @@ namespace QLRapPhim
                     pbFilm.Image = null; 
                 }
             }
-            if (dgvFilm.Rows[i].Cells["Status"].Value.ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
+            if (dgvFilm.Rows[i].Cells["Status"].Value.ToString() == "Đang chiếu") comboBox1.SelectedIndex = 0;
             else comboBox1.SelectedIndex = 1;
 
            
@@ -165,7 +161,7 @@ namespace QLRapPhim
 
         private void btnAddDB_Click(object sender, EventArgs e)
         {
-            if(txtFilmID.Text == "" || txtName.Text == "" || txtLanguage.Text == "" || txtDirector.Text == "" || txtPrice.Text == "" || comboBox1.SelectedIndex == -1)
+            if(txtFilmID.Text == "" || txtName.Text == "" || txtLanguage.Text == "" || txtDirector.Text == "" || comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin phim", "Thông báo", MessageBoxButtons.OK);
                 //if (txtFilmID.Text == "") lbNFilmID.Visible = true;
@@ -185,7 +181,8 @@ namespace QLRapPhim
                 else
                 {
                     string imageFilePath = !string.IsNullOrEmpty(imageName) ? "/Resources/" + imageName : "";
-                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate, Price,FilmImg,Status) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Value.ToString("yyyy-MM-dd") + "', '" + txtPrice.Text + "', '"+ imageFilePath + "',N'"+comboBox1.Text+"')");
+                    process.ChangeDatabase("Insert into tblFilm (FilmID, Name, Language, Director, ProductionDate,FilmImg,Status) values ('" + txtFilmID.Text + "', N'" + txtName.Text + "', N'" + txtLanguage.Text + "', N'" + txtDirector.Text + "','" + dtpDate.Value.ToString("yyyy-MM-dd") + "', '"+ imageFilePath + "',N'"+comboBox1.Text+"')");
+                    MessageBox.Show("Thêm phim " + txtName.Text + " thành công", "Thông báo", MessageBoxButtons.OK);
                     LoadData();
                 }
             }
@@ -221,7 +218,6 @@ namespace QLRapPhim
                     txtName.Text = dt.Rows[0]["Name"].ToString();
                     txtLanguage.Text = dt.Rows[0]["Language"].ToString();
                     txtDirector.Text = dt.Rows[0]["Director"].ToString();
-                    txtPrice.Text = dt.Rows[0]["Price"].ToString();
                     dtpDate.Text = dt.Rows[0]["ProductionDate"].ToString();
                     string imageFileName = dt.Rows[0]["FilmImg"].ToString();
                     string currentDirectory = AppDomain.CurrentDomain.BaseDirectory.TrimEnd('\\');
@@ -241,7 +237,7 @@ namespace QLRapPhim
                             pbFilm.Image = null;
                         }
                     }
-                    if (dt.Rows[0]["Status"].ToString() == "Đang Chiếu") comboBox1.SelectedIndex = 0;
+                    if (dt.Rows[0]["Status"].ToString() == "Đang chiếu") comboBox1.SelectedIndex = 0;
                     else comboBox1.SelectedIndex = 1;
                 }
             }
@@ -256,7 +252,7 @@ namespace QLRapPhim
 
             else
             {
-                if (txtName.Text == "" || txtLanguage.Text == "" || txtPrice.Text == "" || txtDirector.Text == "")
+                if (txtName.Text == "" || txtLanguage.Text == "" || txtDirector.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin phim", "Thông báo", MessageBoxButtons.OK);
                 }
@@ -265,7 +261,8 @@ namespace QLRapPhim
                    if(MessageBox.Show("Bạn có muốn thay đổi thông tin phim "+txtName.Text+" không","Thông báo",MessageBoxButtons.YesNo) == DialogResult.Yes)
                    {
                         string imageFilePath = !string.IsNullOrEmpty(imageName) ? "/Resources/" + imageName : "";
-                        process.ChangeDatabase("Update tblFilm set Name = N'" + txtName.Text + "', Language = N'" + txtLanguage.Text + "', Director = N'" + txtDirector.Text + "', ProductionDate = '" + dtpDate.Value.ToString("yyyy-MM-dd") + "', Price = '" + txtPrice.Text + "', FilmImg = '" + imageFilePath + "' , Status = N'" +comboBox1.Text+"' Where FilmID = '"+txtFilmID.Text+"'");
+                        process.ChangeDatabase("Update tblFilm set Name = N'" + txtName.Text + "', Language = N'" + txtLanguage.Text + "', Director = N'" + txtDirector.Text + "', ProductionDate = '" + dtpDate.Value.ToString("yyyy-MM-dd") + "', FilmImg = '" + imageFilePath + "' , Status = N'" +comboBox1.Text+"' Where FilmID = '"+txtFilmID.Text+"'");
+                        MessageBox.Show("Sửa thông tin phim " + txtName.Text + " thành công", "Thông báo", MessageBoxButtons.OK);
                         LoadData();
                    }    
                 }
@@ -283,7 +280,6 @@ namespace QLRapPhim
             txtDirector.Text = dgvFilm.Rows[i].Cells["Director"].Value.ToString();
             dtpDate.Text = dgvFilm.Rows[i].Cells["ProductionDate"].Value.ToString();
             comboBox1.SelectedIndex = 0;
-            txtPrice.Text = dgvFilm.Rows[i].Cells["Price"].Value.ToString();
             string imageFileName = dgvFilm.Rows[i].Cells["FilmImg"].Value.ToString();
             string currentDirectory = AppDomain.CurrentDomain.BaseDirectory.TrimEnd('\\');
 
