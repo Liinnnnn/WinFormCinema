@@ -128,6 +128,7 @@
             this.cbbPhim.Name = "cbbPhim";
             this.cbbPhim.Size = new System.Drawing.Size(312, 25);
             this.cbbPhim.TabIndex = 2;
+            this.cbbPhim.SelectedIndexChanged += new System.EventHandler(this.cbbPhim_SelectedIndexChanged);
             this.cbbPhim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbbPhim_KeyPress);
             // 
             // label2

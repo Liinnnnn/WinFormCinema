@@ -65,16 +65,21 @@ namespace QLRapPhim.Staff
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, st.ShowtimeHour, 32-(select count(TicketID) " +
-                    "from tblTicket where ShowtimeID = st.ShowtimeID ) as Status from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
-                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = '" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
-                dgvLichChieu.DataSource = table;
-                dgvLichChieu.Columns[0].HeaderText = "Tên Phòng Chiếu";
-                dgvLichChieu.Columns[1].HeaderText = "Tên Phim";
-                dgvLichChieu.Columns[2].HeaderText = "Giờ Chiếu";
-                dgvLichChieu.Columns[3].HeaderText = "Số Ghế Trống";
+                
             }
 
+        }
+
+        private void cbbPhim_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable table = data.ReadDatabase("select sr.RoomName, film.Name, st.ShowtimeHour, 32-(select count(TicketID) " +
+                    "from tblTicket where ShowtimeID = st.ShowtimeID ) as Status from tblShowtime st join tblFilm film on film.FilmID = st.FilmID " +
+                    "join tblShowRoom sr on sr.RoomID = st.RoomID where sr.CinemaID = '" + cinemaID + "' and film.Name = N'" + cbbPhim.Text + "' and CAST(st.Showtime as date) = '" + dtpNgayChieu.Value.ToString("yyyy-MM-dd") + "'");
+            dgvLichChieu.DataSource = table;
+            dgvLichChieu.Columns[0].HeaderText = "Tên Phòng Chiếu";
+            dgvLichChieu.Columns[1].HeaderText = "Tên Phim";
+            dgvLichChieu.Columns[2].HeaderText = "Giờ Chiếu";
+            dgvLichChieu.Columns[3].HeaderText = "Số Ghế Trống";
         }
 
         private void dgvLichChieu_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -94,7 +94,7 @@
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbPrice.Location = new System.Drawing.Point(686, 293);
+            this.lbPrice.Location = new System.Drawing.Point(651, 293);
             this.lbPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(113, 23);
@@ -106,7 +106,7 @@
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbDate.Location = new System.Drawing.Point(686, 249);
+            this.lbDate.Location = new System.Drawing.Point(651, 249);
             this.lbDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(136, 23);
@@ -118,7 +118,7 @@
             this.lbDirector.AutoSize = true;
             this.lbDirector.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDirector.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbDirector.Location = new System.Drawing.Point(686, 202);
+            this.lbDirector.Location = new System.Drawing.Point(651, 202);
             this.lbDirector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDirector.Name = "lbDirector";
             this.lbDirector.Size = new System.Drawing.Size(81, 23);
@@ -140,7 +140,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(387, 248);
+            this.txtName.Location = new System.Drawing.Point(342, 249);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(234, 27);
@@ -149,7 +149,7 @@
             // txtLanguage
             // 
             this.txtLanguage.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLanguage.Location = new System.Drawing.Point(387, 296);
+            this.txtLanguage.Location = new System.Drawing.Point(342, 297);
             this.txtLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLanguage.Name = "txtLanguage";
             this.txtLanguage.Size = new System.Drawing.Size(234, 27);
@@ -158,7 +158,7 @@
             // txtDirector
             // 
             this.txtDirector.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirector.Location = new System.Drawing.Point(875, 203);
+            this.txtDirector.Location = new System.Drawing.Point(805, 204);
             this.txtDirector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDirector.Name = "txtDirector";
             this.txtDirector.Size = new System.Drawing.Size(234, 27);
@@ -167,7 +167,7 @@
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(875, 292);
+            this.txtPrice.Location = new System.Drawing.Point(805, 293);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(235, 27);
@@ -178,7 +178,7 @@
             // 
             this.dtpDate.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(875, 245);
+            this.dtpDate.Location = new System.Drawing.Point(805, 246);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(234, 27);
@@ -290,7 +290,7 @@
             // 
             this.cmbFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFilmID.FormattingEnabled = true;
-            this.cmbFilmID.Location = new System.Drawing.Point(553, 437);
+            this.cmbFilmID.Location = new System.Drawing.Point(504, 437);
             this.cmbFilmID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbFilmID.Name = "cmbFilmID";
             this.cmbFilmID.Size = new System.Drawing.Size(234, 30);
@@ -301,7 +301,7 @@
             this.lbFilmIDSearch.AutoSize = true;
             this.lbFilmIDSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFilmIDSearch.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.lbFilmIDSearch.Location = new System.Drawing.Point(471, 440);
+            this.lbFilmIDSearch.Location = new System.Drawing.Point(422, 440);
             this.lbFilmIDSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFilmIDSearch.Name = "lbFilmIDSearch";
             this.lbFilmIDSearch.Size = new System.Drawing.Size(78, 23);
@@ -323,7 +323,7 @@
             // txtFilmID
             // 
             this.txtFilmID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilmID.Location = new System.Drawing.Point(387, 203);
+            this.txtFilmID.Location = new System.Drawing.Point(342, 204);
             this.txtFilmID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFilmID.Name = "txtFilmID";
             this.txtFilmID.Size = new System.Drawing.Size(234, 27);
@@ -348,7 +348,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Đang chiếu",
             "Ngừng chiếu"});
-            this.comboBox1.Location = new System.Drawing.Point(387, 343);
+            this.comboBox1.Location = new System.Drawing.Point(342, 344);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(234, 28);
             this.comboBox1.TabIndex = 80;
@@ -369,7 +369,7 @@
             this.btnAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAnh.ForeColor = System.Drawing.Color.Violet;
             this.btnAnh.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAnh.Location = new System.Drawing.Point(996, 431);
+            this.btnAnh.Location = new System.Drawing.Point(946, 431);
             this.btnAnh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnh.Name = "btnAnh";
             this.btnAnh.Size = new System.Drawing.Size(93, 32);
@@ -406,7 +406,7 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Violet;
             this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(824, 437);
+            this.btnSearch.Location = new System.Drawing.Point(775, 437);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(106, 26);
@@ -432,7 +432,7 @@
             this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
             this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDB.Location = new System.Drawing.Point(535, 522);
+            this.btnUpdateDB.Location = new System.Drawing.Point(486, 522);
             this.btnUpdateDB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdateDB.Name = "btnUpdateDB";
             this.btnUpdateDB.Size = new System.Drawing.Size(94, 32);
@@ -458,7 +458,7 @@
             this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
             this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDB.Location = new System.Drawing.Point(731, 522);
+            this.btnAddDB.Location = new System.Drawing.Point(682, 522);
             this.btnAddDB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddDB.Name = "btnAddDB";
             this.btnAddDB.Size = new System.Drawing.Size(93, 32);
