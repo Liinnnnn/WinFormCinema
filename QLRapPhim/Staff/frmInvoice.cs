@@ -129,7 +129,7 @@ namespace QLRapPhim.Staff
             g.DrawString(ticket[2], bodyFont, brush, x + 280, y); // Canh phải giá tiền
             y += lineSpacing;
             g.DrawString(ticket[3], bodyFont, brush, x, y);
-            g.DrawString(seatList.Count + "       " + (Convert.ToDouble(ticket[0]) / seatList.Count).ToString(), bodyFont, brush, x + 240, y); // Canh phải số lượng và giá
+            g.DrawString(seatList.Count.ToString(), bodyFont, brush, x + 240, y); // Canh phải số lượng và giá
             y += lineSpacing;
             g.DrawString("Discount", bodyFont, brush, x, y);
             g.DrawString(ticket[1], bodyFont, brush, x + 280, y); // Canh phải giá trị giảm giá
@@ -167,15 +167,36 @@ namespace QLRapPhim.Staff
 
                     DataTable table2 = process.ReadDatabase("select * from tblInvoice order by InvoiceID desc");
                     for (int i = 0; i < seatList.Count; i++)
-                    {
-                        process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','" + lblTienVe.Text + "')");
+                    { 
+                        if (Convert.ToInt32(seatList[i].Substring(1)) >= 3 && Convert.ToInt32(seatList[i].Substring(1)) <= 6 )
+                        {
+                            if (ticket[3] == "Adult" || ticket[3] == "Student")
+                            {
+                                process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','80000')");
+                            }
+                            else
+                            {
+                                process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','60000')");
+                            }
+                        }
+                        else
+                        {
+                            if (ticket[3] == "Adult" || ticket[3] == "Student")
+                            {
+                                process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','60000')");
+                            }
+                            else
+                            {
+                                process.ChangeDatabase("insert into tblTicket(TypeTicket, ShowtimeID, InvoiceID, Seat, FinalPrice) values ('" + ticket[3] + "','" + showtimeID + "','" + table2.Rows[0]["InvoiceID"] + "','" + seatList[i] + "','40000')");
+                            }
+                        }
                     }
 
                     printDocument.Print();
                     this.Hide();
+                    var frm = new frmBookTicket(staffID, cinemaID);
+                    frm.ShowDialog();
                     this.Close();
-
-                    
                 }
             }
             else MessageBox.Show("Chưa chọn phương thức thanh toán");
@@ -217,7 +238,6 @@ namespace QLRapPhim.Staff
             lblLoaiVe.Text += ticket[3];
             lblSoLuongVe.Text += seatList.Count;
             lblTienThu.Text += ticket[2];
-            lblTienVe.Text += (Convert.ToDouble(ticket[0]) / seatList.Count).ToString();
             lblGiamGia.Text += ticket[1];
             lblTienVietpay.Text += ticket[2];
         }

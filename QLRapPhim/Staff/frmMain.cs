@@ -49,10 +49,14 @@ namespace QLRapPhim
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmLogin frm = new frmLogin();
-            frm.ShowDialog();
-            this.Close();
+            if (MessageBox.Show("Bạn có chắc là muốn đăng xuất không?", "Rạp phim Skope", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                frmLogin frm = new frmLogin();
+                frm.ShowDialog();
+                this.Close();
+            }
+            
         }
     }
 }

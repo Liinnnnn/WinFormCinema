@@ -80,6 +80,7 @@
             this.btnDangXuat.ImageSize = new System.Drawing.Size(30, 30);
             this.btnDangXuat.IndicateFocus = true;
             this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.TabStop = false;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnDatVe
@@ -104,6 +105,7 @@
             this.btnDatVe.ImageSize = new System.Drawing.Size(35, 35);
             this.btnDatVe.IndicateFocus = true;
             this.btnDatVe.Name = "btnDatVe";
+            this.btnDatVe.TabStop = false;
             this.btnDatVe.TextOffset = new System.Drawing.Point(8, 0);
             this.btnDatVe.Click += new System.EventHandler(this.btnDatVe_Click);
             // 
@@ -120,6 +122,7 @@
             resources.ApplyResources(this.guna2GradientTileButton1, "guna2GradientTileButton1");
             this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
+            this.guna2GradientTileButton1.TabStop = false;
             // 
             // frmMain
             // 

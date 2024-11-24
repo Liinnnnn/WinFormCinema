@@ -48,7 +48,6 @@
             this.lblTenPhim2 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.lblSoLuongVe = new System.Windows.Forms.Label();
-            this.lblTienVe = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.lblGiamGia = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -252,15 +251,6 @@
             this.lblSoLuongVe.Size = new System.Drawing.Size(0, 18);
             this.lblSoLuongVe.TabIndex = 19;
             // 
-            // lblTienVe
-            // 
-            this.lblTienVe.AutoSize = true;
-            this.lblTienVe.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTienVe.Location = new System.Drawing.Point(282, 457);
-            this.lblTienVe.Name = "lblTienVe";
-            this.lblTienVe.Size = new System.Drawing.Size(0, 18);
-            this.lblTienVe.TabIndex = 20;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -404,7 +394,6 @@
             this.Controls.Add(this.lblGiamGia);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.lblTienThu);
-            this.Controls.Add(this.lblTienVe);
             this.Controls.Add(this.lblSoLuongVe);
             this.Controls.Add(this.lblLoaiVe);
             this.Controls.Add(this.lblTenPhim2);
@@ -456,7 +445,6 @@
         private System.Windows.Forms.Label lblTenPhim2;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblSoLuongVe;
-        private System.Windows.Forms.Label lblTienVe;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label lblGiamGia;
         private System.Windows.Forms.Label label31;
