@@ -409,6 +409,7 @@
             this.txtPhoneNB.Name = "txtPhoneNB";
             this.txtPhoneNB.Size = new System.Drawing.Size(311, 30);
             this.txtPhoneNB.TabIndex = 54;
+            this.txtPhoneNB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNB_KeyPress);
             // 
             // lbStaffID
             // 
@@ -481,7 +482,6 @@
             this.txtPassword.Location = new System.Drawing.Point(1496, 432);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(311, 30);
             this.txtPassword.TabIndex = 44;
             // 

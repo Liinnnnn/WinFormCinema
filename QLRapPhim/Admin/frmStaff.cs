@@ -67,9 +67,9 @@ namespace QLRapPhim
         private void frmStaff_Load(object sender, EventArgs e)
         {
             btnAddDB.Enabled = false;
-            btnSearch.Enabled = false;
-            lbMNVSearch.Enabled = false;
-            cmbMNV.Enabled = false;
+            btnSearch.Enabled = true;
+            lbMNVSearch.Enabled = true;
+            cmbMNV.Enabled = true;
             btnUpdateDB.Enabled = false;
             LoadData();
             dgvStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -154,7 +154,7 @@ namespace QLRapPhim
             }
             else
             {
-                string query = @"Select StaffID, Name, Gender, BirthDay, NumberPhone, WorkStartDate, Password, CinemaID
+                string query = @"Select StaffID, Name, Gender, BirthDay, NumberPhone, WorkStartDate, Password, CinemaID, Status
                                        From tblStaff
                                        Where Type_Account = '" + "Staff" + "' and StaffID = N'" + cmbMNV.Text + "'";
                 DataTable dt = process.ReadDatabase(query);
@@ -203,6 +203,7 @@ namespace QLRapPhim
                     string query = @"Insert into tblStaff (StaffID, Name, Gender, BirthDay, NumberPhone, WorkStartDate, Password, Type_Account, CinemaID,Status)
                                      Values ('" + txtStaffID.Text + "',N'" + txtName.Text + "',N'" + gender + "','" + dtpBirthday.Value.ToString("yyyy-MM-dd") + "','" + txtPhoneNB.Text + "','" + dtpWSDate.Value.ToString("yyyy-MM-dd") + "','" + txtPassword.Text + "','" + "Staff" + "','" + cmbBrach.Text + "', N'"+comboBox1.Text+"')";
                     process.ChangeDatabase(query);
+                    MessageBox.Show("Thêm nhân viên " + txtName.Text + " thành công", "Thông báo", MessageBoxButtons.OK);
                     LoadData();
                     Cancel();
                 }
@@ -230,6 +231,7 @@ namespace QLRapPhim
                 if (MessageBox.Show("Bạn có muốn thay đổi thông tin nhân viên " + txtStaffID.Text, "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     process.ChangeDatabase(query);
+                    MessageBox.Show("Sửa thông tin nhân viên " + txtName.Text + " thành công", "Thông báo", MessageBoxButtons.OK);
                     LoadData();
                     Cancel();
                 }
@@ -244,6 +246,14 @@ namespace QLRapPhim
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtPhoneNB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
