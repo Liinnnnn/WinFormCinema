@@ -214,7 +214,7 @@ namespace QLRapPhim.Staff
                     seats.Add(clickedBtn.Text);
                     if (rbtnNguoiLon.Checked || rbtnSinhVien.Checked)
                     {
-                        if (Convert.ToInt32(clickedBtn.Text.Substring(1)) > 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) < 6)
+                        if (Convert.ToInt32(clickedBtn.Text.Substring(1)) >= 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) <= 6)
                         {
                                 tongtien += 80000;
                         }
@@ -222,7 +222,7 @@ namespace QLRapPhim.Staff
                     }
                     else if (rbtnTreEm.Checked)
                     {
-                        if (Convert.ToInt32(clickedBtn.Text.Substring(1)) > 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) < 6)
+                        if (Convert.ToInt32(clickedBtn.Text.Substring(1)) >= 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) <= 6)
                         {
                             tongtien += 60000;
                         }
@@ -244,7 +244,7 @@ namespace QLRapPhim.Staff
                     {
                         if (rbtnNguoiLon.Checked || rbtnSinhVien.Checked)
                         {
-                            if (Convert.ToInt32(clickedBtn.Text.Substring(1)) > 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) < 6)
+                            if (Convert.ToInt32(clickedBtn.Text.Substring(1)) >= 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) <= 6)
                             {
                                 tongtien -= 80000;
                             }
@@ -252,7 +252,7 @@ namespace QLRapPhim.Staff
                         }
                         else if (rbtnTreEm.Checked)
                         {
-                            if (Convert.ToInt32(clickedBtn.Text.Substring(1)) > 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) < 6)
+                            if (Convert.ToInt32(clickedBtn.Text.Substring(1)) >= 3 && Convert.ToInt32(clickedBtn.Text.Substring(1)) <= 6)
                             {
                                 tongtien -= 60000;
                             }
@@ -281,7 +281,7 @@ namespace QLRapPhim.Staff
                 tongtien = 0;
                 for (int i = 0; i < seats.Count; i++)
                 {
-                    if (Convert.ToInt32(seats[i].Substring(1)) > 3 && Convert.ToInt32(seats[i].Substring(1)) < 6)
+                    if (Convert.ToInt32(seats[i].Substring(1)) >= 3 && Convert.ToInt32(seats[i].Substring(1)) <= 6)
                     {
                         tongtien += 80000;
                     }
@@ -302,7 +302,7 @@ namespace QLRapPhim.Staff
                 tongtien = 0;
                 for (int i = 0; i < seats.Count; i++)
                 {
-                    if (Convert.ToInt32(seats[i].Substring(1)) > 3 && Convert.ToInt32(seats[i].Substring(1)) < 6)
+                    if (Convert.ToInt32(seats[i].Substring(1)) >= 3 && Convert.ToInt32(seats[i].Substring(1)) <= 6)
                     {
                         tongtien += 80000;
                     }
@@ -336,7 +336,7 @@ namespace QLRapPhim.Staff
             tongtien = 0;
             for (int i = 0; i < seats.Count; i++)
             {
-                if (Convert.ToInt32(seats[i].Substring(1)) > 3 && Convert.ToInt32(seats[i].Substring(1)) < 6)
+                if (Convert.ToInt32(seats[i].Substring(1)) >= 3 && Convert.ToInt32(seats[i].Substring(1)) <= 6)
                 {
                     tongtien += 60000;
                 }
@@ -374,6 +374,9 @@ namespace QLRapPhim.Staff
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            var frm = new frmBookTicket(staffID, cinemaID);
+            frm.ShowDialog(this);
             this.Close();
         }
 

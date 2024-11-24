@@ -34,20 +34,29 @@ namespace QLRapPhim
                 }
                 else
                 {
-                    this.Hide();
-                    if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
+                    
+                    DataTable dt1 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Status = N'Đang làm' and Type_Account = 'Staff'");
+                    DataTable dt2 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Type_Account = 'Admin'");
+                    if (dt2.Rows.Count == 0 && dt1.Rows.Count == 0)
                     {
-                        string staffID = dt.Rows[0]["StaffID"].ToString();
-                        string cinemaID = dt.Rows[0]["CinemaID"].ToString();
-                        frmMain main = new frmMain(staffID, cinemaID);
-                        main.ShowDialog();
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
                     }
-                    else
+                    else if (dt2.Rows.Count > 0)
                     {
+                        this.Hide();
                         frmAdmin frmAdmin = new frmAdmin();
                         frmAdmin.ShowDialog();
+                        this.Close();
                     }
-                    this.Close();
+                    else if (dt1.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        string staffID = dt1.Rows[0]["StaffID"].ToString();
+                        string cinemaID = dt1.Rows[0]["CinemaID"].ToString();
+                        frmMain main = new frmMain(staffID, cinemaID);
+                        main.ShowDialog();
+                        this.Close();
+                    }
                 }
             }
         }
@@ -71,26 +80,27 @@ namespace QLRapPhim
                 }
                 else
                 {
-                    DataTable dt = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Status = N'Đang làm'");
-                    if (dt.Rows.Count == 0)
+                    DataTable dt1 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Status = N'Đang làm' and Type_Account = 'Staff'");
+                    DataTable dt2 = dataProcess.ReadDatabase("Select * From tblStaff where StaffID = '" + txtUserName.Text + "' and Password = '" + txtPassword.Text + "' and Type_Account = 'Admin'");
+                    if (dt2.Rows.Count == 0 && dt1.Rows.Count == 0)
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK);
                     }
-                    else
+                    else if (dt2.Rows.Count > 0)
                     {
                         this.Hide();
-                        if (dt.Rows[0]["Type_Account"].ToString() == "Staff")
-                        {
-                            string staffID = dt.Rows[0]["StaffID"].ToString();
-                            string cinemaID = dt.Rows[0]["CinemaID"].ToString();
-                            frmMain main = new frmMain(staffID, cinemaID);
-                            main.ShowDialog();
-                        }
-                        else
-                        {
-                            frmAdmin frmAdmin = new frmAdmin();
-                            frmAdmin.ShowDialog();
-                        }
+                        frmAdmin frmAdmin = new frmAdmin();
+                        frmAdmin.ShowDialog();
+                        this.Close();
+                    }
+                    else if (dt1.Rows.Count > 0)
+                    {
+                        this.Hide();
+                        string staffID = dt1.Rows[0]["StaffID"].ToString();
+                        string cinemaID = dt1.Rows[0]["CinemaID"].ToString();
+                        frmMain main = new frmMain(staffID, cinemaID);
+                        main.ShowDialog();
+                        this.Close();
                     }
                 }
             }
@@ -114,8 +124,10 @@ namespace QLRapPhim
                     }
                     else if (dt2.Rows.Count > 0)
                     {
+                        this.Hide();
                         frmAdmin frmAdmin = new frmAdmin();
                         frmAdmin.ShowDialog();
+                        this.Close();
                     }
                     else if (dt1.Rows.Count > 0)
                     {
@@ -124,7 +136,9 @@ namespace QLRapPhim
                         string cinemaID = dt1.Rows[0]["CinemaID"].ToString();
                         frmMain main = new frmMain(staffID, cinemaID);
                         main.ShowDialog();
+                        this.Close();
                     }
+                   
                 }
             }
         }
