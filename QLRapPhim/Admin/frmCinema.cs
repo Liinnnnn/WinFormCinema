@@ -162,6 +162,11 @@ namespace QLRapPhim
                 if (dt.Rows.Count == 0)
                 {
                     process.ChangeDatabase("insert into tblCinema (CinemaID,CinemaName,Address,Status) values ('" + txtCinemaID.Text + "',N'" + txtCinemaName.Text + "',N'" + txtAddress.Text + "',N'"+cmbStatus.Text+"')");
+                    for(int i = 0; i <= Int32.Parse(txtQuantity.Text)  ; i++)
+                    {
+                        string q = txtCinemaID.Text + Convert.ToString(i+1);
+                        process.ChangeDatabase("insert into tblShowRoom(RoomName,CinemaID) values('"+q+"' , '"+txtCinemaID.Text+"')");
+                    }
                     LoadData();
                 }
                 else

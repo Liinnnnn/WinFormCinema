@@ -38,6 +38,8 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnChange = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnTop = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbCinemaID = new System.Windows.Forms.Label();
@@ -60,35 +62,39 @@
             this.dgvCinema.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCinema.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCinema.Location = new System.Drawing.Point(0, 0);
+            this.dgvCinema.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCinema.Name = "dgvCinema";
             this.dgvCinema.RowHeadersWidth = 51;
             this.dgvCinema.RowTemplate.Height = 24;
-            this.dgvCinema.Size = new System.Drawing.Size(1615, 248);
+            this.dgvCinema.Size = new System.Drawing.Size(1212, 202);
             this.dgvCinema.TabIndex = 1;
             this.dgvCinema.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCinema_CellContentClick);
             // 
             // txtCinemaID
             // 
             this.txtCinemaID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCinemaID.Location = new System.Drawing.Point(823, 331);
+            this.txtCinemaID.Location = new System.Drawing.Point(287, 270);
+            this.txtCinemaID.Margin = new System.Windows.Forms.Padding(2);
             this.txtCinemaID.Name = "txtCinemaID";
-            this.txtCinemaID.Size = new System.Drawing.Size(311, 30);
+            this.txtCinemaID.Size = new System.Drawing.Size(234, 27);
             this.txtCinemaID.TabIndex = 14;
             // 
             // txtCinemaName
             // 
             this.txtCinemaName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCinemaName.Location = new System.Drawing.Point(823, 398);
+            this.txtCinemaName.Location = new System.Drawing.Point(287, 324);
+            this.txtCinemaName.Margin = new System.Windows.Forms.Padding(2);
             this.txtCinemaName.Name = "txtCinemaName";
-            this.txtCinemaName.Size = new System.Drawing.Size(311, 30);
+            this.txtCinemaName.Size = new System.Drawing.Size(234, 27);
             this.txtCinemaName.TabIndex = 15;
             // 
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(823, 465);
+            this.txtAddress.Location = new System.Drawing.Point(287, 379);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(311, 30);
+            this.txtAddress.Size = new System.Drawing.Size(234, 27);
             this.txtAddress.TabIndex = 16;
             // 
             // panel1
@@ -99,8 +105,9 @@
             this.panel1.Controls.Add(this.btnChange);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 922);
+            this.panel1.Size = new System.Drawing.Size(218, 749);
             this.panel1.TabIndex = 17;
             // 
             // btnCancel
@@ -120,9 +127,10 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Violet;
             this.btnCancel.Image = global::QLRapPhim.Properties.Resources.icons8_close_64;
             this.btnCancel.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCancel.Location = new System.Drawing.Point(0, 677);
+            this.btnCancel.Location = new System.Drawing.Point(0, 550);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(291, 40);
+            this.btnCancel.Size = new System.Drawing.Size(218, 32);
             this.btnCancel.TabIndex = 89;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseTransparentBackground = true;
@@ -145,9 +153,10 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Violet;
             this.btnAdd.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(0, 269);
+            this.btnAdd.Location = new System.Drawing.Point(0, 219);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(291, 40);
+            this.btnAdd.Size = new System.Drawing.Size(218, 32);
             this.btnAdd.TabIndex = 86;
             this.btnAdd.Text = "THÊM";
             this.btnAdd.UseTransparentBackground = true;
@@ -170,9 +179,10 @@
             this.btnChange.ForeColor = System.Drawing.Color.Violet;
             this.btnChange.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnChange.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnChange.Location = new System.Drawing.Point(0, 473);
+            this.btnChange.Location = new System.Drawing.Point(0, 384);
+            this.btnChange.Margin = new System.Windows.Forms.Padding(2);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(291, 40);
+            this.btnChange.Size = new System.Drawing.Size(218, 32);
             this.btnChange.TabIndex = 87;
             this.btnChange.Text = "SỬA";
             this.btnChange.UseTransparentBackground = true;
@@ -181,6 +191,8 @@
             // pnTop
             // 
             this.pnTop.BackColor = System.Drawing.Color.White;
+            this.pnTop.Controls.Add(this.label2);
+            this.pnTop.Controls.Add(this.txtQuantity);
             this.pnTop.Controls.Add(this.cmbStatus);
             this.pnTop.Controls.Add(this.label1);
             this.pnTop.Controls.Add(this.lbCinemaID);
@@ -194,18 +206,41 @@
             this.pnTop.Controls.Add(this.btnUpdateDB);
             this.pnTop.Controls.Add(this.btnAddDB);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnTop.Location = new System.Drawing.Point(291, 0);
+            this.pnTop.Location = new System.Drawing.Point(218, 0);
+            this.pnTop.Margin = new System.Windows.Forms.Padding(2);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(1615, 922);
+            this.pnTop.Size = new System.Drawing.Size(1212, 749);
             this.pnTop.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Violet;
+            this.label2.Location = new System.Drawing.Point(585, 268);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 23);
+            this.label2.TabIndex = 97;
+            this.label2.Text = "Số lượng phòng";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(733, 265);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(234, 27);
+            this.txtQuantity.TabIndex = 96;
             // 
             // cmbStatus
             // 
             this.cmbStatus.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(823, 532);
+            this.cmbStatus.Location = new System.Drawing.Point(287, 433);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(311, 35);
+            this.cmbStatus.Size = new System.Drawing.Size(234, 31);
             this.cmbStatus.TabIndex = 95;
             // 
             // label1
@@ -213,9 +248,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Violet;
-            this.label1.Location = new System.Drawing.Point(641, 534);
+            this.label1.Location = new System.Drawing.Point(151, 435);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 28);
+            this.label1.Size = new System.Drawing.Size(90, 23);
             this.label1.TabIndex = 94;
             this.label1.Text = "Trạng Thái";
             // 
@@ -224,9 +260,10 @@
             this.lbCinemaID.AutoSize = true;
             this.lbCinemaID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCinemaID.ForeColor = System.Drawing.Color.Violet;
-            this.lbCinemaID.Location = new System.Drawing.Point(641, 330);
+            this.lbCinemaID.Location = new System.Drawing.Point(151, 269);
+            this.lbCinemaID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCinemaID.Name = "lbCinemaID";
-            this.lbCinemaID.Size = new System.Drawing.Size(79, 28);
+            this.lbCinemaID.Size = new System.Drawing.Size(68, 23);
             this.lbCinemaID.TabIndex = 91;
             this.lbCinemaID.Text = "Mã Rạp";
             // 
@@ -235,9 +272,10 @@
             this.lbCinemaName.AutoSize = true;
             this.lbCinemaName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCinemaName.ForeColor = System.Drawing.Color.Violet;
-            this.lbCinemaName.Location = new System.Drawing.Point(641, 398);
+            this.lbCinemaName.Location = new System.Drawing.Point(151, 324);
+            this.lbCinemaName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCinemaName.Name = "lbCinemaName";
-            this.lbCinemaName.Size = new System.Drawing.Size(80, 28);
+            this.lbCinemaName.Size = new System.Drawing.Size(70, 23);
             this.lbCinemaName.TabIndex = 92;
             this.lbCinemaName.Text = "Tên Rạp";
             // 
@@ -246,9 +284,10 @@
             this.lbAddress.AutoSize = true;
             this.lbAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAddress.ForeColor = System.Drawing.Color.Violet;
-            this.lbAddress.Location = new System.Drawing.Point(641, 466);
+            this.lbAddress.Location = new System.Drawing.Point(151, 380);
+            this.lbAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(74, 28);
+            this.lbAddress.Size = new System.Drawing.Size(65, 23);
             this.lbAddress.TabIndex = 93;
             this.lbAddress.Text = "Địa Chỉ";
             // 
@@ -269,9 +308,10 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Violet;
             this.btnSearch.Image = global::QLRapPhim.Properties.Resources.icons8_search_64;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(646, 622);
+            this.btnSearch.Location = new System.Drawing.Point(154, 506);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(140, 40);
+            this.btnSearch.Size = new System.Drawing.Size(105, 32);
             this.btnSearch.TabIndex = 87;
             this.btnSearch.Text = "TÌM KIẾM";
             this.btnSearch.UseTransparentBackground = true;
@@ -281,9 +321,10 @@
             // 
             this.cmbCinemaID.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCinemaID.FormattingEnabled = true;
-            this.cmbCinemaID.Location = new System.Drawing.Point(823, 627);
+            this.cmbCinemaID.Location = new System.Drawing.Point(287, 510);
+            this.cmbCinemaID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCinemaID.Name = "cmbCinemaID";
-            this.cmbCinemaID.Size = new System.Drawing.Size(311, 35);
+            this.cmbCinemaID.Size = new System.Drawing.Size(234, 31);
             this.cmbCinemaID.TabIndex = 64;
             // 
             // btnUpdateDB
@@ -303,9 +344,10 @@
             this.btnUpdateDB.ForeColor = System.Drawing.Color.Violet;
             this.btnUpdateDB.Image = global::QLRapPhim.Properties.Resources.icons8_fix_64;
             this.btnUpdateDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDB.Location = new System.Drawing.Point(1151, 729);
+            this.btnUpdateDB.Location = new System.Drawing.Point(863, 592);
+            this.btnUpdateDB.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateDB.Name = "btnUpdateDB";
-            this.btnUpdateDB.Size = new System.Drawing.Size(123, 40);
+            this.btnUpdateDB.Size = new System.Drawing.Size(92, 32);
             this.btnUpdateDB.TabIndex = 88;
             this.btnUpdateDB.Text = "SỬA";
             this.btnUpdateDB.UseTransparentBackground = true;
@@ -328,9 +370,10 @@
             this.btnAddDB.ForeColor = System.Drawing.Color.Violet;
             this.btnAddDB.Image = global::QLRapPhim.Properties.Resources.icons8_add_64;
             this.btnAddDB.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddDB.Location = new System.Drawing.Point(468, 729);
+            this.btnAddDB.Location = new System.Drawing.Point(351, 592);
+            this.btnAddDB.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddDB.Name = "btnAddDB";
-            this.btnAddDB.Size = new System.Drawing.Size(127, 40);
+            this.btnAddDB.Size = new System.Drawing.Size(95, 32);
             this.btnAddDB.TabIndex = 89;
             this.btnAddDB.Text = "THÊM";
             this.btnAddDB.UseTransparentBackground = true;
@@ -340,21 +383,23 @@
             // 
             this.panel2.Controls.Add(this.dgvCinema);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(291, 0);
+            this.panel2.Location = new System.Drawing.Point(218, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1615, 248);
+            this.panel2.Size = new System.Drawing.Size(1212, 202);
             this.panel2.TabIndex = 19;
             // 
             // frmCinema
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1906, 922);
+            this.ClientSize = new System.Drawing.Size(1430, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnTop);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCinema";
             this.Text = "frmCinemacs";
             this.Load += new System.EventHandler(this.frmCinema_Load);
@@ -388,5 +433,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbCinemaID;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtQuantity;
     }
 }

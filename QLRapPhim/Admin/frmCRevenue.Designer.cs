@@ -65,7 +65,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 60;
-            this.dataGridView1.Size = new System.Drawing.Size(610, 187);
+            this.dataGridView1.Size = new System.Drawing.Size(610, 108);
             this.dataGridView1.TabIndex = 1;
             // 
             // chart1
@@ -79,16 +79,16 @@
             legend1.TitleBackColor = System.Drawing.Color.White;
             legend1.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 187);
+            this.chart1.Location = new System.Drawing.Point(0, 108);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.LabelBackColor = System.Drawing.Color.White;
             series1.LabelForeColor = System.Drawing.Color.LawnGreen;
             series1.Legend = "Legend1";
             series1.Name = "Doanh Thu";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(610, 263);
+            this.chart1.Size = new System.Drawing.Size(610, 342);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
             // 

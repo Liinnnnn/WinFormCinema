@@ -16,7 +16,7 @@ namespace QLRapPhim
     {
 
         private DataProcess process = new DataProcess();
-        private string query =@"select MONTH(PaymentDate) as Month, SUM(Total - Total*Discount) as Revenue
+        private string query =@"select MONTH(PaymentDate) as Month, SUM(Total) as Revenue
                             from tblInvoice i join tblStaff s on i.StaffID = s.StaffID 
                             join tblCinema c on s.CinemaID =  c.CinemaID 
                             group by MONTH(PaymentDate)";
