@@ -195,7 +195,9 @@ namespace QLRapPhim.Staff
                     printDocument.Print();
                     this.Hide();
                     var frm = new frmBookTicket(staffID, cinemaID);
+                    frm.TopMost = true;
                     frm.ShowDialog();
+                    frm.TopMost = false;
                     this.Close();
                 }
             }
