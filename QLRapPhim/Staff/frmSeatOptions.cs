@@ -389,7 +389,7 @@ namespace QLRapPhim.Staff
             else if(rbtnNguoiLon.Enabled == false && rbtnSinhVien.Enabled == false && rbtnTreEm.Enabled == false){
                 MessageBox.Show("Chưa chọn loại vé");
             }
-            else if(tbTongTien.Text == "0")
+            else if(seats.Count == 0)
             {
                 MessageBox.Show("Chưa chọn ghế ngồi");
             }
